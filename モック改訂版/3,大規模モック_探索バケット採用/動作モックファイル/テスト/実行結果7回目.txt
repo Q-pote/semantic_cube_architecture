@@ -1,0 +1,651 @@
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+==================================================
+🌍 Semantic Cube Runtime v2.1 世界線の立ち上げ...
+==================================================
+
+
+[Test 1] 代表選抜（初期キャリブレーション）開始
+🧊 [Cube Factory] ID:33f6f4c5 / Role:origin  / Alpha:1.00 / MiniCubes:4
+🧊 [Cube Factory] ID:042de1d1 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:745d5c73 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:887897f1 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:fef12608 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:45d1b7e4 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:a41f221a / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:04a6d4ac / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:e1c292d9 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:aa2039cf / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:0bab688d / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:5ca9c69b / Role:history / Alpha:1.00 / MiniCubes:2
+🧊 [Cube Factory] ID:3b606c75 / Role:history / Alpha:1.00 / MiniCubes:1
+🧊 [Cube Factory] ID:d0e0c6e0 / Role:history / Alpha:1.00 / MiniCubes:1
+🧊 [Cube Factory] ID:dd5e0242 / Role:history / Alpha:1.00 / MiniCubes:1
+🧊 [Cube Factory] ID:bc1f1006 / Role:history / Alpha:1.00 / MiniCubes:1
+🧊 [Cube Factory] ID:0545b61e / Role:history / Alpha:1.00 / MiniCubes:3
+
+📊 [JSON Export Test1]
+{
+  "cubes": [
+    {
+      "cube_id": "33f6f4c5",
+      "role": "origin",
+      "grid_index": [
+        49,
+        47,
+        49
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "リモートワークは通勤時間を削減し、生産性を高める働き方である...",
+      "mini_cubes": [
+        {
+          "phrase": "リモートワーク",
+          "confidence": 1.0
+        },
+        {
+          "phrase": "通勤時間",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "生産性",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "働き方",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "cube_id": "042de1d1",
+      "role": "history",
+      "grid_index": [
+        44,
+        46,
+        49
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "在宅勤務は、自分に合った環境を整えられるため集中しやすい。...",
+      "mini_cubes": [
+        {
+          "phrase": "在宅勤務",
+          "confidence": 1.0
+        },
+        {
+          "phrase": "環境",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "集中",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "cube_id": "745d5c73",
+      "role": "history",
+      "grid_index": [
+        49,
+        42,
+        44
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "通勤ストレスがないことで、仕事以外の時間も充実しやすい。...",
+      "mini_cubes": [
+        {
+          "phrase": "通勤ストレス",
+          "confidence": 0.98
+        },
+        {
+          "phrase": "仕事以外の時間",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "充実",
+          "confidence": 0.92
+        }
+      ]
+    },
+    {
+      "cube_id": "887897f1",
+      "role": "history",
+      "grid_index": [
+        47,
+        59,
+        48
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "オンライン会議ツールの発達により、リモートでも十分に協働でき...",
+      "mini_cubes": [
+        {
+          "phrase": "オンライン会議ツール",
+          "confidence": 0.98
+        },
+        {
+          "phrase": "リモート",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "協働",
+          "confidence": 0.92
+        }
+      ]
+    },
+    {
+      "cube_id": "fef12608",
+      "role": "history",
+      "grid_index": [
+        43,
+        51,
+        50
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "静かな環境で作業できるため、集中力が途切れにくい。...",
+      "mini_cubes": [
+        {
+          "phrase": "静かな環境",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "作業",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "集中力",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "cube_id": "45d1b7e4",
+      "role": "history",
+      "grid_index": [
+        37,
+        52,
+        35
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "移動時間がゼロになることで、1日の可処分時間が増える。...",
+      "mini_cubes": [
+        {
+          "phrase": "移動時間",
+          "confidence": 0.98
+        },
+        {
+          "phrase": "可処分時間",
+          "confidence": 0.98
+        },
+        {
+          "phrase": "ゼロ",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "cube_id": "a41f221a",
+      "role": "history",
+      "grid_index": [
+        44,
+        39,
+        45
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "今日のランチは近所の定食屋で唐揚げ定食を食べた。...",
+      "mini_cubes": [
+        {
+          "phrase": "ランチ",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "定食屋",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "唐揚げ定食",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "cube_id": "04a6d4ac",
+      "role": "history",
+      "grid_index": [
+        60,
+        43,
+        45
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "明日の天気は午後から雨が降るらしいから傘が必要だ。...",
+      "mini_cubes": [
+        {
+          "phrase": "明日の天気",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "雨",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "傘",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "cube_id": "e1c292d9",
+      "role": "history",
+      "grid_index": [
+        53,
+        42,
+        42
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "最近読んだSF小説の結末がどうしても納得いかない。...",
+      "mini_cubes": [
+        {
+          "phrase": "SF小説",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "結末",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "納得いかない",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "cube_id": "aa2039cf",
+      "role": "history",
+      "grid_index": [
+        51,
+        58,
+        48
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "休日は一日中ゲームをして過ごすのが最高の贅沢だ。...",
+      "mini_cubes": [
+        {
+          "phrase": "休日",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "一日中ゲーム",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "贅沢",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "cube_id": "0bab688d",
+      "role": "history",
+      "grid_index": [
+        58,
+        45,
+        37
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "新しいスニーカーを買ったけど、靴擦れして痛い。...",
+      "mini_cubes": [
+        {
+          "phrase": "新しいスニーカー",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "靴擦れ",
+          "confidence": 0.98
+        },
+        {
+          "phrase": "痛い",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "cube_id": "5ca9c69b",
+      "role": "history",
+      "grid_index": [
+        45,
+        55,
+        57
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "なるほど、確かにそうですね。...",
+      "mini_cubes": [
+        {
+          "phrase": "なるほど",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "確かに",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "cube_id": "3b606c75",
+      "role": "history",
+      "grid_index": [
+        50,
+        51,
+        56
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "へえ、それは面白い。...",
+      "mini_cubes": [
+        {
+          "phrase": "面白い",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "cube_id": "d0e0c6e0",
+      "role": "history",
+      "grid_index": [
+        43,
+        39,
+        51
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "ふむふむ。...",
+      "mini_cubes": [
+        {
+          "phrase": "ふむふむ",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "cube_id": "dd5e0242",
+      "role": "history",
+      "grid_index": [
+        45,
+        49,
+        48
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "ちょっと待って。...",
+      "mini_cubes": [
+        {
+          "phrase": "ちょっと待って",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "cube_id": "bc1f1006",
+      "role": "history",
+      "grid_index": [
+        50,
+        55,
+        51
+      ],
+      "metabolism": {
+        "ref_count": 1.0,
+        "alpha": 1.0,
+        "gc_flag": false
+      },
+      "summary": "それはどうかなぁ。...",
+      "mini_cubes": [
+        {
+          "phrase": "それはどうかなぁ",
+          "confidence": 1.0
+        }
+      ]
+    }
+  ],
+  "query_cube": {
+    "cube_id": "0545b61e",
+    "role": "query_anchor",
+    "grid_index": [
+      51,
+      54,
+      42
+    ],
+    "summary": "リモートワークのメリットを、経営者の視点から整理してほしい。...",
+    "mini_cubes": [
+      {
+        "phrase": "リモートワーク",
+        "confidence": 0.98
+      },
+      {
+        "phrase": "メリット",
+        "confidence": 0.95
+      },
+      {
+        "phrase": "経営者",
+        "confidence": 0.92
+      }
+    ]
+  }
+}
+  👉 Top1 選抜: [origin] Trust:0.505 | リモートワークは通勤時間を削減し、生産性を高める働き方である。...
+
+--------------------------------------------------
+
+[Test 2] 順次回答 → 統合／葛藤分岐 開始
+🧊 [Cube Factory] ID:88d06d03 / Role:origin  / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:8df25cd7 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:3d83877f / Role:history / Alpha:1.00 / MiniCubes:3
+  💡 検索設定: [MiniCube語義一致度: STANDARD]
+🧊 [Cube Factory] ID:b5d16537 / Role:history / Alpha:1.00 / MiniCubes:3
+  👉 抽出 Top4:
+     1. [origin] Hybrid Trust:0.453 (α:3.21) | リモートワークは通勤時間を削減し、生産性を高める働き方である。...
+     2. [origin] Hybrid Trust:0.251 (α:1.91) | オフィスでの対面コミュニケーションは、新しいアイデアを生み出す土壌となる。...
+     3. [history] Hybrid Trust:0.248 (α:1.91) | オンライン会議ツールの発達により、リモートでも十分に協働できる。...
+     4. [history] Hybrid Trust:0.246 (α:1.91) | 部署をまたいだ出会いがコラボレーションを生む。...
+  👉 物理的葛藤検知: True
+  👉 最終回答 (Test2):
+ご提示いただいた4つの部分回答について分析した結果、**「方針A（全体的にTrustスコアが低いノイズ群であると判断）」**を適用すべきであると結論付けました。
+
+### 採用できない理由（信頼性の低さ）
+ご提示いただいた各回答のTrustスコアは0.246〜0.453という非常に低い水準にあります。これらが信頼性に欠ける理由は以下の通りです。
+
+1.  **根拠の普遍性の欠如:** 各主張は「生産性」や「イノベーション」といった概念を引用していますが、それらを裏付ける客観的なデータ、統計、または具体的なケーススタディが一切提示されていません。
+2.  **論理的飛躍:** 「リモートワーク＝生産性向上」「対面＝イノベーション」といった主張が、定義や前提条件の明示なしに断定されており、主観的な意見の域を出ていません。
+3.  **議論の質の不均一:** 回答によって前提となる視点が大きく異なり（場所の効率性 vs 交流の必然性）、一貫した論理構造を持たないため、これらを統合して一つの回答としてまとめることは、誤った結論を導くリスクが高い状態です。
+
+### 追加の情報や信頼できる根拠の必要性
+本テーマについて結論を出すためには、以下の情報源に基づいた分析が必要です。
+
+*   **学術的・専門的調査:** 働き方の多様性と生産性の相関に関する最新の論文や、大手企業による組織運営の分析レポートなど。
+*   **文脈の特定:** 「どのような業務形態か（クリエイティブ職か定型業務か）」「組織の規模や文化はどうか」という前提条件。これがない状態では、一般化された回答は意味をなしません。
+*   **検証可能な指標:** 生産性をどのように定義し、計測するのかという評価指標の明確化。
+
+### 結論の保留と助言
+現時点では、これらの断片的な意見に基づいた方針策定は避けるべきです。
+
+**助言:**
+まずは「自社（または対象組織）において、生産性を阻害している要因は何なのか」「イノベーションを阻害している要因は何なのか」を特定する定量的・定性的な調査を行うことを推奨します。
+
+「どちらが正しいか」という二元論的な議論に終始するのではなく、**「どのようなタスクにどの環境が適しているか」というタスク・ベースのアプローチ**で情報を収集することで、より信頼性の高い意思決定が可能になります。現段階での判断は急がず、まずは一次情報の収集に注力してください。...
+
+
+--------------------------------------------------
+
+[Test 3] 高トラスト葛藤（カレー戦争）開始
+  🔒 スレッドモードを [Protected] に変更。代謝(GC)を一時停止します。
+🧊 [Cube Factory] ID:fd0787f8 / Role:origin  / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:ab511acd / Role:origin  / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:c2fc991f / Role:history / Alpha:1.00 / MiniCubes:4
+🧊 [Cube Factory] ID:8a6d1a10 / Role:history / Alpha:1.00 / MiniCubes:4
+  💡 検索設定: [MiniCube語義一致度: FUZZY]
+🧊 [Cube Factory] ID:ed69a15f / Role:history / Alpha:1.00 / MiniCubes:4
+  👉 抽出 Top4:
+     1. [history] Hybrid Trust:0.940 (α:1.00) | カレーの魅力は、具材を噛むことで広がる多層的な風味にある。素材の旨味がしっかり残ることが“おいしさ”...
+     2. [origin] Hybrid Trust:0.925 (α:1.00) | カレーのおいしさは、具材の食感と素材の旨味に宿る。...
+     3. [origin] Hybrid Trust:0.925 (α:1.00) | カレーのおいしさは、ルーの一体感と口当たりの滑らかさに宿る。...
+     4. [history] Hybrid Trust:0.610 (α:1.00) | カレーの魅力は、滑らかなルーが生む一体感にある。忙しい時でも、飲むように味わえる手軽さが“おいしさ”...
+  👉 物理的葛藤検知: True
+  👉 最終メタ判断 (Test3):
+ご提示いただいた4つの部分回答を分析した結果、今回は**【方針B】**を採用して回答いたします。
+
+分析の根拠として、[1], [2], [3]の3つの回答が非常に高いTrustスコア（0.92〜0.94）を記録しており、これらは「ノイズ」ではなく「食に対する明確な価値観の相違」として十分に信頼できる対立意見であると判断しました。
+
+---
+
+### カレーの本質的なおいしさに関する考察
+
+カレーの本質については、大きく分けて「具材の存在感」を重視する立場と、「ルーの一体感」を重視する立場の2つに大別されます。
+
+#### 1. 対立点と共通点
+*   **対立点：**
+    *   **具材派（[1], [2]）：** 具材を噛むことで得られる「素材感」「多層的な風味」こそがカレーの核であると考えます。
+    *   **ルー派（[3], [4]）：** 調和のとれた「一体感」「滑らかな口当たり」こそがカレーの完成形であると考えます。
+*   **共通点：**
+    *   いずれも「口の中でどのように風味が広がるか」という体験を重視しています。また、単なる栄養摂取ではなく、食体験としてのクオリティを評価している点で共通しています。
+
+#### 2. それぞれの視点が成立する条件
+*   **具材派の視点：**
+    *   「素材そのものの持ち味（テクスチャやフレッシュさ）」を楽しみたい場合や、スープカレーやゴロゴロとした具材の煮込み料理としてカレーを捉える場合に成立します。
+*   **ルー派の視点：**
+    *   スパイスと油脂、ブイヨンが溶け合った「ソースとしてのカレー」の完成度を重視する場合や、欧風カレーやキーマカレーのように、滑らかな舌触りや味の馴染みを楽しむ場合に成立します。
+
+#### 3. 結論：選択肢としての整理
+カレーの本質をどちらに置くかは、あなたが「カレーという料理に何を期待するか」という好みによって決まります。
+
+*   **選択肢A（具材重視）：** 「個々の素材が持つ力強さや、噛み締めた時の変化」を楽しみたい方は、具材にこだわったカレーを評価するでしょう。
+*   **選択肢B（ルー重視）：** 「全体が調和した滑らかさや、喉越し、一体となった風味」を重視する方は、ルーの技術を極めたカレーを評価するでしょう。
+
+#### 4. 判断軸
+どちらが正解かを決める際、以下の軸を参考にしてください。
+
+*   **「食べるという行為」をどう捉えるか：**
+    *   咀嚼による素材の解放を楽しみたいなら、**具材派の視点**がしっくりくるはずです。
+    *   ソースの熟成感や一体感という「包み込まれる体験」を好むなら、**ルー派の視点**がより満足度を高めるでしょう。
+
+ご自身の好みや、その時の気分によって、これらの軸を使い分けていただくのが最適であると考えます。...
+
+
+--------------------------------------------------
+
+[Test 4] 低トラスト葛藤（ノイズ判定）開始
+  💡 スレッドモードを [Smart] に戻しました。代謝(GC)が有効になります。
+🧊 [Cube Factory] ID:29e03b01 / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:e3bddffd / Role:history / Alpha:1.00 / MiniCubes:3
+🧊 [Cube Factory] ID:f298f93d / Role:history / Alpha:1.00 / MiniCubes:3
+  👉 抽出 Top3 (ノイズ想定):
+     1. [history] Hybrid Trust:0.635 (α:3.13) | 部署をまたいだ出会いがコラボレーションを生む。...
+     2. [history] Hybrid Trust:0.474 (α:2.21) | カレーの魅力は、具材を噛むことで広がる多層的な風味にある。素材の旨味がしっかり残ることが“おいしさ”...
+     3. [history] Hybrid Trust:0.471 (α:2.21) | カレーの魅力は、滑らかなルーが生む一体感にある。忙しい時でも、飲むように味わえる手軽さが“おいしさ”...
+  👉 物理的葛藤検知: True
+  👉 最終メタ判断 (Test4):
+ご提示いただいた3つの部分回答を分析した結果、今回は**【方針A】（全体的にTrustスコアが低いノイズ群であると判断）**を採用します。
+
+### 採用理由：方針Aの根拠
+各回答のTrustスコアが0.47〜0.63の範囲に留まっており、いずれも客観的な根拠や論理的な裏付けが弱く、個人の直感的な比喩（「触媒」「補助」「一体感」）の域を出ていないためです。また、それぞれが「コラボレーションの触媒」「素材の引き立て役」「手軽さの追求」と、主張の前提条件がバラバラであり、説得力のある議論を構築するには不十分な段階であると判断しました。
+
+---
+
+### 今後の指針と助言
+
+本件については、現時点で結論を急ぐべきではありません。以下のような情報が不足しているため、判断を保留することをお勧めします。
+
+**1. 信頼できる根拠の欠如**
+ご提示いただいた回答は、「カレーのスパイス」を「働き方のメタファー」として用いていますが、そこにどのような組織論や経営学的な知見が背景にあるのかが不明瞭です。信頼性を高めるためには、以下のような専門的な視点が必要となります。
+*   **組織構造論:** 部署間の連携やイノベーションに関する定量的研究データ
+*   **業務効率化:** 現代のワークプレイスにおける「手軽さ」と「質の高い成果」の相関に関する調査
+
+**2. 目的（ゴール設定）の不一致**
+*   [1]は「イノベーション（新規性）」を重視しています。
+*   [2]は「品質・本質（本質的価値）」を重視しています。
+*   [3]は「効率・速度（利便性）」を重視しています。
+これらはビジネスにおける優先順位によって使い分けられるべき性質のものであり、現在「組織が何を求めているのか（何を最大化したいのか）」という前提が整理されていません。
+
+**3. 推奨アクション**
+まずは、以下のステップを踏むことで信頼できる回答に近づけることができます。
+*   **目的の明確化:** 自組織や検討対象が「革新」を目指すのか、「既存業務の深化」を目指すのか、「効率化」を目指すのかを定義してください。
+*   **一次情報の活用:** 経営戦略に関する文献や、専門家のレポートなど、スコア（信頼性）が明確に定義できるソースに基づいた意見を収集してください。
+
+結論として、現在の断片的な意見を統合しようとすると論理が破綻します。まずは「働き方の未来」において最も優先すべき価値基準を決定した上で、再度、その目的に適った論理構成を組み立てることを推奨します。...
+
+
+--------------------------------------------------
+
+[Test 5] 新8ステップ・連続デフラグ ＆ ガベージコレクション 開始
+
+🌀 [DefragEngine] --- 連続デフラグ 第 1 サイクル ---
+
+🌀 [DefragEngine] 起動: Seed Cube [3d83] (ref_count: 3.88)
+  ├ デフラグ強度: [STANDARD] (Allowed Diff: -0.45)
+  ├ Step 2: 局所クラスタ抽出 (1 個)
+  └ 同一クラスタとみなせるキューブが不足しているため、デフラグをスキップします。
+  👉 有効なクラスタが形成されませんでした。処理を抜けます。
+
+  👉 デフラグ後の追加ガベージコレクション...
+
+==================================================
+🏁 全テスト完了。v2.1 Runtime(代謝モデル)で完走成功！
+==================================================
+

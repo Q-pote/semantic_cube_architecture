@@ -1,0 +1,350 @@
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+==================================================
+🌍 Semantic Cube Runtime v2.0 世界線の立ち上げ...
+==================================================
+
+
+[Test 1] 代表選抜（初期キャリブレーション）開始
+🧊 [Cube Factory] ID:e2057e9c / Role:origin  / Grid:[49, 47, 49] / MiniCubes:4個
+🧊 [Cube Factory] ID:56bc8d61 / Role:history / Grid:[44, 46, 49] / MiniCubes:3個
+🧊 [Cube Factory] ID:2ded706e / Role:history / Grid:[49, 42, 44] / MiniCubes:3個
+🧊 [Cube Factory] ID:a8fbb46a / Role:history / Grid:[47, 59, 48] / MiniCubes:3個
+🧊 [Cube Factory] ID:0ea24603 / Role:history / Grid:[43, 51, 50] / MiniCubes:3個
+🧊 [Cube Factory] ID:9594912e / Role:history / Grid:[37, 52, 35] / MiniCubes:3個
+🧊 [Cube Factory] ID:d2469614 / Role:history / Grid:[51, 54, 42] / MiniCubes:3個
+  👉 Top1 選抜: [origin] Trust:0.746 | リモートワークは通勤時間を削減し、生産性を高める働き方である。...
+
+📊 [JSON Export Test1]
+{
+  "cubes": [
+    {
+      "cube_id": "e2057e9c",
+      "role": "origin",
+      "grid_index": [
+        49,
+        47,
+        49
+      ],
+      "orientation": {
+        "azimuth": 4.7823,
+        "elevation": -0.1296,
+        "strength": 0.0047
+      },
+      "summary": "リモートワークは通勤時間を削減し、生産性を高める働き方である...",
+      "mini_cubes": [
+        {
+          "phrase": "リモートワーク",
+          "confidence": 1.0
+        },
+        {
+          "phrase": "通勤時間",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "生産性",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "働き方",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "cube_id": "56bc8d61",
+      "role": "history",
+      "grid_index": [
+        44,
+        46,
+        49
+      ],
+      "orientation": {
+        "azimuth": 3.678,
+        "elevation": -0.019,
+        "strength": 0.0126
+      },
+      "summary": "在宅勤務は、自分に合った環境を整えられるため集中しやすい。...",
+      "mini_cubes": [
+        {
+          "phrase": "在宅勤務",
+          "confidence": 0.98
+        },
+        {
+          "phrase": "環境",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "集中しやすい",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "cube_id": "2ded706e",
+      "role": "history",
+      "grid_index": [
+        49,
+        42,
+        44
+      ],
+      "orientation": {
+        "azimuth": 4.7604,
+        "elevation": -0.6461,
+        "strength": 0.0166
+      },
+      "summary": "通勤ストレスがないことで、仕事以外の時間も充実しやすい。...",
+      "mini_cubes": [
+        {
+          "phrase": "通勤ストレス",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "仕事以外の時間",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "時間の充実",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "cube_id": "a8fbb46a",
+      "role": "history",
+      "grid_index": [
+        47,
+        59,
+        48
+      ],
+      "orientation": {
+        "azimuth": 1.7797,
+        "elevation": -0.0902,
+        "strength": 0.0209
+      },
+      "summary": "オンライン会議ツールの発達により、リモートでも十分に協働でき...",
+      "mini_cubes": [
+        {
+          "phrase": "オンライン会議ツール",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "リモート",
+          "confidence": 0.9
+        },
+        {
+          "phrase": "協働",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "cube_id": "0ea24603",
+      "role": "history",
+      "grid_index": [
+        43,
+        51,
+        50
+      ],
+      "orientation": {
+        "azimuth": 2.7819,
+        "elevation": 0.0887,
+        "strength": 0.0124
+      },
+      "summary": "静かな環境で作業できるため、集中力が途切れにくい。...",
+      "mini_cubes": [
+        {
+          "phrase": "静かな環境",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "作業",
+          "confidence": 0.85
+        },
+        {
+          "phrase": "集中力",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "cube_id": "9594912e",
+      "role": "history",
+      "grid_index": [
+        37,
+        52,
+        35
+      ],
+      "orientation": {
+        "azimuth": 2.8839,
+        "elevation": -0.8436,
+        "strength": 0.0368
+      },
+      "summary": "移動時間がゼロになることで、1日の可処分時間が増える。...",
+      "mini_cubes": [
+        {
+          "phrase": "移動時間",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "可処分時間",
+          "confidence": 0.95
+        },
+        {
+          "phrase": "時間短縮",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "query_cube": {
+    "cube_id": "d2469614",
+    "role": "query_anchor",
+    "grid_index": [
+      51,
+      54,
+      42
+    ],
+    "orientation": {
+      "azimuth": 1.2598,
+      "elevation": -0.9472,
+      "strength": 0.0181
+    },
+    "summary": "リモートワークのメリットを、経営者の視点から整理してほしい。...",
+    "mini_cubes": [
+      {
+        "phrase": "リモートワーク",
+        "confidence": 1.0
+      },
+      {
+        "phrase": "経営者",
+        "confidence": 0.95
+      },
+      {
+        "phrase": "メリット",
+        "confidence": 0.9
+      }
+    ]
+  }
+}
+
+--------------------------------------------------
+
+[Test 2] 順次回答 → 統合／葛藤分岐 開始
+🧊 [Cube Factory] ID:5512130b / Role:origin  / Grid:[46, 53, 39] / MiniCubes:3個
+🧊 [Cube Factory] ID:a80aae4b / Role:history / Grid:[48, 46, 44] / MiniCubes:3個
+🧊 [Cube Factory] ID:9a87891c / Role:history / Grid:[45, 54, 49] / MiniCubes:2個
+🧊 [Cube Factory] ID:6ea44b90 / Role:history / Grid:[47, 53, 45] / MiniCubes:3個
+  👉 抽出 Top4:
+     1. [origin] Hybrid Trust:0.654 | リモートワークは通勤時間を削減し、生産性を高める働き方である。...
+     2. [history] Hybrid Trust:0.586 | 部署をまたいだ出会いがコラボレーションを生む。...
+     3. [history] Hybrid Trust:0.582 | 移動時間がゼロになることで、1日の可処分時間が増える。...
+     4. [origin] Hybrid Trust:0.565 | オフィスでの対面コミュニケーションは、新しいアイデアを生み出す土壌となる。...
+  👉 物理的葛藤検知: True
+  👉 最終回答 (Test2):
+提示された各部分回答のTrustスコアを確認したところ、すべて0.5〜0.6台と極めて拮抗しており、かつ特定の回答が圧倒的な根拠やデータに基づいているとは言い難い状態です。したがって、これらを「決定的な真理」として統合・選別することは危険であると判断し、**方針A（信頼性の低さを指摘し、結論を保留する）**に基づき回答します。
+
+---
+
+### 分析結果と助言
+
+ご提示いただいた4つの回答群を分析した結果、以下の理由により現時点でいずれかの方針を「正解」として採用することは推奨できません。
+
+#### 1. 信頼性の判断（なぜ採用できないのか）
+*   **根拠の不足：** 各回答は、論理的な主張としては一貫していますが、それを裏付ける客観的データ、特定の業界や組織規模に適した検証結果、あるいは先行研究などの信頼できる根拠が提示されていません。
+*   **視点の断絶：** 「リモートワーク（効率性）」と「オフィス回帰（対面交流）」という、現代の働き方において最も議論が分かれるテーマについて、それぞれの主張が経験則や抽象的な論理に留まっており、論拠の強度がどれも同等（Trust: 0...
+
+
+--------------------------------------------------
+
+[Test 3] 高トラスト葛藤（カレー戦争）開始
+🧊 [Cube Factory] ID:cc5fdee3 / Role:origin  / Grid:[47, 47, 49] / MiniCubes:3個
+🧊 [Cube Factory] ID:2be78d7c / Role:origin  / Grid:[46, 53, 43] / MiniCubes:3個
+🧊 [Cube Factory] ID:1d0f069d / Role:history / Grid:[47, 42, 48] / MiniCubes:4個
+🧊 [Cube Factory] ID:71650ab8 / Role:history / Grid:[47, 46, 40] / MiniCubes:4個
+🧊 [Cube Factory] ID:675daf59 / Role:history / Grid:[46, 41, 45] / MiniCubes:4個
+  👉 抽出 Top4:
+     1. [history] Hybrid Trust:0.959 | カレーの魅力は、滑らかなルーが生む一体感にある。忙しい時でも、飲むように味わえる手軽さが“おいしさ”の一部を形作る。...
+     2. [origin] Hybrid Trust:0.809 | カレーのおいしさは、具材の食感と素材の旨味に宿る。...
+     3. [history] Hybrid Trust:0.733 | カレーの魅力は、具材を噛むことで広がる多層的な風味にある。素材の旨味がしっかり残ることが“おいしさ”の核になる。...
+     4. [origin] Hybrid Trust:0.727 | カレーのおいしさは、ルーの一体感と口当たりの滑らかさに宿る。...
+  👉 物理的葛藤検知: True
+  👉 最終メタ判断 (Test3):
+ご提示いただいた各部分回答を分析した結果、今回は**【方針B：十分なTrustスコアを持つ対立意見であると判断】**し、回答を作成いたします。
+
+各回答のTrustスコアはいずれも一定以上の水準（0.727〜0.959）にあり、これらは単なるノイズではなく、カレーの価値観における二大潮流を反映しているものと判断しました。
+
+---
+
+### カレーの「本質的なおいしさ」に関する分析
+
+カレーの定義において、意見は大きく「ルーの一体感・滑らかさ（テクスチャ重視）」と「具材の食感・素材感（素材重視）」の二つに分かれています。
+
+#### 1. 対立点と共通点
+*   **対立点**:
+    *   **ルー重視派 ([1], [4])**: 滑らかなルーが調和を生む「一体感」や、手軽に摂取できる「流動性・利便性」を重視します。
+    *   **具材重視派 ([2], [3])**: 具材を噛むことで得られる「食感」や、素材そのものが持つ「旨味の層」を重視します。
+*   **共通点**:
+    *   どちらの主張も「味の深み」や「満足感」を追求しており、カレーという料理が単調なも...
+
+
+--------------------------------------------------
+
+[Test 4] 低トラスト葛藤（採用保留・却下）開始
+🧊 [Cube Factory] ID:43736e7a / Role:history / Grid:[51, 49, 45] / MiniCubes:3個
+🧊 [Cube Factory] ID:3cf989c6 / Role:history / Grid:[58, 49, 47] / MiniCubes:3個
+🧊 [Cube Factory] ID:149d532e / Role:history / Grid:[48, 50, 44] / MiniCubes:3個
+  👉 抽出 Top3 (ノイズ想定):
+     1. [history] Hybrid Trust:0.771 | カレーの隠し味にはチョコレートが良い。...
+     2. [history] Hybrid Trust:0.678 | カレーを食べる時はスプーンよりフォークだ。...
+     3. [origin] Hybrid Trust:0.627 | カレーのおいしさは、具材の食感と素材の旨味に宿る。...
+  👉 物理的葛藤検知: True
+  👉 最終メタ判断 (Test4):
+ご提示いただいた部分回答を分析した結果、これらは「働き方の未来」という文脈において、比喩的あるいは個人の好みの域を出ない主張であり、客観的なデータや専門的な議論の積み重ねによるものとは言い難いと判断しました。
+
+そのため、ご提示いただいた指針に基づき、**方針A**を採用して回答いたします。
+
+---
+
+### 回答：情報の信頼性と分析結果について
+
+ご提示いただいた3つの回答は、それぞれ異なる視点から「働き方の未来」を語っていますが、現時点では**方針A（全体的に信頼性が限定的であるノイズ群）**として扱うのが適切です。
+
+#### 1. なぜ採用できないのか（信頼性の低さ）
+*   **論理的飛躍:** 「働き方の未来」という抽象度の高いテーマに対し、カレーの食べ方（フォークの是非）や特定の味付け（チョコレートの隠し味）という、文脈の異なる比喩が用いられています。これらがどのような因果関係や類推に基づいて「働き方」に適用されているのか、論理的な裏付けが欠如しています。
+*   **主観的・断片的な主張:** いずれの回答も、根拠となるデータや学術的・社会的な合意形成に基づくものでは...
+
+
+--------------------------------------------------
+
+[Test 5] デフラグ (代謝・Origin再生成) 開始
+
+🌀 [DefragEngine] 起動: Seed Cube [e205] (リモートワークは通勤時間を削減...)
+  ├ 局所クラスタ抽出: 5 キューブ
+  ├ 重心ベクトル算出完了
+
+  👀 [監査ログ] デフラグ入力（抽出された近傍キューブ群）:
+      [1] (Hybrid Trust: 0.920) リモートワークは通勤時間を削減し、生産性を高める働き方である。...
+      [2] (Hybrid Trust: 0.710) 在宅勤務は、自分に合った環境を整えられるため集中しやすい。...
+      [3] (Hybrid Trust: 0.656) 通勤ストレスがないことで、仕事以外の時間も充実しやすい。...
+      [4] (Hybrid Trust: 0.586) 移動時間がゼロになることで、1日の可処分時間が増える。...
+      [5] (Hybrid Trust: 0.575) オンライン会議ツールの発達により、リモートでも十分に協働できる。...
+
+  ├ LLM による抽象化処理中...
+
+  👀 [監査ログ] デフラグ出力（LLMが生成した新Origin）:
+      ご提示いただいた意見クラスタの共通項を抽象化し、その根底にある価値観を「Origin（起源・土台）」として表現しました。
+
+**「場所の制約から自らを解放し、時間と環境を主体的にデザインすることで、個人のパフォーマンスと人生の質を最大化する。」**
+
+🧊 [Cube Factory] ID:e8616aae / Role:origin  / Grid:[40, 58, 47] / MiniCubes:5個
+
+==================================================
+🏁 全テスト完了。MiniCube統合Runtimeで完走成功！
+==================================================
+

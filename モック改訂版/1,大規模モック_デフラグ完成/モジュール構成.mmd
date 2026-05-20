@@ -1,0 +1,22 @@
+flowchart TD
+
+    subgraph Runtime["Semantic Cube Runtime v1.2（関数型志向）"]
+        CF[CubeFactory<br/>pure functions: embed, map_to_grid, make_cube]
+        KV[(KVHub<br/>唯一のstate保持者)]
+        TE[TrustEvaluator<br/>pure functions: grid_dist, angle_dist, trust]
+        PE[PartialEngine<br/>pure function: make_partial]
+        IE[IntegrationEngine<br/>pure function: integrate]
+        CE[ConflictEngine<br/>pure function: analyze_conflict]
+        DE[DefragEngine<br/>pure function: defrag_cluster]
+        LOG[Logger<br/>pure function: export_json]
+    end
+
+    CF --> KV
+    KV --> TE
+    TE --> KV
+    KV --> PE
+    PE --> IE
+    PE --> CE
+    KV --> DE
+    DE --> KV
+    KV --> LOG
