@@ -25,7 +25,7 @@ flowchart TD
     PhysicsConflict -->|葛藤なし| Integrate[7a. 自然統合エンジン: 最終提案を生成]
     PhysicsConflict -->|葛藤あり| Analyze[7b. 葛藤解決エンジン: 対立構造の整理]
 
-    Integrate --> Response[8. LLMからの最終回答　（意見葛藤があればその旨を素直に報告）]
+    Integrate --> Response[8. LLMからの最終回答（葛藤があればその旨を素直に報告）]
     Analyze --> Response
 
     %% ==========================================
@@ -44,4 +44,3 @@ flowchart TD
 
     class User userStyle;
     class Response userStyle;
-
