@@ -1,8 +1,11 @@
 # Semantic Cube Architecture
 （意味キューブアーキテクチャ）
 
+---
 ### A Data & Memory Architecture for Next-Generation AI
 
+論文はかなり高難易度なので、AIに読んでもらってわかる言語に翻訳してもらってください。
+---
 
 **Semantic Cube Architecture は “データ＆メモリアーキテクチャ” です。  
 
@@ -84,12 +87,9 @@ Semantic Cube Architecture は、
 
 ---
 
-
----
-
 ## 🧪 Implementation Mock
 
-`mock/` には以下の PoC が含まれます：
+`動作モック_Python` には以下の PoC が含まれます：
 
 - int3 量子化  
 - 7階調バケット  
@@ -101,15 +101,11 @@ Semantic Cube Architecture は、
 
 ---
 
-## 📊 Architecture Diagram
-
-（Mermaid 図または PNG をここに貼る）
-
----
-
 ## 📚 Documentation
 
-論文（第1〜7章）は `docs/` に格納されています。
+論文（第1〜7章）は `ドキュメント清書` に格納されています。
+
+
 
 - **第1章**：意味キューブとは  
 - **第2章**：データ構造  
