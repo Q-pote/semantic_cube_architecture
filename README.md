@@ -2,9 +2,9 @@
 （意味キューブアーキテクチャ）
 
 ---
-### A Data & Memory Architecture for Next-Generation AI
+本論文は、私の個人開発とGemini、Copilot等のAI達との協業によって作成しています。
 
-論文はかなり高難易度なので、AIに読んでもらってわかる言語に翻訳してもらってください。
+論文はかなり高難易度なのでAIを活用しわかる言語に翻訳してもらってください。
 ---
 
 **Semantic Cube Architecture は “データ＆メモリアーキテクチャ” です。  
