@@ -1,11 +1,12 @@
 # Semantic Cube Architecture
-（意味キューブアーキテクチャ）
 
+---
 ---
 本論文は、私の個人開発とGemini、Copilot等のAI達との協業によって作成しています。
 
 本論文は高密度な設計を含むため、
 必要に応じてAI翻訳・要約ツールを活用すると理解しやすくなります。
+---
 ---
 
 **Semantic Cube Architecture は、
@@ -33,6 +34,9 @@ Semantic Cube Architecture は、
 これらを克服するために、Semantic Cube Architecture は  
 **“LLM の外側にある意味空間”** を構築し、  
 そこに **記憶・推論・代謝・方向性検知** を委譲します。
+
+LLMの外側に「思考するメモリ」を構築するアーキテクチャです。
+まず第4章と第5章を読んでください。
 
 ---
 
