@@ -54,6 +54,13 @@ LLMの外側の記憶空間を概念検索可能なDBと定義し、そこに **
 
 ---
 
+### 🎯 What you can do with this
+
+- 常時稼働能力を持つAIの実現
+- 手動スレッド管理の解決
+
+---
+
 ## 🤝 Contributing
 
 Semantic Cube Architecture は現在オープンな研究プロジェクトです。
