@@ -1,0 +1,66 @@
+-------- 1ターンの全体像 --------
+
+【Step 1: ユーザー入力の受付と「問い」のキューブ化】
+    1,ActivityMain: ユーザーからの入力user_queryを受け取る。
+    2,q_cube = cube_eng.make_cube(user_query, "history", "USER", hub.global_turn):
+        CubeEngineに、ユーザーの問いを**「q_cube（Question Cube）」**として錬成させる。
+    3,hub.cube_add(q_cube): q_cubeを宇宙（cube_pool）に放り込む。
+    4,hub.history_push(q_cube): q_cubeを短期記憶（active_history）に入れる。
+
+【Step 2: 思考の材料集め（SRAG）】
+    1,top_k_cubes = srag_eng.search(q_cube, hub.cube_get_all()):
+        SragEngineに、q_cubeを道しるべとして、宇宙全体から関連性の高い**「根拠キューブ（TOP-K）」**を探査させる。
+    2,hub.search_change_set(top_k_cubes):
+        見つけてきた根拠を、一時的なワークエリア（srag_results）に配置する。
+
+【Step 3: 葛藤の検知】
+    1,conflict_meta = analyze_eng.analyze_Conflict(hub.search_get_all()):
+        AnalyzeEngineに、ワークエリアにある根拠群を検証させ、**「意見は揃っているか？対立しているか？」**を判定させる。
+
+【Step 4: 最終回答の生成】
+    1,final_prompt = integrate_eng.integration(hub.search_get_all(), hub.history_get_all(), conflict_meta):
+        IntegrationEngineに、**「根拠」「直近の文脈」「葛藤の有無」**の3点セットを渡し、LLMへの最終的な「指示書（プロンプト）」を生成させる。
+    2,llm_result = llm_service.call_api_generate(final_prompt):
+        LLMServiceを介して、外部宇宙の神（Gemini）に指示書を送り、お告げ（final_answer）をもらう。
+
+【Step 5: システム応答の記録と「因果の紐付け」】
+    1,a_cube = cube_eng.make_cube(final_answer, "history", "LLM", hub.global_turn):
+        神のお告げを、今度は**「a_cube（Answer Cube）」**として、俺たちの宇宙の言葉（SemanticCube）に翻訳・錬成する。
+    2,a_cube.reactionLink_ID = q_cube.cube_id:
+        この「答え」が、どの「問い」から生まれたのか、因果の鎖を繋ぐ。
+    3,(optional) q_cube.reactionLink_ID = a_cube.id:
+        「問い」の側にも「答え」のIDを記録すれば、完全な双方向リンクが完成する。
+    4,hub.cube_add(a_cube): 「答えのキューブ」も、宇宙に放り込む。
+    5,hub.history_push(a_cube): 「答えのキューブ」も、短期記憶に入れる。
+    6,hub.tick(): 宇宙の時間を1つ進める。
+    7,ActivityMain: final_answerをUIに表示し、ループの先頭に戻る。
+
+-------- --------
+
+-------- phase 1 実装 --------
+
+【Step 1: ユーザー入力の受付と「問い」のキューブ化】
+    1,ActivityMain: ユーザーからの入力user_queryを受け取る。
+    2,q_cube = cube_eng.make_cube(user_query, "history", "USER", hub.global_turn):
+        CubeEngineに、ユーザーの問いを**「q_cube（Question Cube）」**として錬成させる。
+    3,hub.cube_add(q_cube): q_cubeを宇宙（cube_pool）に放り込む。
+    4,hub.history_push(q_cube): q_cubeを短期記憶（active_history）に入れる。
+
+【Step 4: 最終回答の生成】
+    1,answer = integrate_eng.single(q_cube):
+        内部で次の処理を行う。→ llm_service.call_api_generate(q_cube.summary):
+        LLMServiceを介してLLMに指示を送り、お告げ（answer）をもらう（笑）
+
+【Step 5: システム応答の記録と「因果の紐付け」】
+    1,a_cube = cube_eng.make_cube(answer, "history", "LLM", hub.global_turn):
+        神のお告げを、今度は**「a_cube（Answer Cube）」**として、俺たちの宇宙の言葉（SemanticCube）に翻訳・錬成する。
+    2,a_cube.reactionLink_ID = q_cube.cube_id:
+        この「答え」が、どの「問い」から生まれたのか、因果の鎖を繋ぐ。
+    3,(optional) q_cube.reactionLink_ID = a_cube.id:
+        「問い」の側にも「答え」のIDを記録すれば、完全な双方向リンクが完成する。
+    4,hub.cube_add(a_cube): 「答えのキューブ」も、宇宙に放り込む。
+    5,hub.history_push(a_cube): 「答えのキューブ」も、短期記憶に入れる。
+    6,hub.tick(): 宇宙の時間を1つ進める。
+    7,ActivityMain: answerをUIに表示し、ループの先頭に戻る。
+
+-------- --------

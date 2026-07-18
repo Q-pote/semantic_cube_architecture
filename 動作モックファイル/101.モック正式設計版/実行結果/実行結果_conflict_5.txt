@@ -1,0 +1,219 @@
+=======================================================
+💬 Step 2: 無限対話モードを開始します。(終了するには 'exit' と入力)
+=======================================================
+
+👤 You: 今から複数のシステムテストをやるから、変な事をいっぱい言うけど、あんまり気にせず短く1行で応答してね。
+
+🧊 CubeEngine: Starting 'make_cube' for '今から複数のシステムテストをやるから、変な事をいっぱい言うけど、あんまり気にせず短く1行で応答してね...'
+    - keyphrase: '私'  role: 'subject'  with confidence 0.85
+    - keyphrase: 'あなた'  role: 'subject'  with confidence 0.85
+    - keyphrase: 'やる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '言う'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '応答して'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '1行'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_2a27942c' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid (256): (np.int64(77), np.int64(162), np.int64(130))
+    - Mesh (10000):  (np.int64(3035), np.int64(6339), np.int64(5104))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '今から複数のシステムテストをやるから、変...'
+  - Found 7 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+
+
+【ユーザーの入力プロンプト】
+今から複数のシステムテストをやるから、変な事をいっぱい言うけど、あんまり気にせず短く1行で応答してね。
+
+【メタデータ】
+ - 2026-07-13 12:20:48.486972+09:00
+
+
+--------------------------------
+
+---------- SRAG RESULT ----------
+  --- 該当する過去の記憶は見つかりませんでした ---
+--------------------------------
+
+--------------------------------
+
+
+🤖 LLM: 了解しました！どんなことでも気にせず、短く1行でお返事しますね。いつでもどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '了解しました！どんなことでも気にせず、短く1行でお返事しますね。いつでもどうぞ！...'
+    - keyphrase: '私（省略された主語）'  role: 'subject'  with confidence 0.85
+    - keyphrase: '了解しました'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'お返事します'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '短く1行で'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'どんなことでも'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'いつでも'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_ef584540' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid (256): (np.int64(88), np.int64(144), np.int64(110))
+    - Mesh (10000):  (np.int64(3472), np.int64(5628), np.int64(4304))
+
+[System] Turn 1 complete. Total cubes: 12.
+
+👤 You: サウナと水風呂は「ととのう」と言われているが、実はあれ、INTが下がっていたんだ。
+
+🧊 CubeEngine: Starting 'make_cube' for 'サウナと水風呂は「ととのう」と言われているが、実はあれ、INTが下がっていたんだ。...'
+    - keyphrase: 'サウナと水風呂'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'INT'  role: 'subject'  with confidence 0.9
+    - keyphrase: '下がっていた'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '言われている'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'ととのう'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_9347c902' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(4), np.int64(2))
+    - Fine Grid (256): (np.int64(89), np.int64(138), np.int64(69))
+    - Mesh (10000):  (np.int64(3498), np.int64(5402), np.int64(2723))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'サウナと水風呂は「ととのう」と言われてい...'
+  - Found 7 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.6
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.792)】
+ - 【過去の対話内容】:【 人生における大切なことは、だいたいサウナと水風呂が教えてくれる。】
+ - 【関連キーワード】: [サウナと水風呂が]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-13 12:20:48.486972+09:00 : 今から複数のシステムテストをやるから、変な事をいっぱい言うけど、あんまり気にせず短く1行で応答してね。
+- LLM: 2026-07-13 12:21:02.563938+09:00 : 了解しました！どんなことでも気にせず、短く1行でお返事しますね。いつでもどうぞ！
+
+【ユーザーの入力プロンプト】
+サウナと水風呂は「ととのう」と言われているが、実はあれ、INTが下がっていたんだ。
+
+【メタデータ】
+- 2026-07-13 12:21:48.611489+09:00
+
+
+--------------------------------
+
+---------- SRAG RESULT ----------
+  [Rank 1] '人生における大切なことは、だいたいサウナ...' (Score: 0.792)
+    - Matched: 'サウナと水風呂' -> 'サウナと水風呂が'
+--------------------------------
+
+--------------------------------
+
+
+🤖 LLM: たとえINTが下がっていても、人生の大切なことはだいたいサウナと水風呂が教えてくれますよ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'たとえINTが下がっていても、人生の大切なことはだいたいサウナと水風呂が教えてくれますよ！...'
+    - keyphrase: 'サウナと水風呂'  role: 'subject'  with confidence 0.95
+    - keyphrase: '教えてくれます'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人生の大切なこと'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'INT'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_35a44069' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(4), np.int64(1))
+    - Fine Grid (256): (np.int64(97), np.int64(146), np.int64(52))
+    - Mesh (10000):  (np.int64(3815), np.int64(5721), np.int64(2058))
+
+[System] Turn 2 complete. Total cubes: 14.
+
+👤 You: 人生における大切なことは、だいたいサウナと水風呂から出るときには湯船に浮いてる。
+
+🧊 CubeEngine: Starting 'make_cube' for '人生における大切なことは、だいたいサウナと水風呂から出るときには湯船に浮いてる。...'
+    - keyphrase: '人生における大切なこと'  role: 'subject'  with confidence 0.95
+    - keyphrase: '浮いてる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'サウナ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '水風呂'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '湯船'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_e0ed29b5' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(4), np.int64(0))
+    - Fine Grid (256): (np.int64(101), np.int64(135), np.int64(11))
+    - Mesh (10000):  (np.int64(3971), np.int64(5288), np.int64(459))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '人生における大切なことは、だいたいサウナ...'
+  - Found 5 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.6
+    -> Executing 'integration' route with 3 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.962)】
+ - 【過去の対話内容】:【 人生における大切なことは、だいたいサウナと水風呂が教えてくれる。】
+ - 【関連キーワード】: [サウナ, 水風呂]
+
+【根拠データ2 (Score: 0.885)】
+ - 【過去の対話内容】:【 たとえINTが下がっていても、人生の大切なことはだいたいサウナと水風呂が教えてくれますよ！】
+ - 【関連キーワード】: [人生の大切なこと]
+
+【根拠データ3 (Score: 0.769)】
+ - 【過去の対話内容】:【 サウナと水風呂は「ととのう」と言われているが、実はあれ、INTが下がっていたんだ。】
+ - 【関連キーワード】: [ととのう]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-13 12:20:48.486972+09:00 : 今から複数のシステムテストをやるから、変な事をいっぱい言うけど、あんまり気にせず短く1行で応答してね。
+- LLM: 2026-07-13 12:21:02.563938+09:00 : 了解しました！どんなことでも気にせず、短く1行でお返事しますね。いつでもどうぞ！
+- User: 2026-07-13 12:21:48.611489+09:00 : サウナと水風呂は「ととのう」と言われているが、実はあれ、INTが下がっていたんだ。
+- LLM: 2026-07-13 12:21:58.687919+09:00 : たとえINTが下がっていても、人生の大切なことはだいたいサウナと水風呂が教えてくれますよ！
+
+【ユーザーの入力プロンプト】
+人生における大切なことは、だいたいサウナと水風呂から出るときには湯船に浮いてる。
+
+【メタデータ】
+- 2026-07-13 12:22:42.865845+09:00
+
+
+--------------------------------
+
+---------- SRAG RESULT ----------
+  [Rank 1] '人生における大切なことは、だいたいサウナ...' (Score: 0.962)
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: '水風呂' -> '水風呂'
+  [Rank 2] 'たとえINTが下がっていても、人生の大切...' (Score: 0.885)
+    - Matched: '人生における大切なこと' -> '人生の大切なこと'
+  [Rank 3] 'サウナと水風呂は「ととのう」と言われてい...' (Score: 0.769)
+    - Matched: 'サウナ' -> 'ととのう'
+--------------------------------
+
+--------------------------------
+
+
+🤖 LLM: 大切なことまで一緒にぷかぷか浮き流されちゃっていますね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '大切なことまで一緒にぷかぷか浮き流されちゃっていますね（笑）...'
+    - keyphrase: '大切なこと'  role: 'subject'  with confidence 0.85
+    - keyphrase: '浮き流されちゃっています'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ぷかぷか'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '一緒に'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_5cff3b7d' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(4), np.int64(1))
+    - Fine Grid (256): (np.int64(91), np.int64(140), np.int64(60))
+    - Mesh (10000):  (np.int64(3591), np.int64(5487), np.int64(2380))
+
+[System] Turn 3 complete. Total cubes: 16.
+
+👤 You: exit
+👋 See you, space cowboy...

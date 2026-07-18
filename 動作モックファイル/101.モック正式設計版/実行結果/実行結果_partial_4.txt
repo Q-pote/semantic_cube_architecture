@@ -1,0 +1,68 @@
+🚀 Semantic Cube Runtime v8.2 (Dynamic Projector MVP) 起動...
+🔧 DynamicProjector initialized. Waiting for fitting...
+✅ CubeEngine initialized.
+
+=======================================================
+🌍 Step 1: 全対話データからベクトルを一括生成＆プロジェクター学習
+=======================================================
+⚠️ Warning: Not enough data to fit PCA. Skipping.
+
+=======================================================
+🌌 Step 2: 1ターンの対話サイクルを開始
+=======================================================
+
+👤 User: こんにちは。今日の良き日よ。私の方は、最近のニュースや天気のことを気にしています。さて、あなたはどんなことを考えていますか？
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは。今日の良き日よ。私の方は、最近のニュースや天気のことを気にしています。さて、あなたはどん...'
+    - keyphrase: '私の方は'  role: 'subject'  with confidence 0.95
+    - keyphrase: '気にしています'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'あなたは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '考えていますか'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '最近のニュース'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '天気'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'どんなこと'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '今日の良き日'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_666e498a' created successfully.
+    - Coarse Grid (8): (0, 0, 0)
+    - Fine Grid (256): (0, 0, 0)
+    - Mesh (10000):  (0, 0, 0)
+
+💬 IntegrationEngine: Generating single response...
+
+----------------
+🤖 LLM says: こんにちは。温かいご挨拶をいただき、ありがとうございます。
+
+最近は天候の変化や日々のニュースなど、気にかかることが多い季節ですね。
+
+私は、本日（2026年7月12日）も、あなたのように話しかけてくださる皆様の日々が少しでも快適で豊かなものになるよう、どのようにお手伝いができるかを考えております。また、本格的な夏の暑さを迎える時期ですので、皆様が健やかに過ごされているかも気にかけております。
+
+何か調べたいニュースや、お手伝いできることがありましたら、いつでもお気軽にお話しくださいね。
+----------------
+
+💾 Storing response and linking causality...
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは。温かいご挨拶をいただき、ありがとうございます。
+
+最近は天候の変化や日々のニュースなど、...'
+    - keyphrase: '私'  role: 'subject'  with confidence 0.98
+    - keyphrase: '皆様の日々'  role: 'subject'  with confidence 0.9
+    - keyphrase: '皆様'  role: 'subject'  with confidence 0.88
+    - keyphrase: '考えております'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '気にかけております'  role: 'predicate'  with confidence 0.92
+    - keyphrase: 'ありがとうございます'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'お話しください'  role: 'predicate'  with confidence 0.88
+    - keyphrase: '温かいご挨拶'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '天候の変化'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '2026年7月12日'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '本格的な夏の暑さ'  role: 'key_phrase'  with confidence 0.88
+    - keyphrase: 'お手伝い'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_de13c1c1' created successfully.
+    - Coarse Grid (8): (0, 0, 0)
+    - Fine Grid (256): (0, 0, 0)
+    - Mesh (10000):  (0, 0, 0)
+
+✅ Turn 1 Complete.
+   - Global Turn: 1
+   - Total Cubes in Pool: 2
+   - Q-Cube ('こんにちは。今日の良...') is linked to A-Cube ('こんにちは。温かいご...')
+   - Q-Cube Grid: (0, 0, 0) / A-Cube Grid: (0, 0, 0)

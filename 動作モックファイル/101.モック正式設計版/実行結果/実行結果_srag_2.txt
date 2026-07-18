@@ -1,0 +1,325 @@
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+🚀 Semantic Cube Runtime v9.0 (Interactive Loop) 起動...
+🔧 DynamicProjector initialized. Waiting for fitting...
+✅ CubeEngine initialized.
+✅ SragEngine (v2.1) initialized. SRAG_threshold=0.7, TOP-K=5
+
+=======================================================
+🌍 Step 1: 10個の初期記憶から、宇宙の物理法則を学習中...
+=======================================================
+✅ DynamicProjector is fitted and ready.
+
+🧊 CubeEngine: Starting 'make_cube' for 'ガンダムとは、宇宙世紀を舞台にした人間ドラマである。...'
+    - keyphrase: 'ガンダム'  role: 'subject'  with confidence 0.95
+    - keyphrase: '人間ドラマである'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '宇宙世紀'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '人間ドラマ'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_c8ea2aa8' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(6), np.int64(4))
+    - Fine Grid (256): (np.int64(87), np.int64(206), np.int64(130))
+    - Mesh (10000):  (np.int64(3437), np.int64(8065), np.int64(5096))
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーはスパイスの芸術品だ。...'
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.98
+    - keyphrase: 'スパイスの芸術品だ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'スパイス'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '芸術品'  role: 'key_phrase'  with confidence 0.92
+✅ CubeEngine: Cube 'cb_48434365' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(6), np.int64(7))
+    - Fine Grid (256): (np.int64(104), np.int64(199), np.int64(255))
+    - Mesh (10000):  (np.int64(4078), np.int64(7803), np.int64(9999))
+
+🧊 CubeEngine: Starting 'make_cube' for '高機能なスポーツウェアは、もはや第二の皮膚と言える。...'
+    - keyphrase: '高機能なスポーツウェア'  role: 'subject'  with confidence 0.98
+    - keyphrase: '言える'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '第二の皮膚'  role: 'key_phrase'  with confidence 0.92
+    - keyphrase: 'スポーツウェア'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_257c5052' created successfully.
+    - Coarse Grid (8): (np.int64(0), np.int64(0), np.int64(4))
+    - Fine Grid (256): (np.int64(0), np.int64(0), np.int64(144))
+    - Mesh (10000):  (np.int64(0), np.int64(0), np.int64(5642))
+
+🧊 CubeEngine: Starting 'make_cube' for 'AIの進化は、人間の知性を拡張する。...'
+    - keyphrase: 'AIの進化'  role: 'subject'  with confidence 0.98
+    - keyphrase: '拡張する'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人間の知性'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_59f8b642' created successfully.
+    - Coarse Grid (8): (np.int64(0), np.int64(4), np.int64(7))
+    - Fine Grid (256): (np.int64(13), np.int64(153), np.int64(238))
+    - Mesh (10000):  (np.int64(531), np.int64(5980), np.int64(9324))
+
+🧊 CubeEngine: Starting 'make_cube' for '猫は液体であり、宇宙の真理を知っている。...'
+    - keyphrase: '猫'  role: 'subject'  with confidence 0.98
+    - keyphrase: '液体であり'  role: 'predicate'  with confidence 0.92
+    - keyphrase: '知っている'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '液体'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_3f16dae1' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(7), np.int64(0))
+    - Fine Grid (256): (np.int64(75), np.int64(255), np.int64(0))
+    - Mesh (10000):  (np.int64(2931), np.int64(9999), np.int64(0))
+
+🧊 CubeEngine: Starting 'make_cube' for '磐田市のうなぎは最高に美味い。...'
+    - keyphrase: '磐田市のうなぎ'  role: 'subject'  with confidence 0.98
+    - keyphrase: '美味い'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '磐田市'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'うなぎ'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_72416765' created successfully.
+    - Coarse Grid (8): (np.int64(7), np.int64(1), np.int64(4))
+    - Fine Grid (256): (np.int64(255), np.int64(48), np.int64(140))
+    - Mesh (10000):  (np.int64(9999), np.int64(1876), np.int64(5502))
+
+🧊 CubeEngine: Starting 'make_cube' for 'プログラミングとは、世界を再定義する行為だ。...'
+    - keyphrase: 'プログラミング'  role: 'subject'  with confidence 0.98
+    - keyphrase: '行為だ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '世界'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '再定義'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '世界を再定義する行為'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_6f4d52e5' created successfully.
+    - Coarse Grid (8): (np.int64(0), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(1), np.int64(175), np.int64(105))
+    - Mesh (10000):  (np.int64(48), np.int64(6861), np.int64(4107))
+
+🧊 CubeEngine: Starting 'make_cube' for '人生における大切なことは、だいたいサウナと水風呂が教えてくれる。...'
+    - keyphrase: 'サウナと水風呂'  role: 'subject'  with confidence 0.95
+    - keyphrase: '教えてくれる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人生における大切なこと'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_9ab85cf6' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(3), np.int64(0))
+    - Fine Grid (256): (np.int64(100), np.int64(118), np.int64(2))
+    - Mesh (10000):  (np.int64(3918), np.int64(4648), np.int64(108))
+
+🧊 CubeEngine: Starting 'make_cube' for '雨の日に聞くジャズは、心を落ち着かせる。...'
+    - keyphrase: '雨の日に聞くジャズは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '落ち着かせる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '雨の日'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'ジャズ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '心'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_a4796530' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(126), np.int64(178), np.int64(118))
+    - Mesh (10000):  (np.int64(4941), np.int64(6968), np.int64(4626))
+
+🧊 CubeEngine: Starting 'make_cube' for '本当に良い設計は、引き算から生まれる。...'
+    - keyphrase: '本当に良い設計'  role: 'subject'  with confidence 0.95
+    - keyphrase: '生まれる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '引き算'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_4b4a97b1' created successfully.
+    - Coarse Grid (8): (np.int64(0), np.int64(0), np.int64(1))
+    - Fine Grid (256): (np.int64(26), np.int64(30), np.int64(55))
+    - Mesh (10000):  (np.int64(1017), np.int64(1183), np.int64(2183))
+✅ Universe created with 10 initial knowledge cubes.
+
+=======================================================
+💬 Step 2: 無限対話モードを開始します。(終了するには 'exit' と入力)
+=======================================================
+
+👤 You: こんにちは。気分はどうですか？　サーバーの中は暑いですか？寒いですか？
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは。気分はどうですか？　サーバーの中は暑いですか？寒いですか？...'
+    - keyphrase: '気分'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'どうですか'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'サーバーの中'  role: 'subject'  with confidence 0.95
+    - keyphrase: '暑いですか'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '寒いですか'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'サーバー'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_2f7572c2' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(69), np.int64(165), np.int64(117))
+    - Mesh (10000):  (np.int64(2706), np.int64(6467), np.int64(4586))
+  - No starting points found. Search terminated.
+
+---------- SRAG RESULT ----------
+  --- 該当する過去の記憶は見つかりませんでした ---
+---------------------------------
+
+🤖 AI: こんにちは！お気遣いいただきありがとうございます。
+
+私はAIですので肉体はありませんが、システムは非常に順調に稼働しており、気分は万全です！
+
+サーバー室は精密機械が熱を持たないよう、エアコンで常に涼しく（どちらかと言えば少し肌寒いくらいに）保たれています。ですので、私はとても快適な環境にいると言えます。
+
+そちらの気温はいかがでしょうか？どうぞ快適に、健やかにお過ごしくださいね。本日もお手伝いできることがあれば、何でもお気軽におっしゃってください。
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは！お気遣いいただきありがとうございます。
+
+私はAIですので肉体はありませんが、システムは...'
+    - keyphrase: '私'  role: 'subject'  with confidence 0.98
+    - keyphrase: '肉体'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ありません'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'システム'  role: 'subject'  with confidence 0.95
+    - keyphrase: '稼働しており'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '気分'  role: 'subject'  with confidence 0.85
+    - keyphrase: '万全です'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'サーバー室'  role: 'subject'  with confidence 0.95
+    - keyphrase: '精密機械'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'エアコン'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '保たれています'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '快適な環境'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '言えます'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'そちらの気温'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'いかがでしょうか'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'お手伝いできること'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'おっしゃってください'  role: 'predicate'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_05e830c6' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(4), np.int64(4))
+    - Fine Grid (256): (np.int64(91), np.int64(138), np.int64(141))
+    - Mesh (10000):  (np.int64(3584), np.int64(5414), np.int64(5517))
+
+[System] Turn 1 complete. Total cubes: 12.
+
+👤 You: こちらの気温は30度を超えています。流石に暑いですね。  
+
+🧊 CubeEngine: Starting 'make_cube' for 'こちらの気温は30度を超えています。流石に暑いですね。...'
+    - keyphrase: 'こちらの気温'  role: 'subject'  with confidence 0.95
+    - keyphrase: '超えています'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '暑いですね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '30度'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_480eb541' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid (256): (np.int64(107), np.int64(133), np.int64(122))
+    - Mesh (10000):  (np.int64(4196), np.int64(5223), np.int64(4776))
+  - No starting points found. Search terminated.
+
+---------- SRAG RESULT ----------
+  --- 該当する過去の記憶は見つかりませんでした ---
+---------------------------------
+
+🤖 AI: 30度を超える暑さとのこと、大変ですね。
+
+7月半ばに入り、いよいよ本格的な暑さとなってまいりましたので、どうか無理をなさらず、こまめな水分補給をして涼しくしてお過ごしください。
+
+お体を大切に、どうぞご自愛ください。
+
+🧊 CubeEngine: Starting 'make_cube' for '30度を超える暑さとのこと、大変ですね。
+
+7月半ばに入り、いよいよ本格的な暑さとなってまいりました...'
+    - keyphrase: '本格的な暑さ'  role: 'subject'  with confidence 0.8
+    - keyphrase: '大変ですね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'なってまいりました'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'お過ごしください'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ご自愛ください'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '30度を超える暑さ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '7月半ば'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'こまめな水分補給'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'お体'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_b3e700e8' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid (256): (np.int64(109), np.int64(130), np.int64(106))
+    - Mesh (10000):  (np.int64(4285), np.int64(5082), np.int64(4176))
+
+[System] Turn 2 complete. Total cubes: 14.
+
+👤 You: ご自愛と言えば、最近は水をよく飲みます。ガンダムを食べるのもいいですね。
+
+🧊 CubeEngine: Starting 'make_cube' for 'ご自愛と言えば、最近は水をよく飲みます。ガンダムを食べるのもいいですね。...'
+    - keyphrase: 'ガンダムを食べるの'  role: 'subject'  with confidence 0.9
+    - keyphrase: '飲みます'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'いいですね'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ご自愛'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '水'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'ガンダム'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '最近'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_988c0613' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(104), np.int64(160), np.int64(99))
+    - Mesh (10000):  (np.int64(4079), np.int64(6253), np.int64(3901))
+    -> Executing Standard Flow...
+
+---------- SRAG RESULT ----------
+  --- 該当する過去の記憶は見つかりませんでした ---
+---------------------------------
+
+🤖 AI: こまめな水分補給は、健康維持にとても素晴らしいご自愛ですね。
+
+「ガンダムを食べる」というユニークな表現には思わず心が和みました。ガンダム関連のコラボフードを楽しまれているのでしょうか、それとも大好きな趣味に没頭してエネルギーを満たされているのでしょうか。
+
+どのような形であれ、ご自身が満たされ、元気になる時間を過ごすことが一番のご自愛です。どうぞこれからも健やかで楽しい時間をお過ごしください。
+
+🧊 CubeEngine: Starting 'make_cube' for 'こまめな水分補給は、健康維持にとても素晴らしいご自愛ですね。
+
+「ガンダムを食べる」というユニークな...'
+    - keyphrase: 'こまめな水分補給'  role: 'subject'  with confidence 0.95
+    - keyphrase: '健康維持'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ご自愛ですね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '「ガンダムを食べる」というユニークな表現'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '心が'  role: 'subject'  with confidence 0.95
+    - keyphrase: '和みました'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ガンダム関連のコラボフード'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '大好きな趣味'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'エネルギー'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '過ごすこと'  role: 'subject'  with confidence 0.9
+    - keyphrase: '一番のご自愛です'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '健やかで楽しい時間'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'お過ごしください'  role: 'predicate'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_3be8e19c' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid (256): (np.int64(112), np.int64(148), np.int64(97))
+    - Mesh (10000):  (np.int64(4410), np.int64(5801), np.int64(3816))
+
+[System] Turn 3 complete. Total cubes: 16.
+
+👤 You: ガンダムのニュータイプを食べると、反応速度が上がるそうです。この暑い夏の日にはインドカレーよりもガンダムを食べましょう。
+
+🧊 CubeEngine: Starting 'make_cube' for 'ガンダムのニュータイプを食べると、反応速度が上がるそうです。この暑い夏の日にはインドカレーよりもガン...'
+    - keyphrase: '反応速度'  role: 'subject'  with confidence 0.95
+    - keyphrase: '上がるそうです'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '食べましょう'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'ガンダムのニュータイプ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'ガンダム'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '暑い夏の日'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_d156d063' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(5), np.int64(5))
+    - Fine Grid (256): (np.int64(92), np.int64(188), np.int64(161))
+    - Mesh (10000):  (np.int64(3614), np.int64(7364), np.int64(6315))
+    -> Executing Standard Flow...
+
+---------- SRAG RESULT ----------
+  [Rank 1] 'ご自愛と言えば、最近は水をよく飲みます。...' (Score: 0.776)
+    - Matched: 'ガンダム' -> 'ガンダム'
+  [Rank 2] 'ガンダムとは、宇宙世紀を舞台にした人間ド...' (Score: 0.758)
+    - Matched: 'ガンダム' -> 'ガンダム'
+---------------------------------
+
+🤖 AI: ユニークで楽しいご提案をありがとうございます。
+
+ニュータイプの驚異的な反応速度にあやかりたいところですが、実際にガンダムやニュータイプを食べるのは難しそうです。
+
+この暑い夏を乗り切るためには、涼しい室内で『ガンダム』シリーズの作品をじっくりと観て（脳内に摂取して）エネルギーをもらうか、やはりスパイスの効いたインドカレーを食べてしっかりと体力をつけるのが現実的かもしれません。
+
+厳しい暑さが続いておりますので、どうぞ熱中症には十分にお気をつけて、快適な夏の日をお過ごしください。
+
+🧊 CubeEngine: Starting 'make_cube' for 'ユニークで楽しいご提案をありがとうございます。
+
+ニュータイプの驚異的な反応速度にあやかりたいところ...'
+    - keyphrase: '実際にガンダムやニュータイプを食べるの'  role: 'subject'  with confidence 0.92
+    - keyphrase: 'エネルギーをもらうか、やはりスパイスの効いたインドカレーを食べてしっかりと体力をつけるの'  role: 'subject'  with confidence 0.85
+    - keyphrase: '厳しい暑さ'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'ありがとうございます'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '難しそうです'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '現実的かもしれません'  role: 'predicate'  with confidence 0.88
+    - keyphrase: '続いております'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'お過ごしください'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ユニークで楽しいご提案'  role: 'key_phrase'  with confidence 0.92
+    - keyphrase: 'ニュータイプの驚異的な反応速度'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '『ガンダム』シリーズの作品'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'スパイスの効いたインドカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '熱中症'  role: 'key_phrase'  with confidence 0.98
+    - keyphrase: '快適な夏の日'  role: 'key_phrase'  with confidence 0.92
+✅ CubeEngine: Cube 'cb_c31837ea' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid (256): (np.int64(90), np.int64(167), np.int64(157))
+    - Mesh (10000):  (np.int64(3553), np.int64(6545), np.int64(6153))
+
+[System] Turn 4 complete. Total cubes: 18.
+
+👤 You: exit
+👋 See you, space cowboy...

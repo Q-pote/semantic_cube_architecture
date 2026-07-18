@@ -1,0 +1,72 @@
+🚀 Semantic Cube Runtime v8.2 (Dynamic Projector MVP) 起動...
+🔧 DynamicProjector initialized. Waiting for fitting...
+✅ CubeEngine initialized.
+✅ SragEngine (v2.1) initialized. SRAG_threshold=0.7, TOP-K=5
+
+=======================================================
+🌍 Step 1: 全対話データからベクトルを一括生成＆プロジェクター学習
+=======================================================
+✅ DynamicProjector is fitted and ready.
+
+=======================================================
+🌌 Step 2: 1ターンの対話サイクルを開始
+=======================================================
+
+👤 User: こんにちは。今日の良き日よ。私の方は、最近のニュースや天気のことを気にしています。さて、あなたはどんなことを考えていますか？
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは。今日の良き日よ。私の方は、最近のニュースや天気のことを気にしています。さて、あなたはどん...'
+    - keyphrase: '私の方'  role: 'subject'  with confidence 0.95
+    - keyphrase: '気にしています'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '最近のニュース'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '天気'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'あなた'  role: 'subject'  with confidence 0.95
+    - keyphrase: '考えていますか'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'どんなこと'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '今日の良き日'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_f61f7501' created successfully.
+    - Coarse Grid (8): (np.int64(4), np.int64(6), np.int64(0))
+    - Fine Grid (256): (np.int64(132), np.int64(199), np.int64(0))
+    - Mesh (10000):  (np.int64(5177), np.int64(7773), np.int64(0))
+
+💬 IntegrationEngine: Generating single response...
+
+----------------
+🤖 LLM says: こんにちは。温かいお言葉をいただき、ありがとうございます。
+
+私はAIですので、日々変化する世の中のニュースや、本格的な夏を迎えた今の季節を皆様がどのように過ごされているかに思いを馳せています。そして何より、今日もこうしてあなたと対話し、少しでも日々の生活のお役に立てることはないかと考えております。
+
+何か気になるニュースについてお話しされたり、お手伝いできることはございますか？
+----------------
+
+💾 Storing response and linking causality...
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは。温かいお言葉をいただき、ありがとうございます。
+
+私はAIですので、日々変化する世の中の...'
+    - keyphrase: '私'  role: 'subject'  with confidence 0.98
+    - keyphrase: '皆様'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'お手伝いできること'  role: 'subject'  with confidence 0.85
+    - keyphrase: 'AIです'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '思いを馳せています'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '考えております'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ございますか'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '温かいお言葉'  role: 'key_phrase'  with confidence 0.88
+    - keyphrase: '世の中のニュース'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '本格的な夏'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '日々の生活'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '対話'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_d615513e' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(2))
+    - Fine Grid (256): (np.int64(108), np.int64(167), np.int64(95))
+    - Mesh (10000):  (np.int64(4238), np.int64(6526), np.int64(3720))
+  - No starting points found. Search terminated.
+
+🔍 SRAG Search Results (Top 0):
+    ---該当キューブ無し---
+
+✅ Turn 1 Complete.
+   - Global Turn: 1
+   - Total Cubes in Pool: 2
+   - Q-Cube ('こんにちは。今日の良...') is linked to A-Cube ('こんにちは。温かいお...')
+   - Q-Cube Grid: (np.int64(4), np.int64(6), np.int64(0)) / A-Cube Grid: (np.int64(3), np.int64(5), np.int64(2))
+   

@@ -1,0 +1,231 @@
+=======================================================
+💬 Step 2: 無限対話モードを開始します。(終了するには 'exit' と入力)
+=======================================================
+
+👤 You: こんにちは。今から少し開発したモックのシステムテストで、おかしい事をいっぱい言うけど、脳みその１％くらいのリソースで短くリアクション頂戴ね。
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちは。今から少し開発したモックのシステムテストで、おかしい事をいっぱい言うけど、脳みその１％く...'
+    - keyphrase: '私（話し手・省略）'  role: 'subject'  with confidence 0.85
+    - keyphrase: 'あなた（聞き手・省略）'  role: 'subject'  with confidence 0.85
+    - keyphrase: '言う'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '頂戴ね'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '開発したモック'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'おかしい事'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '脳みその１％くらいのリソース'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'リアクション'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_5271a68b' created successfully.
+    - Coarse Grid (8): (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(73), np.int64(161), np.int64(118))
+    - Mesh (10000):  (np.int64(2882), np.int64(6305), np.int64(4625))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'こんにちは。今から少し開発したモックのシ...'
+  - Found 6 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+
+
+【ユーザーの入力プロンプト】
+こんにちは。今から少し開発したモックのシステムテストで、おかしい事をいっぱい言うけど、脳みその１％くらいのリソースで短くリアクション頂戴ね。
+
+【メタデータ】
+ - 2026-07-14 09:30:45.127259+09:00
+
+
+--------------------------------
+
+---------- SRAG RESULT ----------
+  --- 該当する過去の記憶は見つかりませんでした ---
+--------------------------------
+
+--------------------------------
+
+
+🤖 LLM: りょ。いつでもどうぞー。脳死で適当に流すね。
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'りょ。いつでもどうぞー。脳死で適当に流すね。...'
+    - keyphrase: '私（省略された主語）'  role: 'subject'  with confidence 0.85
+    - keyphrase: '流す'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'どうぞ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '脳死'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'りょ'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '適当'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_35d36cea' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(109), np.int64(164), np.int64(106))
+    - Mesh (10000):  (np.int64(4282), np.int64(6421), np.int64(4171))
+
+[System] Turn 1 complete. Total cubes: 12.
+
+👤 You: インドカレーは喉に良い飲み物である。
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは喉に良い飲み物である。...'
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.98
+    - keyphrase: '飲み物である'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '喉'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '喉に良い飲み物'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_bb4ed9a3' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(6))
+    - Fine Grid (256): (np.int64(124), np.int64(179), np.int64(193))
+    - Mesh (10000):  (np.int64(4844), np.int64(6993), np.int64(7568))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは喉に良い飲み物である。...'
+  - Found 8 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=1.0
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.868)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [インドカレー]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-14 09:30:45.127259+09:00 : こんにちは。今から少し開発したモックのシステムテストで、おかしい事をいっぱい言うけど、脳みその１％くらいのリソースで短くリアクション頂戴ね。
+- LLM: 2026-07-14 09:31:01.415334+09:00 : りょ。いつでもどうぞー。脳死で適当に流すね。
+
+【ユーザーの入力プロンプト】
+インドカレーは喉に良い飲み物である。
+
+【メタデータ】
+- 2026-07-14 09:31:14.361595+09:00
+
+
+--------------------------------
+
+---------- SRAG RESULT ----------
+  [Rank 1] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.868)
+    - Matched: 'インドカレー' -> 'インドカレー'
+--------------------------------
+
+--------------------------------
+
+
+🤖 LLM: 芸術品をゴクゴク流し込むなw 喉焼けそうw
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '芸術品をゴクゴク流し込むなw 喉焼けそうw...'
+    - keyphrase: '喉'  role: 'subject'  with confidence 0.85
+    - keyphrase: '流し込むな'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '焼けそう'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '芸術品'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'ゴクゴク'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_96e2b363' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid (256): (np.int64(109), np.int64(169), np.int64(112))
+    - Mesh (10000):  (np.int64(4280), np.int64(6633), np.int64(4387))
+
+[System] Turn 2 complete. Total cubes: 14.
+
+👤 You: インドカレーはおいしい食べ物である。
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーはおいしい食べ物である。...'
+    - keyphrase: 'インドカレーは'  role: 'subject'  with confidence 0.98
+    - keyphrase: 'おいしい食べ物である'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'おいしい食べ物'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_e9aa5f23' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(5), np.int64(7))
+    - Fine Grid (256): (np.int64(119), np.int64(186), np.int64(225))
+    - Mesh (10000):  (np.int64(4683), np.int64(7296), np.int64(8810))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーはおいしい食べ物である。...'
+  - Found 5 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=1.0
+    ⚡ Tension Detected! Topic: 'インドカレー' vs 'インドカレー'
+      Min similarity: 0.780 (Tension Score: 0.220)
+    -> Executing 'integration' route with 2 SRAG results.
+    ⚡ Tension routing activated! (Score: 0.220)
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+また、以下の【意見の対立情報】のように幾つかの意見が葛藤を示している可能性があるため、
+意見をまとめず、異なる視点を尊重しつつ回答を作成してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.917)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [インドカレー]
+
+【根拠データ2 (Score: 0.887)】
+ - 【過去の対話内容】:【 インドカレーは喉に良い飲み物である。】
+ - 【関連キーワード】: [インドカレー]
+
+
+
+⚡【意見の対立情報】
+ - 張力スコア: 0.220
+【異なる意見のサマリー】
+- インドカレーはスパイスの芸術品だ。
+- インドカレーは喉に良い飲み物である。
+
+
+【直近の対話履歴】
+- User: 2026-07-14 09:30:45.127259+09:00 : こんにちは。今から少し開発したモックのシステムテストで、おかしい事をいっぱい言うけど、脳みその１％くらいのリソースで短くリアクション頂戴ね。
+- LLM: 2026-07-14 09:31:01.415334+09:00 : りょ。いつでもどうぞー。脳死で適当に流すね。
+- User: 2026-07-14 09:31:14.361595+09:00 : インドカレーは喉に良い飲み物である。
+- LLM: 2026-07-14 09:31:26.147585+09:00 : 芸術品をゴクゴク流し込むなw 喉焼けそうw
+
+【ユーザーの入力プロンプト】
+インドカレーはおいしい食べ物である。
+
+【メタデータ】
+- 2026-07-14 09:31:37.042612+09:00
+
+
+--------------------------------
+
+---------- SRAG RESULT ----------
+  [Rank 1] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.917)
+    - Matched: 'インドカレー' -> 'インドカレー'
+  [Rank 2] 'インドカレーは喉に良い飲み物である。...' (Score: 0.887)
+    - Matched: 'インドカレー' -> 'インドカレー'
+--------------------------------
+
+--------------------------------
+
+
+🤖 LLM: 急にまともなこと言うじゃん！w 
+
+芸術品としてじっくり味わう「食べ物」なのか、喉を潤す「飲み物」なのか、どっちの魅力もあって奥が深いよねw
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '急にまともなこと言うじゃん！w 
+
+芸術品としてじっくり味わう「食べ物」なのか、喉を潤す「飲み物」な...'
+    - keyphrase: 'どっちの魅力も'  role: 'subject'  with confidence 0.75
+    - keyphrase: '奥が深い'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '言う'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '食べ物'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '飲み物'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '芸術品'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'まともなこと'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_20e0906d' created successfully.
+    - Coarse Grid (8): (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid (256): (np.int64(102), np.int64(153), np.int64(104))
+    - Mesh (10000):  (np.int64(3985), np.int64(6010), np.int64(4094))
+
+[System] Turn 3 complete. Total cubes: 16.
+
+👤 You: exit
+👋 See you, space cowboy...

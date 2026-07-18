@@ -1,0 +1,513 @@
+
+ーーーーーーーー
+phase 0 実装
+ーーーーーーーー
+
+---
+data class semantic_cube {
+    ID ： long                          // ランダムで付与されるID。DBMSでやるならlongだが、メモリでやるならStringの方がいいかも。
+    role : enum role                    // 役割タイプ
+    source : enum source                // 役割の拡張、ソース元、userかLLMか。
+    summary ： string                   // 要約テキストではなく、原文を埋め込みたい。
+    
+    //  ↓LLMのエンベディングモデルに頼る部分
+    embedding_vector ： float[]         // 埋め込み生ベクタ
+    
+    // ↓UMAPでやる箇所
+    vec_int3 ： int[]                   // 0~7階調の埋め込み簡易ベクタ 
+
+    int3_grid ： int[x,y,z]             // xyzともに0~7の8階調
+    grid_mesh : int[x,y,z]              // xyzともに現在座標を疑似的に表すため、0~999の1000階調
+    
+    Orientation : float[x,y,z]          // 本当はロール、ピッチ、ヨー等の意味になるが、疑似的な向きのためXYZでいい。
+    OrientationBins : int[x,y,z]        // 360°BINの簡易判断のためint。
+    
+    //  内部拡張クラス
+    trust ： trust_st
+    minicube ： Minicube[]
+    
+    // まず作成するだけならリアクションキューブ方式を取りたい。
+    reactionLink_ID : long              // ユーザークエリに対してどうLLM回答をしたかを紐づける。相互リンクにできたらいいな。
+    // やはり重くなるようなら回答だけを埋め込む形にする。
+    result_summary : srtring            // 重かった場合に、LLMresponseのみ保持する。
+
+    // 運用メタに関するデータ
+    defrag_target : boolean             // デフラグ対象を決める。今のところoriginとhistoryだけtrue。
+    is_archived : boolean               // GC済みを表すarchiveフラグ
+    create_datetime : datetime with timezone // キューブが生成された日時
+    create_turn : long                  // こっちは生成されたグローバルターン
+    
+    abstract getAlpha() {
+        /*
+            閾値は、生成後何ターン保護するか、毎ターン減らす値はいくつにするか。
+            生成後Ｘターンを超えていれば、毎ターン0.1減少する。
+            仮に０になっても、デフラグが実行される前にＧＣされる事は仕組み上無い。
+        */
+    }
+
+    todo...
+}
+
+
+data class minicube {                   // 意味キューブ内の1～10個程度のキーワードを管理する小キューブ。
+    ID ： long                          // DBMSでやるならlongだが、メモリでやるならStringの方がいいかも。
+    keyword ： string
+
+    embedding_vector ： float[]         // LLMエンベディングを想定。検索の必須事項。
+
+    vec_int3 ： int[]                   // 検索の必須事項。
+    int3_grid ： int[x,y,z]             // 8階調の512グリッド。検索のかなめ。
+    grid_mesh : int[x,y,z]              // 1000階調のグリッド。一応タグ集合をイメージしている。
+    Orientation : float[x,y,z]          // 疑似的に向きを示す。
+    OrientationBins : int[x,y,z]        // 360°BINの簡易判断のためint。
+}
+
+
+data class trust_st {
+    score : float                       // ・・・・・つかうか？？
+    alfa : float                        // キューブのライフを示す
+    ref_count : int                     // 参照された回数（使うか分からん）
+
+    todo...
+}
+
+
+enum role {
+    "history",          // 対話履歴
+    "origin",           // 使うか分からん
+    "knowledge",        // RAG知識など・デフラグ対象外
+    "倫理",             // 倫理・ガードレース・デフラグ対象外
+    "エイデンティティ",  //  振る舞い・反応定義・デフラグ対象外
+
+}
+
+enum source {
+    "USER",
+    "LLM"
+}
+
+---
+
+
+---
+/// データハブクラス
+/// データハブクラス内には3種類のデータ構造を持つ。
+/// １，全セマンティックキューブの一覧リスト。
+/// ２，直近5～10個の対話ログ。
+/// ３，直近で実行したSRAGで得たキューブ、LLMに渡すためのもの(ワーク領域)
+class dataHub {
+    abstract tick()                                 // グローバルターンを進める
+    abstract cube_GetAll() -> semantic_cube[]       // キューブ一覧を取得する
+    abstract history_GetAll() -> semantic_cube[]    // 直近チャットログ全件取得
+    abstract search_GetAll() -> semantic_cube[]     // SRAG一時保存エリアの対象をすべて取得
+    abstract cube_Add( semantic_cube )              // キューブを末尾に格納する
+    abstract history_Push( semantic_cube )          // キューブを最新として1つ追加
+    abstract cube_ChangeSet(semantic_cube[])        // 保持cubeの総入れ替えを行う
+    abstract history_ChangeSet(semantic_cube[])     // 保持historyの総入れ替えを行う
+    abstract search_ChangeSet( semantic_cube[] )    // サーチ結果エリアの意味キューブを全て入れ替える
+    abstract GCStart()                              // ガベージコレクトを行う
+
+    todo...
+} 
+---
+
+
+---
+/// ActivityMain
+class ActivityMain() {
+    todo...
+}
+
+---
+
+
+---
+/// 対話管理クラス
+class promptManager() {                     // プロンプト管理クラス。
+    abstract makeCube() -> string           // キューブ作成時のキーワード抽出
+    abstract partial() -> string            // 単発対話
+    abstract conflict() -> string           // 葛藤のやつ
+    abstract integration() -> string        // 統合のやつ
+    abstract defrag() -> string             // デフラグの時のプロンプト
+
+    todo...
+}
+
+---
+
+
+---
+/// 外部API管理クラス
+class LLMService() {
+    abstract call_API() -> result           // HttpCode, Reason, ResultData
+
+    todo...
+}
+
+/// 拡張のためのやつ。
+interface LLMProvider {
+    interface generate() -> instans             // LLMサービスのインスタンス
+}
+
+class openAIProvider implements LLMProvider
+class claudeProvider implements LLMProvider
+class geminiprovider implements LLMProvider
+---
+
+
+---
+/// 内部演算クラス
+
+class AnalyzeEngine {                                              // ここに葛藤検知やトラストスコア計算などを入れる。
+    abstract analyze_Conflict(semantic_cube[]) -> result           // ConflictScore, semantic_cube[]
+    abstract analyze_Trust() -> trust_st                           // 
+
+    todo...
+}
+
+class CubeEngine {
+    abstract makeCube(query : string) -> semantic_cube              // queryからキューブを１つ生成
+    abstract makeMiniCuke( semantic_cube ) -> semantic_cube         // キーワード抽出を行い、ミニキューブを埋め込む。
+
+    todo...
+}
+
+class SragEngine {
+    abstract search(query : string, DB : semantic_cube[], mode: enum) -> semantic_cube[]            // queryに基づき動作modeによってDBから、TOP-Kを選択する
+
+    todo...
+}
+
+class DefragEngine {
+    abstract defrag(DB : semantic_cube[]) -> semantic_cube[]             // 記憶代謝を行う
+
+    todo...
+}
+
+class IntegrationEngine {
+    abstract integration(partials : result[] ) -> string             // analyze_Conflictの比較構造体配列を受け取り、葛藤検知と統合を判断しまとめた後、LLM回答を付けて1つのキューブを返す。
+    abstract single(partial : semantic_cube) -> string               // 1つのキューブに対しLLM回答を付けて1つのキューブを返す。
+
+    todo...
+}
+
+class partialEngine {
+    abstract makePartial( question : semantic_cube ) -> string              // う～ん。。。。。
+}
+---
+
+
+
+ーーーーーーーー
+phase 1 実装
+ーーーーーーーー
+
+class SragEngine {
+
+    /// queryに基づき動作modeによってDBから、TOP-Kを選択する
+    search( query : string, DB : semantic_cube[], mode : enum ) -> semantic_cube[] {
+        /*
+            【order】
+            ー【手順１共通】ー
+            1,ミニキューブのint3_gridを用いて、キーワードの概念グリッド検索。シード候補を選出。
+            2,ミニキューブのvec_int3を用いて起点候補群をピックアップ。
+            3,起点候補群から、ミニキューブのキーワードのtrust_scoreを算出。
+            4,trust_scoreの高い順に、起点候補群をソートする。
+
+
+            ー【手順２標準フロー】ー
+            1,ミニキューブのembedding_vectorを使ってcosine(query.embedding_vector, current.embedding_vector)を算出。
+            2,cosineの高い順に、起点候補群をソートする。
+            3,起点候補の意味キューブからsummaryを抽出。
+            4,そのマッチ根拠として、ミニキューブのキーワードを付ける。
+                （回答根拠情報: ${ semantic_cube.summary }
+                根拠としてマッチしたワード: ${ semantic_cube.minicube.keyword[1] }
+                根拠としてマッチしたワード: ${ semantic_cube.minicube.keyword[2] }というような形でプロンプトに入れ込む）
+            5,回答候補（回答用の根拠データ）として戻り値。
+
+
+            ー【手順２意味探査フロー】ー
+            1,起点候補の意味キューブから、高密度方向に近い意味キューブを探索する。
+                （意味キューブのgrid_meshを簡易座標として扱い、意味キューブが集まっている方向をチェック。）
+            2,高密度地点をクラスタリング、各クラスタ群の重心位置を算出する。
+            3,ミニキューブのvec_int3を用いて、クラスタ内の概念的一致を確認する（完全なノイズを除外）。
+            4,クラスタの各意味キューブのvec_int3を用いて、クエリのvec_int3からトラストスコアを算出。
+                （標準的なcosine(query.int3_vec, current.int3_vec)でよい）
+            5,トラストスコアの高い順に、クラスタ内の意味キューブをソートする。
+            6,最終チェックとして意味キューブのcosine(query.embedding_vector, current.embedding_vector)を算出。
+            7,上位結果のみをトラストスコア順にソート。
+            8,ソートされた意味キューブからsummaryを抽出。
+            9,そのマッチ根拠として、ミニキューブのキーワードを付ける。
+            10,回答候補（回答用の根拠データ）として全体整形して戻り値。
+        */
+
+        /*
+            【必須事項】
+            【制御値を入れる】
+            SRAG_threshold          // 意味キューブ文脈ベクトル類似度一致とみなす下限値。下限を下回ると意味的ノイズが混入する可能性がある。将来的にUIからスライダーで選択する「余裕あり↔標準↔厳密」
+            keyword_threshold       // キーワード一致とみなす下限値。下限を下回ると概念的一致が保証されない。UIからスライダーで選択するイメージ「網羅的↔標準↔厳密↔超厳密」
+            TOP-K_numbers           // 何個まで採用するか。
+        */
+
+        /*
+            【return】
+            TOP-Kのsemantic_cube配列
+        */
+    }
+
+}
+
+
+
+class DefragEngine {
+
+    /// 記憶代謝を行う
+    defrag(DB : semantic_cube[]) -> semantic_cube[] {
+        /*
+            【オーダー】
+            SRAG的な正しい対象をピックアップするのではなく、消去法で網羅的に全てを片付ける方式で考える。
+            （明示的クエリが無いため、意味的な理解なしで数式で判断するしかない）
+            また、密度の低いクラスタは構造化対象外とする。
+
+            ーーーーーーーー手順ーーーーーーーー
+            ０，IsArchiveが空＆＆IsOriginがKVハブの現在のデフラグターン変数の値より5以上大きいキューブ、が5個以下ならキャンセル。（作られたoriginは5ターン保護）＆（処理対象が見つからなくなったら終了：ループはbreakすること、continueでは無限ループになる）
+            １、KVハブのデフラグターン変数にグローバルターンを挿入。
+            ２，テキトー検索で閾値以下のアルファを見つける。（閾値は0.6：defrag_threshold）
+            ３，セマンティックキューブのint3の近傍グリッドを探査。
+            ４，近傍グリッドに4個以上のセマンティックキューブ有りでクラスタ認定。（まとめる意味キューブ個数：　cluster_threshold）
+            ５，これらをリストにする。
+            ６，手順5で作ったリストに対して、意味キューブのgrid_meshを使いクラスタの重心を計算。
+            ７，セマンティックキューブ内のデフラグターン変数が現在のKVハブのデフラグターン変数と等しい物は除外（同じターンにデフラグ済み）
+            ８，grid_meshで見て、重心に最も近いセマンティックキューブのミニキューブにあるキーフレーズのvec_int3でマッチ検索（閾値は0.8：cluster_threshold）＆（こいつが疑似クエリ）。
+            ９，マッチ個数が多い順にソートでリスト作成。
+            １０，セマンティックキューブ内のデフラグターン変数に現在のKVハブのデフラグターン変数の値を挿入。
+            １１，手順9で作成したリストに対し、セマンティックキューブのvec_int3と疑似クエリのvec_int3を比較。
+            １２，cosineで類似度が高い順にソート。（ここでリスト内部含まれるセマンティックキューブのミニキューブからキーフレーズを全て抽出、重複を除外。）
+            １３，手順12で作成したクラスタ群に対して新しいキューブに要約する。
+            １４，手順13で作成したセマンティックキューブのミニキューブのフレーズが、手順12で作成したクラスタのキーフレーズより既定の個数を満たせば採用する。（閾値は50%：newOrigin_threshold）
+            １５，手順12で作成したリストに含まれる意味キューブのIsArchive変数に現在のKVハブのデフラグターン変数の値を挿入。
+            １６，手順13で作成したセマンティックキューブのIsOrigin変数に現在のKVハブのデフラグターン変数の値を挿入。
+            １７，手順０に戻る。（デフラグ終了条件は手順０でブレイクした場合になる。）
+
+        */
+        /*
+            【必須事項・制御値を入れる】
+            integration_threshold       // 意味キューブ統合強度。話題一位とみなす下限。将来的にUIからスライダーで選択する「あいまい↔標準↔厳密」
+            turn_guard                  // 意味キューブが生成されて何ターンデフラグ除外とするか。「代謝↔標準↔生存」
+            cluster_threshold           // 何個以上をクラスタとみなすかの下限値。
+            例：cluster_threshold ↓:　小規模クラスタ統合で意味断片化。　cluster_threshold ↑:　クラスタ形成不可で代謝停止。
+            
+            defrag_threshold            // デフラグ開始起点の対象アルファを決める値。
+            newOrigin_threshold         // 生成Originの採用合格率。いくつのキーフレーズが一致したら合格とするか。低すぎるとポエム化リスクあり。「あいまい↔標準↔厳密」
+            例：newOrigin_threshold ↓:　不完全統合（質低下）。　newOrigin_threshold ↑:　新規origin生成失敗（圧縮不能）。
+        */
+        /*
+            【リターン】
+            デフラグ後の全キューブ。
+            例： data_hub.change_Set( DefragEngine.defrag( data_hub.getAll() ) );
+        */
+    }
+
+}
+
+
+class CubeEngine {
+
+    /// queryからキューブを１つ生成
+    abstract makeCube(query : string) -> semantic_cube {
+
+        /*
+        【order】
+            １，【要約・キーワード抽出】 (LLM Call 1)
+                    入力された 生テキストをLLMに渡し、summary（要約）とList<phrase>（1〜10個のキーワード群）をJSON形式で抽出する (extract_keyphrases)。
+            ２，【意味ベクトル生成】 (Embedding Call)
+                    summaryのテキストをEmbedding APIに渡し、**高次元のvector（3072次元）**を生成する (embed_text)。
+            ３，【空間座標の量子化】 (PCA & Math)
+                    vectorを、事前学習済みのPCAモデルに投入し、3次元のvec_3dに圧縮する。
+                    vec_3dを正規化し、int3_grid（8階調の粗い座標）とgrid_mesh（1000階調の精密な座標）を計算する。
+                    vector（3072次元）を直接量子化し、vec_int3（8階調のN次元ベクトル）を生成する (quantize_embedding)。
+            ４，【MiniCube群の生成】 (Loop & Embedding Call)
+                    ステップ1で抽出した各phrase（キーワード）に対してループ処理を実行。
+                    各phraseをEmbedding APIに渡し、それぞれのembedding（意味ベクトル）を取得。
+                    各embeddingに対して再度quantize_embeddingを実行し、MiniCubeごとのint3_gridなどを計算。
+                    MiniCubeオブジェクトをインスタンス化し、リストに追加する。
+            ５，【メタデータ構造体の初期化】
+                    TrustStructを生成。alpha_base=1.0、created_at_turn、last_updated_turnなどを現在のglobal_turnで初期化する。
+            ６，【最終組み立て】
+                    上記で生成した全てのパーツ（vector, int3_grid, grid_mesh, mini_cubes, trustなど）を結合し、1つのSemanticCubeオブジェクトとしてインスタンス化して返す。
+        */
+        /*
+            【備考】 PCAでの埋め込み
+            # Enbedding_vectorからグリッドに落とすアルゴリズム
+            import numpy as np
+            from sklearn.decomposition import PCA
+
+            # 1. クエリのエンベディング取得 (例: 768次元)
+            embedding_vector = np.random.randn(768).astype(np.float32)
+
+            # --- [vec_int3 の生成] ---
+            # 各次元を -3.0 ~ 3.0 の範囲で 0.0 ~ 1.0 に正規化し、8階調に量子化
+            clipped_vec = np.clip(embedding_vector, -3.0, 3.0)
+            norm_vec = (clipped_vec + 3.0) / 6.0
+            vec_int3 = np.floor(norm_vec * 8).astype(int)
+            vec_int3 = np.clip(vec_int3, 0, 7) # [4, 3, 4, 6, 3, ...] のようなN次元配列
+
+            # --- [int3_grid と grid_mesh の生成] ---
+            # 事前学習済みのPCAモデルで3次元(X, Y, Z)に圧縮
+            # pca = 空間全体のデータでfit済みのモデル
+            vec_3d = pca.transform([embedding_vector])[0]
+
+            # 3次元空間の理論上の最小値・最大値を使って 0.0 ~ 1.0 に正規化
+            space_min, space_max = -5.0, 5.0 
+            norm_3d = np.clip((vec_3d - space_min) / (space_max - space_min), 0.0, 1.0)
+
+            # int3_grid: 8階調 (0~7) にマッピング
+            int3_grid = np.floor(norm_3d * 8).astype(int)
+            int3_grid = np.clip(int3_grid, 0, 7) # 例: [3, 4, 4]
+
+            # grid_mesh: 1000階調 (0~999) にマッピング
+            grid_mesh = np.floor(norm_3d * 1000).astype(int)
+            grid_mesh = np.clip(grid_mesh, 0, 999) # 例: [406, 503, 564]
+        */
+    }
+
+    /// キーワード抽出を行い、ミニキューブを埋め込む。
+    abstract makeMiniCuke( semantic_cube ) -> semantic_cube {
+
+    }
+
+    todo...
+}
+
+
+/// ここに葛藤検知やトラストスコア計算などを入れる。
+class AnalyzeEngine {
+
+    /// 意見がコンフリクトを起こしたかチェックするエンジン
+    analyze_Conflict(semantic_cube[]) -> result { // resultは次のタプル ConflictScore, semantic_cube[]
+
+        /*
+        【order】
+            【Phase 1: 物理的な高速検知 (ゲートキーパー)】
+                １，【入力】: SRAGが返したTop-KのList<SemanticCube>を受け取る。
+                ２，【方位角差の計算】: キューブ群の全ペアに対して、trust.orientation（方位角・仰角）のangular_distance（角度距離）を総当たりで計算する (determine_route_by_physics)。
+                ３，【高速判定】:
+                    もし、最大角度距離が0.3未満であれば、全てのキューブは同じ方向を向いているとみなし、「葛藤なし（No Conflict）」と即時判定。ConflictMetaにconflict_detected: falseをセットして、IntegrationEngineへ処理を渡す。
+                    もし、最大角度距離が0.3以上であれば、「視点の対立の可能性あり」とみなし、Phase 2の精密な葛藤検知へ進む。
+            【Phase 2: 引力マップによる精密検知 (裁判官)】
+                １，【スカラー引力行列Aの生成】: Phase 1を通過したキューブ群の全ペアに対し、max(cos(v_i, v_j), 0) * w_i * w_j を計算し、スカラー引力行列Aを生成する。（wはtrust_scoreなど）
+                ２，【方向性減衰の適用】: Aの各要素に対し、exp(-λ * f(Δ_ij)) を乗算し、最終的な引力マップÃを生成する。(Δ_ijは方位コードのハミング距離などで近似)
+                ３，【クラスタリング】: Ãを元にクラスタリング（DBSCANなど）を実行し、キューブ群を「視点の星団（クラスタ）」に分類する。
+                ４，【判定指標の計算】:
+                    D_min: クラスタ間の最小距離を計算。
+                    d_centroid: 全体の加重平均ベクトルと、最も近いクラスタ中心との距離を計算。
+                ５，【最終判定】:
+                    もし (D_min >= τ_cluster) かつ (d_centroid >= τ_avg) であれば、「葛藤あり（Conflict）」と最終判定。
+                    それ以外の場合は**「葛藤なし（No Conflict）」**と判定。
+                ６，【出力】: ConflictMetaオブジェクト（conflict_detectedフラグ、D_min、d_centroid、クラスタ数、推奨アクションなどを格納）を生成して返す。
+        */
+        /*
+            conflict_threshold          // コンフリクト判定強度。初期値は0.3。
+        */
+    }
+    
+    abstract analyze_Trust() -> trust_st
+
+    todo...
+}
+
+
+class IntegrationEngine {
+
+    /// analyze_Conflictの比較構造体配列を受け取り、葛藤検知と統合を判断しまとめた後、LLM回答を付けて1つの回答を返す。
+    integration({semantic_cube[], ConflictScore}[] ) -> string {
+        
+        /*
+        【order】
+            １，【入力】: List<SemanticCube> (Top-K候補) と ConflictMetaオブジェクトを受け取る。
+            ２，【ルート分岐】: ConflictMeta.conflict_detected の true/false を確認する。
+            ３，【IF: 葛藤なし (No Conflict) の場合】:
+                integration_engine.pyのロジックを起動。
+                プロンプトのヘッダーに「以下の根拠を調和させ、自然に統合し、一貫した提案を作成してください」と指示。
+                Top-Kの全キューブのsummary, Keyphrases, Metadata, response_and_answerを構造化してプロンプトに埋め込む。
+                生成された「統合プロンプト」をLLMに送信し、単一の調和した回答を得る。
+            ４，【IF: 葛藤あり (Conflict) の場合】:
+                conflict_engine.pyのロジックを起動。
+                プロンプトのヘッダーに「以下の根拠には意見の葛藤が存在します。対立点と共通点を整理し、意見の統合は行わず、選択肢として提示してください」と指示。
+                ConflictMetaで特定された、対立する各クラスタの代表キューブ情報（summaryなど）を、**「方針A」「方針B」**として明確に分離してプロンプトに埋め込む。
+                生成された「対立プロンプト」をLLMに送信し、ユーザーに判断を委ねる、両論併記の回答を得る。
+            ５，【最終回答のキューブ化】:
+                どちらのルートで得られた最終回答であれ、そのテキストをmakeCubeに再度投入し、新しい「システム発言のキューブ」を生成。dataHubに保存して1ターンを完了する。
+        */
+    }
+
+    /// 1つのキューブに対しLLM回答を付けて1つの回答を返す。
+    single( semantic_cube ) -> string {
+
+        /*
+            【order】
+                １，１つのキューブ（クエスチョン）を受け取る。
+                ２，LLMをコールし、回答（アンサー）を返す。
+        */
+    }
+
+    todo...
+}
+
+
+
+----------------
+phase2 実装時の注意
+----------------
+
+/*
+    last_srag_results （TOP-KのSRAG結果）の渡し方
+
+    SRAGEngineが引き当てた「意味的に近い、いま使うべきキューブ（TOP-K）」は、
+    IntegrationEngineやAnalyzeEngineが直接参照できるように、
+    DataHub内の**一時キャッシュ領域（ワーク領域）**に格納する。
+    
+    【データフローのシーケンス】:
+    １，SragEngine が起動。DataHub.cube_pool から空間量子化等を使って検索を行い、最適な3〜8個の SemanticCube を引き当てる。
+    ２，SragEngine は、引き当てたキューブのリストを DataHub.last_srag_results に上書き保存 する。
+    ３，AnalyzeEngine (Conflict) は、DataHub.last_srag_results からキューブ群を読み出して葛藤検知を実行。結果を ConflictMeta として DataHub に書き込む。
+    ４，IntegrationEngine は、DataHub.active_session_logs（直近の文脈）と DataHub.last_srag_results（SRAGの根拠）、そして ConflictMeta を DataHub から一括で読み込み、LLMへの最終プロンプトを組み立てる。
+*/
+
+
+
+/*
+    （FIX版詳細概念）←こっちが更新版
+    1ターン（ユーザーの発話からAIの応答まで）の全シーケンス詳細
+        ActivityMainがユーザー入力を受け取ってから、AIが応答を返し、因果関係を記録して次の入力に備える
+
+        【Step 1: ユーザー入力の受付と「問い」のキューブ化】
+        ActivityMain: ユーザーからの入力テキスト（query）を受け取る。
+        CubeEngine.makeCube(query, source="USER"): CubeEngineを呼び出し、queryを元にユーザー発話のSemanticCube（q_cube）を生成。この時、sourceプロパティに"USER"を明示的にセットする。
+        DataHub.cube_Add(q_cube): 生成されたq_cubeをDataHubの全キューブ一覧（cube_pool）に格納する。
+        DataHub.history_Push(q_cube): q_cubeをDataHubの直近対話ログ（active_session_logs）に追加する。
+
+        【Step 2: 思考の材料集め（SRAG）】
+        SragEngine.search(q_cube, dataHub.cube_GetAll(), "standard"): SragEngineを呼び出し、q_cubeをクエリとして、DataHubの全キューブを対象に検索（SRAG）を実行。TOP-Kの根拠キューブ群（top_k_cubes）を取得する。
+        DataHub.search_ChangeSet(top_k_cubes): SragEngineが返したTOP-Kのリストを、DataHubの**SRAG一時保存エリア（last_srag_results）**に上書き保存する。
+
+        【Step 3: 葛藤の検知】
+        AnalyzeEngine.analyze_Conflict(dataHub.search_GetAll()): AnalyzeEngineを呼び出し、SRAGが選んだTOP-Kのキューブ群を対象に、**「物理検知（方位角）」→「精密検知（引力マップ）」**の二段階で葛藤を検知する。
+        AnalyzeEngineは、判定結果を格納したConflictMetaオブジェクトを返す。
+
+        【Step 4: 最終回答の生成】
+        IntegrationEngine.start(...): IntegrationEngineを呼び出し、DataHubから「SRAGの根拠」「直近の対話履歴」「葛藤検知の結果」の3点セットを読み込み、promptManagerと連携してLLMへの最終プロンプトを組み立てる。
+        LLMService.call_API(): 最終プロンプトをLLMに送信し、最終回答テキスト（final_answer）を取得する。
+
+        【Step 5: システム応答の記録と「因果の紐付け」】
+        CubeEngine.makeCube(final_answer, source="LLM"): 取得したfinal_answerを元に、AI応答のSemanticCube（a_cube）を新規に生成。この時、sourceプロパティに"LLM"をセットする。
+ 
+        【構造強化の核心】:
+        a_cube.reactionLink_ID = q_cube.ID: AIの応答キューブ（a_cube）に、それがどのユーザーの問い（q_cube）に対するリアクションなのか、IDを記録する。
+        q_cube.reactionLink_ID = a_cube.ID: ユーザーの問いのキューブ（q_cube）側にも、AIの応答（a_cube）のIDを記録する。これにより、**「問い」と「応答」の完全な相互リンク（因果関係の鎖）**が完成する！
+        DataHub.cube_Add(a_cube): 生成・リンクされたa_cubeをDataHubの全キューブ一覧に格納。
+        DataHub.history_Push(a_cube): a_cubeをDataHubの直近対話ログに追加。
+        DataHub.tick(): DataHubのグローバルターンを1つ進める。
+        ActivityMainはfinal_answerをUIに表示し、次のユーザー入力を待つ。
+*/
+

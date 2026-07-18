@@ -1,0 +1,708 @@
+  import google.generativeai as genai
+🚀 Semantic Cube Runtime v9.0 (Interactive Loop) 起動...
+🔧 DynamicProjector initialized. Waiting for fitting...
+✅ CubeEngine initialized.
+✅ IntegrationEngine (v2.0) initialized.
+✅ SragEngine (v3.0) initialized. SRAG_threshold=0.65, keyword_threshold=0.65, TOP-K=5
+    - Blending weights: Genre=0.3, Keyword=0.3, Context=0.4
+
+=======================================================
+🌍 機動準備: PCA学習中...
+=======================================================
+✅ DynamicProjector is fitted and ready.
+
+🧊 CubeEngine: Starting 'make_cube' for 'ガンダムとは、宇宙世紀を舞台にした人間ドラマである。...'
+    - keyphrase: 'アニメ'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'ガンダム'  role: 'subject'  with confidence 1.0
+    - keyphrase: '人間ドラマである'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '宇宙世紀'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_c1d0d02e' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(6), np.int64(4))
+    - Fine Grid : (np.int64(87), np.int64(206), np.int64(130))
+    - Grid Mesh :  (np.int64(3437), np.int64(8065), np.int64(5096))
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーはスパイスの芸術品だ。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: '芸術品だ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'スパイス'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_fdb1d77f' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(6), np.int64(7))
+    - Fine Grid : (np.int64(104), np.int64(199), np.int64(255))
+    - Grid Mesh :  (np.int64(4078), np.int64(7803), np.int64(9999))
+
+🧊 CubeEngine: Starting 'make_cube' for '高機能なスポーツウェアは、もはや第二の皮膚と言える。...'
+    - keyphrase: 'sports_wear'  role: 'genre'  with confidence 0.85
+    - keyphrase: '高機能なスポーツウェアは'  role: 'subject'  with confidence 0.98
+    - keyphrase: '第二の皮膚と言える'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '第二の皮膚'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_ad37b466' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(0), np.int64(4))
+    - Fine Grid : (np.int64(0), np.int64(0), np.int64(144))
+    - Grid Mesh :  (np.int64(0), np.int64(0), np.int64(5642))
+
+🧊 CubeEngine: Starting 'make_cube' for 'AIの進化は、人間の知性を拡張する。...'
+    - keyphrase: 'テクノロジー'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'AIの進化'  role: 'subject'  with confidence 0.98
+    - keyphrase: '拡張する'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人間の知性'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_c5cf5821' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(4), np.int64(7))
+    - Fine Grid : (np.int64(13), np.int64(153), np.int64(238))
+    - Grid Mesh :  (np.int64(531), np.int64(5980), np.int64(9324))
+
+🧊 CubeEngine: Starting 'make_cube' for '猫は液体であり、宇宙の真理を知っている。...'
+    - keyphrase: 'Humor'  role: 'genre'  with confidence 0.8
+    - keyphrase: '猫'  role: 'subject'  with confidence 0.98
+    - keyphrase: '液体であり'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '知っている'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '液体'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_f7dfcefc' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(7), np.int64(0))
+    - Fine Grid : (np.int64(75), np.int64(255), np.int64(0))
+    - Grid Mesh :  (np.int64(2931), np.int64(9999), np.int64(0))
+
+🧊 CubeEngine: Starting 'make_cube' for '磐田市のうなぎは最高に美味い。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: '磐田市のうなぎ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '最高に美味い'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '磐田市'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'うなぎ'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_b40ffeb9' created successfully.
+    - int3 Grid : (np.int64(7), np.int64(1), np.int64(4))
+    - Fine Grid : (np.int64(255), np.int64(48), np.int64(140))
+    - Grid Mesh :  (np.int64(9999), np.int64(1876), np.int64(5502))
+
+🧊 CubeEngine: Starting 'make_cube' for 'プログラミングとは、世界を再定義する行為だ。...'
+    - keyphrase: 'programming'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'プログラミング'  role: 'subject'  with confidence 0.98
+    - keyphrase: '行為だ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '世界を再定義する'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '世界'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_c672e4da' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(1), np.int64(175), np.int64(105))
+    - Grid Mesh :  (np.int64(48), np.int64(6861), np.int64(4107))
+
+🧊 CubeEngine: Starting 'make_cube' for '人生における大切なことは、だいたいサウナと水風呂が教えてくれる。...'
+    - keyphrase: 'サウナ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'サウナと水風呂'  role: 'subject'  with confidence 0.95
+    - keyphrase: '教えてくれる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人生における大切なこと'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_96bda37f' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(0))
+    - Fine Grid : (np.int64(100), np.int64(118), np.int64(2))
+    - Grid Mesh :  (np.int64(3918), np.int64(4648), np.int64(108))
+
+🧊 CubeEngine: Starting 'make_cube' for '雨の日に聞くジャズは、心を落ち着かせる。...'
+    - keyphrase: '音楽'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'ジャズ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '落ち着かせる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '雨の日'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '心'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_92223b83' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(126), np.int64(178), np.int64(118))
+    - Grid Mesh :  (np.int64(4941), np.int64(6968), np.int64(4626))
+
+🧊 CubeEngine: Starting 'make_cube' for '本当に良い設計は、引き算から生まれる。...'
+    - keyphrase: 'design'  role: 'genre'  with confidence 0.85
+    - keyphrase: '本当に良い設計は'  role: 'subject'  with confidence 0.95
+    - keyphrase: '引き算から生まれる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '設計'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '引き算'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_b1ae5b3d' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(0), np.int64(1))
+    - Fine Grid : (np.int64(26), np.int64(30), np.int64(55))
+    - Grid Mesh :  (np.int64(1017), np.int64(1183), np.int64(2183))
+✅ Universe created with 10 initial knowledge cubes.
+
+=======================================================
+💬 対話モードを開始(終了するには 'exit' と入力)
+💡 記憶代謝処理(デフラグ)を実行するには 'defrag' と入力
+=======================================================
+
+
+👤 You: やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。          
+
+🧊 CubeEngine: Starting 'make_cube' for 'やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言う...'
+    - keyphrase: 'software_testing'  role: 'genre'  with confidence 0.85
+    - keyphrase: '私'  role: 'subject'  with confidence 0.8
+    - keyphrase: 'テストを行う'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '応答してね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'アプリのテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'Gemini'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_e00c3c21' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(82), np.int64(158), np.int64(134))
+    - Grid Mesh :  (np.int64(3224), np.int64(6183), np.int64(5238))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'やっほ～。Gemini.ごきげんはいかが...'
+  - Found 5 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+
+
+【ユーザーの入力プロンプト】
+やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。
+
+【メタデータ】
+ - 2026-07-17 11:57:17.180744+09:00
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！...'
+    - keyphrase: 'communication'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'ご機嫌'  role: 'subject'  with confidence 0.95
+    - keyphrase: '準備'  role: 'subject'  with confidence 0.9
+    - keyphrase: '最高だよ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'バッチリ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'テストの準備'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'テスト'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_84458543' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(93), np.int64(140), np.int64(120))
+    - Grid Mesh :  (np.int64(3645), np.int64(5483), np.int64(4710))
+
+[System] Turn 1 complete. Total cubes: 12.
+
+👤 You: インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.98
+    - keyphrase: 'ゴッドブレンドである'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '砂漠の熱気'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'おじさんの手あか'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '多種多様なスパイス'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_2392713c' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(105), np.int64(190), np.int64(186))
+    - Grid Mesh :  (np.int64(4133), np.int64(7450), np.int64(7268))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは砂漠の熱気と、おじさんの手...'
+  - Found 4 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.902 | Context:0.836 | Final:0.905
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.905)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, スパイス, スパイス, インドカレー, スパイス]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-17 11:57:17.180744+09:00 : やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。
+- LLM: 2026-07-17 11:57:32.419246+09:00 : やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！
+
+【ユーザーの入力プロンプト】
+インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+
+【メタデータ】
+- 2026-07-17 11:58:20.653655+09:00
+
+
+--------------------------------
+  [Rank 1] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.905)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'グルメ' -> 'スパイス'
+    - Matched: 'インドカレー' -> 'スパイス'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: '多種多様なスパイス' -> 'スパイス'
+--------------------------------
+
+
+🤖 LLM: おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！...'
+    - keyphrase: '料理'  role: 'genre'  with confidence 0.9
+    - keyphrase: '複雑なスパイスの配合'  role: 'subject'  with confidence 0.95
+    - keyphrase: '芸術品だ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'おじさんの隠し味'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'スパイス'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_5e69c2cb' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(5))
+    - Fine Grid : (np.int64(107), np.int64(159), np.int64(175))
+    - Grid Mesh :  (np.int64(4189), np.int64(6239), np.int64(6846))
+
+[System] Turn 2 complete. Total cubes: 14.
+
+👤 You: インドカレーは二日酔いの翌日に良く効く飲み物である。
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは二日酔いの翌日に良く効く飲み物である。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: '飲み物である'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '二日酔い'  role: 'key_phrase'  with confidence 0.92
+    - keyphrase: '良く効く'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '翌日'  role: 'key_phrase'  with confidence 0.7
+✅ CubeEngine: Cube 'cb_b7431d4e' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(111), np.int64(169), np.int64(177))
+    - Grid Mesh :  (np.int64(4369), np.int64(6621), np.int64(6927))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは二日酔いの翌日に良く効く飲...'
+  - Found 11 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーは砂漠の熱気と、おじさんの手 | Genre:1.000 | Keyword:0.925 | Context:0.818 | Final:0.905
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.887 | Context:0.759 | Final:0.870
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.5
+    -> Executing 'integration' route with 2 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.905)】
+ - 【過去の対話内容】:【 インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。】
+ - 【関連キーワード】: [グルメ, インドカレー, グルメ]
+
+【根拠データ2 (Score: 0.870)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, スパイス, スパイス, インドカレー, グルメ]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-17 11:57:17.180744+09:00 : やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。
+- LLM: 2026-07-17 11:57:32.419246+09:00 : やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！
+- User: 2026-07-17 11:58:20.653655+09:00 : インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+- LLM: 2026-07-17 11:58:33.732641+09:00 : おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！
+
+【ユーザーの入力プロンプト】
+インドカレーは二日酔いの翌日に良く効く飲み物である。
+
+【メタデータ】
+- 2026-07-17 11:59:16.718917+09:00
+
+
+--------------------------------
+  [Rank 1] 'インドカレーは砂漠の熱気と、おじさんの手...' (Score: 0.905)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: '二日酔い' -> 'グルメ'
+  [Rank 2] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.870)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'グルメ' -> 'スパイス'
+    - Matched: 'インドカレー' -> 'スパイス'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: '二日酔い' -> 'グルメ'
+--------------------------------
+
+
+🤖 LLM: 芸術的なスパイスのゴッドブレンドをゴクゴク飲めば、二日酔いも一発で吹き飛びそうだね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '芸術的なスパイスのゴッドブレンドをゴクゴク飲めば、二日酔いも一発で吹き飛びそうだね！...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.8
+    - keyphrase: '二日酔い'  role: 'subject'  with confidence 0.9
+    - keyphrase: '吹き飛びそうだ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'スパイスのゴッドブレンド'  role: 'key_phrase'  with confidence 0.92
+    - keyphrase: '芸術的なスパイス'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_873ee2ad' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(5))
+    - Fine Grid : (np.int64(96), np.int64(156), np.int64(160))
+    - Grid Mesh :  (np.int64(3755), np.int64(6103), np.int64(6263))
+
+[System] Turn 3 complete. Total cubes: 16.
+
+👤 You: インドカレーは暑い日に最適なオトコの食べ物だ。
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは暑い日に最適なオトコの食べ物だ。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: '最適なオトコの食べ物だ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '暑い日'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_1a299942' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(6))
+    - Fine Grid : (np.int64(107), np.int64(157), np.int64(203))
+    - Grid Mesh :  (np.int64(4195), np.int64(6158), np.int64(7934))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは暑い日に最適なオトコの食べ...'
+  - Found 8 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーは砂漠の熱気と、おじさんの手 | Genre:1.000 | Keyword:0.934 | Context:0.825 | Final:0.910
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.905 | Context:0.798 | Final:0.891
+      [Debug] Cube: インドカレーは二日酔いの翌日に良く効く飲 | Genre:1.000 | Keyword:0.897 | Context:0.810 | Final:0.893
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.5
+    -> Executing 'integration' route with 3 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.910)】
+ - 【過去の対話内容】:【 インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。】
+ - 【関連キーワード】: [グルメ, インドカレー, 砂漠の熱気]
+
+【根拠データ2 (Score: 0.893)】
+ - 【過去の対話内容】:【 インドカレーは二日酔いの翌日に良く効く飲み物である。】
+ - 【関連キーワード】: [二日酔い, グルメ, インドカレー, 翌日]
+
+【根拠データ3 (Score: 0.891)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, スパイス, スパイス, インドカレー]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-17 11:57:17.180744+09:00 : やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。
+- LLM: 2026-07-17 11:57:32.419246+09:00 : やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！
+- User: 2026-07-17 11:58:20.653655+09:00 : インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+- LLM: 2026-07-17 11:58:33.732641+09:00 : おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！
+- User: 2026-07-17 11:59:16.718917+09:00 : インドカレーは二日酔いの翌日に良く効く飲み物である。
+- LLM: 2026-07-17 11:59:30.086106+09:00 : 芸術的なスパイスのゴッドブレンドをゴクゴク飲めば、二日酔いも一発で吹き飛びそうだね！
+
+【ユーザーの入力プロンプト】
+インドカレーは暑い日に最適なオトコの食べ物だ。
+
+【メタデータ】
+- 2026-07-17 12:00:01.145312+09:00
+
+
+--------------------------------
+  [Rank 1] 'インドカレーは砂漠の熱気と、おじさんの手...' (Score: 0.910)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: '暑い日' -> '砂漠の熱気'
+  [Rank 2] 'インドカレーは二日酔いの翌日に良く効く飲...' (Score: 0.893)
+    - Matched: 'グルメ' -> '二日酔い'
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: '暑い日' -> '翌日'
+  [Rank 3] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.891)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'グルメ' -> 'スパイス'
+    - Matched: 'インドカレー' -> 'スパイス'
+    - Matched: 'インドカレー' -> 'インドカレー'
+--------------------------------
+
+
+🤖 LLM: 砂漠の熱気を宿したゴッドブレンドを豪快に流し込めば、暑い日もパワフルに乗り切れそうだね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '砂漠の熱気を宿したゴッドブレンドを豪快に流し込めば、暑い日もパワフルに乗り切れそうだね！...'
+    - keyphrase: 'コーヒー'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'ゴッドブレンド'  role: 'subject'  with confidence 0.8
+    - keyphrase: '乗り切れそうだ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '砂漠の熱気'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '暑い日'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_fdbd75f2' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(95), np.int64(148), np.int64(113))
+    - Grid Mesh :  (np.int64(3727), np.int64(5793), np.int64(4414))
+
+[System] Turn 4 complete. Total cubes: 18.
+
+👤 You: サウナと水風呂の関係は、冬でいう所のこたつから出た後に、裸で風呂場に降り立つ時と同じ負荷がかかるんだ（笑）
+
+🧊 CubeEngine: Starting 'make_cube' for 'サウナと水風呂の関係は、冬でいう所のこたつから出た後に、裸で風呂場に降り立つ時と同じ負荷がかかるんだ...'
+    - keyphrase: 'サウナ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'サウナと水風呂の関係'  role: 'subject'  with confidence 0.95
+    - keyphrase: '負荷がかかる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '水風呂'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'こたつ'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '風呂場'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_f76b5259' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(1))
+    - Fine Grid : (np.int64(105), np.int64(124), np.int64(49))
+    - Grid Mesh :  (np.int64(4119), np.int64(4861), np.int64(1924))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'サウナと水風呂の関係は、冬でいう所のこた...'
+  - Found 7 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: 人生における大切なことは、だいたいサウナ | Genre:1.000 | Keyword:0.869 | Context:0.788 | Final:0.876
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.876)】
+ - 【過去の対話内容】:【 人生における大切なことは、だいたいサウナと水風呂が教えてくれる。】
+ - 【関連キーワード】: [サウナと水風呂, サウナ, サウナと水風呂, サウナ, サウナと水風呂, サウナ, サウナ, サウナと水風呂, サウナ]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-17 11:57:17.180744+09:00 : やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。
+- LLM: 2026-07-17 11:57:32.419246+09:00 : やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！
+- User: 2026-07-17 11:58:20.653655+09:00 : インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+- LLM: 2026-07-17 11:58:33.732641+09:00 : おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！
+- User: 2026-07-17 11:59:16.718917+09:00 : インドカレーは二日酔いの翌日に良く効く飲み物である。
+- LLM: 2026-07-17 11:59:30.086106+09:00 : 芸術的なスパイスのゴッドブレンドをゴクゴク飲めば、二日酔いも一発で吹き飛びそうだね！
+- User: 2026-07-17 12:00:01.145312+09:00 : インドカレーは暑い日に最適なオトコの食べ物だ。
+- LLM: 2026-07-17 12:00:20.134261+09:00 : 砂漠の熱気を宿したゴッドブレンドを豪快に流し込めば、暑い日もパワフルに乗り切れそうだね！
+
+【ユーザーの入力プロンプト】
+サウナと水風呂の関係は、冬でいう所のこたつから出た後に、裸で風呂場に降り立つ時と同じ負荷がかかるんだ（笑）
+
+【メタデータ】
+- 2026-07-17 12:01:50.265288+09:00
+
+
+--------------------------------
+  [Rank 1] '人生における大切なことは、だいたいサウナ...' (Score: 0.876)
+    - Matched: 'サウナ' -> 'サウナと水風呂'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: 'サウナと水風呂の関係' -> 'サウナと水風呂'
+    - Matched: 'サウナと水風呂の関係' -> 'サウナ'
+    - Matched: '水風呂' -> 'サウナと水風呂'
+    - Matched: '水風呂' -> 'サウナ'
+    - Matched: 'こたつ' -> 'サウナ'
+    - Matched: '風呂場' -> 'サウナと水風呂'
+    - Matched: '風呂場' -> 'サウナ'
+--------------------------------
+
+
+🤖 LLM: そのヒートショックばりの負荷を乗り越えてこそ、人生の大切な真理が学べるのかもしれないね（笑）！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'そのヒートショックばりの負荷を乗り越えてこそ、人生の大切な真理が学べるのかもしれないね（笑）！...'
+    - keyphrase: 'サウナ'  role: 'genre'  with confidence 0.55
+    - keyphrase: '人生の大切な真理が'  role: 'subject'  with confidence 0.95
+    - keyphrase: '学べる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ヒートショックばりの負荷'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '乗り越える'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_1b7b3011' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(3), np.int64(2))
+    - Fine Grid : (np.int64(75), np.int64(118), np.int64(67))
+    - Grid Mesh :  (np.int64(2932), np.int64(4622), np.int64(2633))
+
+[System] Turn 5 complete. Total cubes: 20.
+
+👤 You: 人生における大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+
+🧊 CubeEngine: Starting 'make_cube' for '人生における大事なことは、だいたいサウナと水風呂に置き忘れてくる。...'
+    - keyphrase: 'サウナ'  role: 'genre'  with confidence 0.85
+    - keyphrase: '人生における大事なこと'  role: 'subject'  with confidence 0.95
+    - keyphrase: '置き忘れてくる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'サウナ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '水風呂'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '人生'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_456927ed' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(0))
+    - Fine Grid : (np.int64(102), np.int64(124), np.int64(5))
+    - Grid Mesh :  (np.int64(4000), np.int64(4874), np.int64(217))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '人生における大事なことは、だいたいサウナ...'
+  - Found 14 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: 人生における大切なことは、だいたいサウナ | Genre:1.000 | Keyword:0.926 | Context:0.962 | Final:0.963
+      [Debug] Cube: そのヒートショックばりの負荷を乗り越えて | Genre:1.000 | Keyword:0.904 | Context:0.691 | Final:0.847
+      [Debug] Cube: サウナと水風呂の関係は、冬でいう所のこた | Genre:1.000 | Keyword:0.876 | Context:0.784 | Final:0.876
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.5
+    -> Executing 'integration' route with 3 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.963)】
+ - 【過去の対話内容】:【 人生における大切なことは、だいたいサウナと水風呂が教えてくれる。】
+ - 【関連キーワード】: [サウナと水風呂, サウナ, 人生における大切なこと, サウナと水風呂, サウナ, サウナと水風呂, サウナ, 人生における大切なこと]
+
+【根拠データ2 (Score: 0.876)】
+ - 【過去の対話内容】:【 サウナと水風呂の関係は、冬でいう所のこたつから出た後に、裸で風呂場に降り立つ時と同じ負荷がかかるんだ（笑）】
+ - 【関連キーワード】: [サウナと水風呂の関係, サウナ, 水風呂, こたつ, 風呂場, サウナと水風呂の関係, サウナ, 水風呂, こたつ, 風呂場, サウナと水風呂の関係, サウナ, 水風呂, 風呂場]
+
+【根拠データ3 (Score: 0.847)】
+ - 【過去の対話内容】:【 そのヒートショックばりの負荷を乗り越えてこそ、人生の大切な真理が学べるのかもしれないね（笑）！】
+ - 【関連キーワード】: [サウナ, 人生の大切な真理が, サウナ, サウナ, 乗り越える, 人生の大切な真理が]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-17 11:57:17.180744+09:00 : やっほ～。Gemini.ごきげんはいかが？　今から少しアプリのテストを行うから、変な事をいっぱい言うけど、１行で短く応答してね。
+- LLM: 2026-07-17 11:57:32.419246+09:00 : やっほー！ご機嫌は最高だよ、テストの準備はいつでもバッチリだからどんどんどうぞ！
+- User: 2026-07-17 11:58:20.653655+09:00 : インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+- LLM: 2026-07-17 11:58:33.732641+09:00 : おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！
+- User: 2026-07-17 11:59:16.718917+09:00 : インドカレーは二日酔いの翌日に良く効く飲み物である。
+- LLM: 2026-07-17 11:59:30.086106+09:00 : 芸術的なスパイスのゴッドブレンドをゴクゴク飲めば、二日酔いも一発で吹き飛びそうだね！
+- User: 2026-07-17 12:00:01.145312+09:00 : インドカレーは暑い日に最適なオトコの食べ物だ。
+- LLM: 2026-07-17 12:00:20.134261+09:00 : 砂漠の熱気を宿したゴッドブレンドを豪快に流し込めば、暑い日もパワフルに乗り切れそうだね！
+- User: 2026-07-17 12:01:50.265288+09:00 : サウナと水風呂の関係は、冬でいう所のこたつから出た後に、裸で風呂場に降り立つ時と同じ負荷がかかるんだ（笑）
+- LLM: 2026-07-17 12:02:05.730510+09:00 : そのヒートショックばりの負荷を乗り越えてこそ、人生の大切な真理が学べるのかもしれないね（笑）！
+
+【ユーザーの入力プロンプト】
+人生における大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+
+【メタデータ】
+- 2026-07-17 12:03:00.032400+09:00
+
+
+--------------------------------
+  [Rank 1] '人生における大切なことは、だいたいサウナ...' (Score: 0.963)
+    - Matched: 'サウナ' -> 'サウナと水風呂'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: '人生における大事なこと' -> '人生における大切なこと'
+    - Matched: 'サウナ' -> 'サウナと水風呂'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: '水風呂' -> 'サウナと水風呂'
+    - Matched: '水風呂' -> 'サウナ'
+    - Matched: '人生' -> '人生における大切なこと'
+  [Rank 2] 'サウナと水風呂の関係は、冬でいう所のこた...' (Score: 0.876)
+    - Matched: 'サウナ' -> 'サウナと水風呂の関係'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: 'サウナ' -> '水風呂'
+    - Matched: 'サウナ' -> 'こたつ'
+    - Matched: 'サウナ' -> '風呂場'
+    - Matched: 'サウナ' -> 'サウナと水風呂の関係'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: 'サウナ' -> '水風呂'
+    - Matched: 'サウナ' -> 'こたつ'
+    - Matched: 'サウナ' -> '風呂場'
+    - Matched: '水風呂' -> 'サウナと水風呂の関係'
+    - Matched: '水風呂' -> 'サウナ'
+    - Matched: '水風呂' -> '水風呂'
+    - Matched: '水風呂' -> '風呂場'
+  [Rank 3] 'そのヒートショックばりの負荷を乗り越えて...' (Score: 0.847)
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: '人生における大事なこと' -> '人生の大切な真理が'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: '水風呂' -> 'サウナ'
+    - Matched: '人生' -> '乗り越える'
+    - Matched: '人生' -> '人生の大切な真理が'
+--------------------------------
+
+
+🤖 LLM: ととのいすぎて、せっかく教えてもらった大切な真理まで一緒に水に流しちゃったんだね（笑）！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'ととのいすぎて、せっかく教えてもらった大切な真理まで一緒に水に流しちゃったんだね（笑）！...'
+    - keyphrase: 'サウナ'  role: 'genre'  with confidence 0.92
+    - keyphrase: 'あなた（※文脈上の主語）'  role: 'subject'  with confidence 0.85
+    - keyphrase: '水に流しちゃった'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ととのい'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '大切な真理'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_8b57a3d4' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(0))
+    - Fine Grid : (np.int64(97), np.int64(141), np.int64(27))
+    - Grid Mesh :  (np.int64(3808), np.int64(5512), np.int64(1086))
+
+[System] Turn 6 complete. Total cubes: 22.
+
+👤 You: 家のみお様という猫は、大きなおけつをぼよんぼよん振り回して歩くよ。
+
+🧊 CubeEngine: Starting 'make_cube' for '家のみお様という猫は、大きなおけつをぼよんぼよん振り回して歩くよ。...'
+    - keyphrase: 'Pets'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'みお様という猫'  role: 'subject'  with confidence 0.98
+    - keyphrase: '歩く'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '大きなおけつ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ぼよんぼよん'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_d3596a0e' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(2))
+    - Fine Grid : (np.int64(110), np.int64(170), np.int64(78))
+    - Grid Mesh :  (np.int64(4307), np.int64(6678), np.int64(3058))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '家のみお様という猫は、大きなおけつをぼよ...'
+  - Found 16 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: 猫は液体であり、宇宙の真理を知っている。 | Genre:0.646 | Keyword:0.770 | Context:0.655 | Final:0.687
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.7, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.687)】
+ - 【過去の対話内容】:【 猫は液体であり、宇宙の真理を知っている。】
+ - 【関連キーワード】: [猫, 猫, 知っている, 猫]
+
+
+
+【直近の対話履歴】
+- User: 2026-07-17 11:58:20.653655+09:00 : インドカレーは砂漠の熱気と、おじさんの手あかと、多種多様なスパイスのゴッドブレンドである。
+- LLM: 2026-07-17 11:58:33.732641+09:00 : おじさんの隠し味は強烈だけど、あの複雑なスパイスの配合はまさに芸術品だね！
+- User: 2026-07-17 11:59:16.718917+09:00 : インドカレーは二日酔いの翌日に良く効く飲み物である。
+- LLM: 2026-07-17 11:59:30.086106+09:00 : 芸術的なスパイスのゴッドブレンドをゴクゴク飲めば、二日酔いも一発で吹き飛びそうだね！
+- User: 2026-07-17 12:00:01.145312+09:00 : インドカレーは暑い日に最適なオトコの食べ物だ。
+- LLM: 2026-07-17 12:00:20.134261+09:00 : 砂漠の熱気を宿したゴッドブレンドを豪快に流し込めば、暑い日もパワフルに乗り切れそうだね！
+- User: 2026-07-17 12:01:50.265288+09:00 : サウナと水風呂の関係は、冬でいう所のこたつから出た後に、裸で風呂場に降り立つ時と同じ負荷がかかるんだ（笑）
+- LLM: 2026-07-17 12:02:05.730510+09:00 : そのヒートショックばりの負荷を乗り越えてこそ、人生の大切な真理が学べるのかもしれないね（笑）！
+- User: 2026-07-17 12:03:00.032400+09:00 : 人生における大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 2026-07-17 12:03:15.828739+09:00 : ととのいすぎて、せっかく教えてもらった大切な真理まで一緒に水に流しちゃったんだね（笑）！
+
+【ユーザーの入力プロンプト】
+家のみお様という猫は、大きなおけつをぼよんぼよん振り回して歩くよ。
+
+【メタデータ】
+- 2026-07-17 12:03:57.293532+09:00
+
+
+--------------------------------
+  [Rank 1] '猫は液体であり、宇宙の真理を知っている。...' (Score: 0.687)
+    - Matched: 'Pets' -> '猫'
+    - Matched: 'みお様という猫' -> '猫'
+    - Matched: '歩く' -> '知っている'
+    - Matched: '歩く' -> '猫'
+--------------------------------
+
+
+🤖 LLM: おけつをぼよんぼよん振り回して歩くみお様、想像するだけでたまらなく愛らしい姿だね！
+
+実は猫って「液体」だから、そのダイナミックなお尻の動きも、液体特有のなめらかな波動なのかもしれないよ。さっきサウナに置き忘れてきちゃった人生の大切な真理も、もしかしたらみお様はそのおけつのスイングで優雅に表現して、すべてお見通しなのかもね（笑）！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'おけつをぼよんぼよん振り回して歩くみお様、想像するだけでたまらなく愛らしい姿だね！
+
+実は猫って「液...'
+    - keyphrase: 'ペット'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'みお様'  role: 'subject'  with confidence 0.95
+    - keyphrase: '猫'  role: 'subject'  with confidence 0.9
+    - keyphrase: '愛らしい'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'お見通しだ'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'お尻の動き'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '液体'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '人生の真理'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_bd7e186e' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(1))
+    - Fine Grid : (np.int64(102), np.int64(168), np.int64(52))
+    - Grid Mesh :  (np.int64(3985), np.int64(6573), np.int64(2045))
+
+[System] Turn 7 complete. Total cubes: 24.
+
+👤 You: exit
+👋 See you, space cowboy...
