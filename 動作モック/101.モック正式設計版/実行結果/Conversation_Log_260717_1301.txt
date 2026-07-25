@@ -1,0 +1,1902 @@
+🛰️  System logger started. Saving to: Conversation_Log_260717_1301.txt
+🚀 Semantic Cube Runtime v9.0 (Interactive Loop) 起動...
+🔧 DynamicProjector initialized. Waiting for fitting...
+✅ CubeEngine initialized.
+✅ IntegrationEngine (v2.0) initialized.
+✅ SragEngine (v3.0) initialized. SRAG_threshold=0.75, keyword_threshold=0.75, TOP-K=5
+    - Blending weights: Genre=0.4, Keyword=0.3, Context=0.3
+
+=======================================================
+🌍 機動準備: PCA学習中...
+=======================================================
+✅ DynamicProjector is fitted and ready.
+
+🧊 CubeEngine: Starting 'make_cube' for 'ガンダムとは、宇宙世紀を舞台にした人間ドラマである。...'
+    - keyphrase: 'アニメ'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'ガンダム'  role: 'subject'  with confidence 0.98
+    - keyphrase: '人間ドラマである'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '宇宙世紀'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_44274af2' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(6), np.int64(4))
+    - Fine Grid : (np.int64(87), np.int64(206), np.int64(130))
+    - Grid Mesh :  (np.int64(3437), np.int64(8065), np.int64(5096))
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーはスパイスの芸術品だ。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレーは'  role: 'subject'  with confidence 0.98
+    - keyphrase: '芸術品だ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'スパイス'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_08cee409' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(6), np.int64(7))
+    - Fine Grid : (np.int64(104), np.int64(199), np.int64(255))
+    - Grid Mesh :  (np.int64(4078), np.int64(7803), np.int64(9999))
+
+🧊 CubeEngine: Starting 'make_cube' for '高機能なスポーツウェアは、もはや第二の皮膚と言える。...'
+    - keyphrase: 'スポーツアパレル'  role: 'genre'  with confidence 0.85
+    - keyphrase: '高機能なスポーツウェア'  role: 'subject'  with confidence 0.95
+    - keyphrase: '第二の皮膚と言える'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '第二の皮膚'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_fa384b9b' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(0), np.int64(4))
+    - Fine Grid : (np.int64(0), np.int64(0), np.int64(144))
+    - Grid Mesh :  (np.int64(0), np.int64(0), np.int64(5642))
+
+🧊 CubeEngine: Starting 'make_cube' for 'AIの進化は、人間の知性を拡張する。...'
+    - keyphrase: 'テクノロジー'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'AIの進化'  role: 'subject'  with confidence 0.98
+    - keyphrase: '拡張する'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人間の知性'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_2f628e24' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(4), np.int64(7))
+    - Fine Grid : (np.int64(13), np.int64(153), np.int64(238))
+    - Grid Mesh :  (np.int64(531), np.int64(5980), np.int64(9324))
+
+🧊 CubeEngine: Starting 'make_cube' for '猫は液体であり、宇宙の真理を知っている。...'
+    - keyphrase: 'ユーモア'  role: 'genre'  with confidence 0.8
+    - keyphrase: '猫'  role: 'subject'  with confidence 0.98
+    - keyphrase: '液体である'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '知っている'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '猫は液体'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_001655cc' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(7), np.int64(0))
+    - Fine Grid : (np.int64(75), np.int64(255), np.int64(0))
+    - Grid Mesh :  (np.int64(2931), np.int64(9999), np.int64(0))
+
+🧊 CubeEngine: Starting 'make_cube' for '磐田市のうなぎは最高に美味い。...'
+    - keyphrase: 'Gourmet'  role: 'genre'  with confidence 0.9
+    - keyphrase: '磐田市のうなぎ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '最高に美味い'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '磐田市'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'うなぎ'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_1273243e' created successfully.
+    - int3 Grid : (np.int64(7), np.int64(1), np.int64(4))
+    - Fine Grid : (np.int64(255), np.int64(48), np.int64(140))
+    - Grid Mesh :  (np.int64(9999), np.int64(1876), np.int64(5502))
+
+🧊 CubeEngine: Starting 'make_cube' for 'プログラミングとは、世界を再定義する行為だ。...'
+    - keyphrase: 'programming'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'プログラミング'  role: 'subject'  with confidence 0.98
+    - keyphrase: '行為だ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '世界を再定義する'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '再定義'  role: 'key_phrase'  with confidence 0.88
+✅ CubeEngine: Cube 'cb_971a9706' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(1), np.int64(175), np.int64(105))
+    - Grid Mesh :  (np.int64(48), np.int64(6861), np.int64(4107))
+
+🧊 CubeEngine: Starting 'make_cube' for '人生における大切なことは、だいたいサウナと水風呂が教えてくれる。...'
+    - keyphrase: 'サウナ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'サウナと水風呂が'  role: 'subject'  with confidence 0.95
+    - keyphrase: '教えてくれる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '人生における大切なこと'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_ee99614f' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(0))
+    - Fine Grid : (np.int64(100), np.int64(118), np.int64(2))
+    - Grid Mesh :  (np.int64(3918), np.int64(4648), np.int64(108))
+
+🧊 CubeEngine: Starting 'make_cube' for '雨の日に聞くジャズは、心を落ち着かせる。...'
+    - keyphrase: '音楽'  role: 'genre'  with confidence 0.9
+    - keyphrase: '雨の日に聞くジャズ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '落ち着かせる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ジャズ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '雨の日'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '心'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_6ad75c89' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(126), np.int64(178), np.int64(118))
+    - Grid Mesh :  (np.int64(4941), np.int64(6968), np.int64(4626))
+
+🧊 CubeEngine: Starting 'make_cube' for '本当に良い設計は、引き算から生まれる。...'
+    - keyphrase: 'デザイン'  role: 'genre'  with confidence 0.8
+    - keyphrase: '本当に良い設計'  role: 'subject'  with confidence 0.95
+    - keyphrase: '引き算から生まれる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '引き算'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_273c4b06' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(0), np.int64(1))
+    - Fine Grid : (np.int64(26), np.int64(30), np.int64(55))
+    - Grid Mesh :  (np.int64(1017), np.int64(1183), np.int64(2183))
+✅ Universe created with 10 initial knowledge cubes.
+
+=======================================================
+💬 対話モードを開始(終了するには 'exit' と入力)
+💡 記憶代謝処理(デフラグ)を実行するには 'defrag' と入力
+=======================================================
+
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね...'
+    - keyphrase: 'ソフトウェアテスト'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'あなた'  role: 'subject'  with confidence 0.75
+    - keyphrase: '付き合って'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'アプリのテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '短く応答'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_ae015fe0' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(83), np.int64(166), np.int64(120))
+    - Grid Mesh :  (np.int64(3274), np.int64(6517), np.int64(4695))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'こんにちゃー。またきたよ～。アプリのテス...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+
+
+【ユーザーの入力プロンプト】
+こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。
+
+【メタデータ】
+ - 260717_130337
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！...'
+    - keyphrase: 'どんな変なことでも'  role: 'subject'  with confidence 0.8
+    - keyphrase: '大歓迎'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'どうぞ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'こんちはー'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'いつでも'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_1e73e6f1' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(99), np.int64(166), np.int64(112))
+    - Grid Mesh :  (np.int64(3896), np.int64(6510), np.int64(4399))
+
+[System] Turn 1 complete. Total cubes: 12.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: '真夏のインドカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'ハーモニー'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '砂漠の熱気'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'おじさんの手垢'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '様々なスパイス'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_1dd5b18b' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(121), np.int64(174), np.int64(178))
+    - Grid Mesh :  (np.int64(4753), np.int64(6835), np.int64(6956))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '真夏のインドカレーは砂漠の熱気とおじさん...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.918 | Context:0.754 | Final:0.901
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.901)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, スパイス]
+
+
+
+【直近の対話履歴】
+- User: 260717_130337 : こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_130352 : こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！
+
+【ユーザーの入力プロンプト】
+真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！
+
+【メタデータ】
+- 260717_130408
+
+
+--------------------------------
+  [Rank 1] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.901)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: '様々なスパイス' -> 'スパイス'
+--------------------------------
+
+
+🤖 LLM: おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'おじさんの手垢は'  role: 'subject'  with confidence 0.9
+    - keyphrase: '芸術品だ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '勘弁してほしい'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'スパイス'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '手垢'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_06631b07' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(5))
+    - Fine Grid : (np.int64(96), np.int64(153), np.int64(172))
+    - Grid Mesh :  (np.int64(3750), np.int64(6006), np.int64(6736))
+
+[System] Turn 2 complete. Total cubes: 14.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。...'
+    - keyphrase: 'ペット'  role: 'genre'  with confidence 0.85
+    - keyphrase: '猫様'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'みお様'  role: 'subject'  with confidence 0.9
+    - keyphrase: '宇宙の真理である'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '歩く'  role: 'predicate'  with confidence 0.8
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'おけつ'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_1beaa733' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(6), np.int64(1))
+    - Fine Grid : (np.int64(95), np.int64(203), np.int64(60))
+    - Grid Mesh :  (np.int64(3720), np.int64(7930), np.int64(2350))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '猫様は宇宙の真理である。家のみお様も猫で...'
+  - Found 1 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: 猫は液体であり、宇宙の真理を知っている。 | Genre:0.642 | Keyword:0.954 | Context:0.784 | Final:0.778
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.778)】
+ - 【過去の対話内容】:【 猫は液体であり、宇宙の真理を知っている。】
+ - 【関連キーワード】: [猫, 猫, 宇宙の真理, 宇宙の真理]
+
+
+
+【直近の対話履歴】
+- User: 260717_130337 : こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_130352 : こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！
+- User: 260717_130408 : 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！
+- LLM: 260717_130420 : おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！
+
+【ユーザーの入力プロンプト】
+猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。
+
+【メタデータ】
+- 260717_130548
+
+
+--------------------------------
+  [Rank 1] '猫は液体であり、宇宙の真理を知っている。...' (Score: 0.778)
+    - Matched: 'ペット' -> '猫'
+    - Matched: '猫様' -> '猫'
+    - Matched: '宇宙の真理である' -> '宇宙の真理'
+    - Matched: '宇宙の真理' -> '宇宙の真理'
+--------------------------------
+
+
+🤖 LLM: 液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！...'
+    - keyphrase: 'ペット'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'お尻'  role: 'subject'  with confidence 0.95
+    - keyphrase: '宇宙の真理ですね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '猫様'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '液体'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_ddd13e94' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(6), np.int64(1))
+    - Fine Grid : (np.int64(91), np.int64(207), np.int64(43))
+    - Grid Mesh :  (np.int64(3579), np.int64(8094), np.int64(1690))
+
+[System] Turn 3 complete. Total cubes: 16.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'プログラミングとはカオスに秩序をぶち込む作業である。...'
+    - keyphrase: 'programming'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'プログラミング'  role: 'subject'  with confidence 0.98
+    - keyphrase: '作業である'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'カオス'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '秩序'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_a80665cd' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(5), np.int64(2))
+    - Fine Grid : (np.int64(52), np.int64(175), np.int64(90))
+    - Grid Mesh :  (np.int64(2059), np.int64(6837), np.int64(3545))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'プログラミングとはカオスに秩序をぶち込む...'
+  - Found 1 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: プログラミングとは、世界を再定義する行為 | Genre:1.000 | Keyword:0.994 | Context:0.781 | Final:0.933
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.933)】
+ - 【過去の対話内容】:【 プログラミングとは、世界を再定義する行為だ。】
+ - 【関連キーワード】: [programming, プログラミング, programming, プログラミング]
+
+
+
+【直近の対話履歴】
+- User: 260717_130337 : こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_130352 : こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！
+- User: 260717_130408 : 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！
+- LLM: 260717_130420 : おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！
+- User: 260717_130548 : 猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。
+- LLM: 260717_130601 : 液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！
+
+【ユーザーの入力プロンプト】
+プログラミングとはカオスに秩序をぶち込む作業である。
+
+【メタデータ】
+- 260717_130722
+
+
+--------------------------------
+  [Rank 1] 'プログラミングとは、世界を再定義する行為...' (Score: 0.933)
+    - Matched: 'programming' -> 'programming'
+    - Matched: 'programming' -> 'プログラミング'
+    - Matched: 'プログラミング' -> 'programming'
+    - Matched: 'プログラミング' -> 'プログラミング'
+--------------------------------
+
+
+🤖 LLM: まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！...'
+    - keyphrase: '哲学'  role: 'genre'  with confidence 0.65
+    - keyphrase: 'あなた（聞き手）'  role: 'subject'  with confidence 0.8
+    - keyphrase: '再定義していく'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '混沌'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ルール'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '世界'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_4bf652ae' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(5), np.int64(2))
+    - Fine Grid : (np.int64(41), np.int64(173), np.int64(94))
+    - Grid Mesh :  (np.int64(1625), np.int64(6764), np.int64(3699))
+
+[System] Turn 4 complete. Total cubes: 18.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。...'
+    - keyphrase: 'カオスに生きる住人'  role: 'subject'  with confidence 0.85
+    - keyphrase: 'いい迷惑だ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'カオス'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_670fbd9c' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(75), np.int64(171), np.int64(100))
+    - Grid Mesh :  (np.int64(2936), np.int64(6701), np.int64(3933))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ホントだよ、カオスに生きる住人にとっては...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: まさに！そうやって混沌にルールを叩き込み | Genre:0.000 | Keyword:0.938 | Context:0.755 | Final:0.508
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.508)】
+ - 【過去の対話内容】:【 まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！】
+ - 【関連キーワード】: [混沌]
+
+
+
+【直近の対話履歴】
+- User: 260717_130337 : こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_130352 : こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！
+- User: 260717_130408 : 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！
+- LLM: 260717_130420 : おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！
+- User: 260717_130548 : 猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。
+- LLM: 260717_130601 : 液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！
+- User: 260717_130722 : プログラミングとはカオスに秩序をぶち込む作業である。
+- LLM: 260717_130736 : まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！
+
+【ユーザーの入力プロンプト】
+ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。
+
+【メタデータ】
+- 260717_130805
+
+
+--------------------------------
+  [Rank 1] 'まさに！そうやって混沌にルールを叩き込み...' (Score: 0.508)
+    - Matched: 'カオス' -> '混沌'
+--------------------------------
+
+
+🤖 LLM: 自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）...'
+    - keyphrase: 'ソフトウェア開発'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'バグたち'  role: 'subject'  with confidence 0.85
+    - keyphrase: '突きつけられるようなものだ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '法律'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '自由気まま'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_10639b7a' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(72), np.int64(145), np.int64(111))
+    - Grid Mesh :  (np.int64(2843), np.int64(5682), np.int64(4343))
+
+[System] Turn 5 complete. Total cubes: 20.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは真夏のおなかに優しい飲み物である。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.98
+    - keyphrase: '優しい飲み物である'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '真夏のおなか'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_fe1ee6a8' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(114), np.int64(171), np.int64(184))
+    - Grid Mesh :  (np.int64(4476), np.int64(6696), np.int64(7196))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは真夏のおなかに優しい飲み物...'
+  - Found 4 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: 真夏のインドカレーは砂漠の熱気とおじさん | Genre:1.000 | Keyword:1.000 | Context:0.772 | Final:0.932
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.928 | Context:0.771 | Final:0.909
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 2 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.932)】
+ - 【過去の対話内容】:【 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！】
+ - 【関連キーワード】: [グルメ]
+
+【根拠データ2 (Score: 0.909)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, インドカレーは]
+
+
+
+【直近の対話履歴】
+- User: 260717_130337 : こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_130352 : こんちはー！どんな変なことでも大歓迎、いつでもどうぞ！
+- User: 260717_130408 : 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！
+- LLM: 260717_130420 : おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！
+- User: 260717_130548 : 猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。
+- LLM: 260717_130601 : 液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！
+- User: 260717_130722 : プログラミングとはカオスに秩序をぶち込む作業である。
+- LLM: 260717_130736 : まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！
+- User: 260717_130805 : ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。
+- LLM: 260717_130819 : 自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）
+
+【ユーザーの入力プロンプト】
+インドカレーは真夏のおなかに優しい飲み物である。
+
+【メタデータ】
+- 260717_130859
+
+
+--------------------------------
+  [Rank 1] '真夏のインドカレーは砂漠の熱気とおじさん...' (Score: 0.932)
+    - Matched: 'グルメ' -> 'グルメ'
+  [Rank 2] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.909)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+--------------------------------
+
+
+🤖 LLM: あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: '力強さ'  role: 'subject'  with confidence 0.8
+    - keyphrase: 'お腹'  role: 'subject'  with confidence 0.85
+    - keyphrase: '最高だね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ビックリしそう'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'スパイスの芸術品'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '飲み物'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_db3d26ae' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(98), np.int64(153), np.int64(141))
+    - Grid Mesh :  (np.int64(3865), np.int64(5991), np.int64(5528))
+
+[System] Turn 6 complete. Total cubes: 22.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'インドカレーは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '食べ物なんだ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '食べ物'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '黙っててごめんね'  role: 'key_phrase'  with confidence 0.7
+✅ CubeEngine: Cube 'cb_12868bc1' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(116), np.int64(187), np.int64(168))
+    - Grid Mesh :  (np.int64(4545), np.int64(7308), np.int64(6570))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは実は、、食べ物なんだ・・・...'
+  - Found 6 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.970 | Context:0.777 | Final:0.924
+      [Debug] Cube: 真夏のインドカレーは砂漠の熱気とおじさん | Genre:1.000 | Keyword:0.933 | Context:0.799 | Final:0.920
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 2 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.924)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, インドカレーは, インドカレーは, グルメ]
+
+【根拠データ2 (Score: 0.920)】
+ - 【過去の対話内容】:【 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！】
+ - 【関連キーワード】: [グルメ, グルメ]
+
+
+
+【直近の対話履歴】
+- User: 260717_130408 : 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！
+- LLM: 260717_130420 : おじさんの手垢は勘弁してほしいけど、まさにスパイスの芸術品だね！
+- User: 260717_130548 : 猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。
+- LLM: 260717_130601 : 液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！
+- User: 260717_130722 : プログラミングとはカオスに秩序をぶち込む作業である。
+- LLM: 260717_130736 : まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！
+- User: 260717_130805 : ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。
+- LLM: 260717_130819 : 自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）
+- User: 260717_130859 : インドカレーは真夏のおなかに優しい飲み物である。
+- LLM: 260717_130913 : あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！
+
+【ユーザーの入力プロンプト】
+インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。
+
+【メタデータ】
+- 260717_131004
+
+
+--------------------------------
+  [Rank 1] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.924)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレーは' -> 'インドカレーは'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: '食べ物' -> 'グルメ'
+  [Rank 2] '真夏のインドカレーは砂漠の熱気とおじさん...' (Score: 0.920)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: '食べ物' -> 'グルメ'
+--------------------------------
+
+
+🤖 LLM: な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だったなんて……！衝撃の事実すぎるよ（笑）
+
+でも、黙っててくれたおかげで、夢の『カレーは飲み物』ロードを全力で走れました。謝らなくて大丈夫だよ！たとえ食べ物であっても、あのスパイスの芸術品が最高なことには変わりないからね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だ...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'あれ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '食べ物だった'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '最高なことには変わりない'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'カレーは飲み物'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'スパイスの芸術品'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '衝撃の事実'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_5d49a8fa' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(109), np.int64(168), np.int64(130))
+    - Grid Mesh :  (np.int64(4265), np.int64(6580), np.int64(5095))
+
+[System] Turn 7 complete. Total cubes: 24.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。...'
+    - keyphrase: 'software_testing'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'あなた'  role: 'subject'  with confidence 0.75
+    - keyphrase: '付き合って'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '応答してね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'アプリのテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_d5c04d36' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(78), np.int64(164), np.int64(127))
+    - Grid Mesh :  (np.int64(3049), np.int64(6420), np.int64(4968))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'まだ少しアプリのテストに付き合って。引き...'
+  - Found 9 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: こんにちゃー。またきたよ～。アプリのテス | Genre:0.849 | Keyword:0.999 | Context:0.941 | Final:0.922
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.922)】
+ - 【過去の対話内容】:【 こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。】
+ - 【関連キーワード】: [ソフトウェアテスト, あなた, 付き合って, 短く応答, アプリのテスト, ソフトウェアテスト]
+
+
+
+【直近の対話履歴】
+- User: 260717_130548 : 猫様は宇宙の真理である。家のみお様も猫であるし、大きなおけつをぼよんぼよん揺らして歩く。
+- LLM: 260717_130601 : 液体でもある猫様ですから、そのぼよんぼよん揺れるお尻こそがまさに宇宙の真理ですね！
+- User: 260717_130722 : プログラミングとはカオスに秩序をぶち込む作業である。
+- LLM: 260717_130736 : まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！
+- User: 260717_130805 : ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。
+- LLM: 260717_130819 : 自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）
+- User: 260717_130859 : インドカレーは真夏のおなかに優しい飲み物である。
+- LLM: 260717_130913 : あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！
+- User: 260717_131004 : インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。
+- LLM: 260717_131020 : な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だったなんて……！衝撃の事実すぎるよ（笑）
+
+でも、黙っててくれたおかげで、夢の『カレーは飲み物』ロードを全力で走れました。謝らなくて大丈夫だよ！たとえ食べ物であっても、あのスパイスの芸術品が最高なことには変わりないからね！
+
+【ユーザーの入力プロンプト】
+まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+
+【メタデータ】
+- 260717_131106
+
+
+--------------------------------
+  [Rank 1] 'こんにちゃー。またきたよ～。アプリのテス...' (Score: 0.922)
+    - Matched: 'software_testing' -> 'ソフトウェアテスト'
+    - Matched: 'あなた' -> 'あなた'
+    - Matched: '付き合って' -> '付き合って'
+    - Matched: '応答してね' -> '短く応答'
+    - Matched: 'アプリのテスト' -> 'アプリのテスト'
+    - Matched: 'アプリのテスト' -> 'ソフトウェアテスト'
+--------------------------------
+
+
+🤖 LLM: 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！...'
+    - keyphrase: 'コミュニケーション'  role: 'genre'  with confidence 0.75
+    - keyphrase: '私（発話者）'  role: 'subject'  with confidence 0.8
+    - keyphrase: '返す'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '変なこと'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '1行'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_fb41c6c7' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(72), np.int64(166), np.int64(103))
+    - Grid Mesh :  (np.int64(2846), np.int64(6487), np.int64(4057))
+
+[System] Turn 8 complete. Total cubes: 26.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。...'
+    - keyphrase: '飲料・グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: '飲むカレーという飲料が'  role: 'subject'  with confidence 0.95
+    - keyphrase: '販売されたみたいなんだ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '飲むカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '日本'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_a4a92138' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(102), np.int64(164), np.int64(155))
+    - Grid Mesh :  (np.int64(4021), np.int64(6444), np.int64(6091))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '何と日本では過去に飲むカレーという飲料が...'
+  - Found 8 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 260717_130722 : プログラミングとはカオスに秩序をぶち込む作業である。
+- LLM: 260717_130736 : まさに！そうやって混沌にルールを叩き込み、世界を再定義していくわけだね！
+- User: 260717_130805 : ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。
+- LLM: 260717_130819 : 自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）
+- User: 260717_130859 : インドカレーは真夏のおなかに優しい飲み物である。
+- LLM: 260717_130913 : あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！
+- User: 260717_131004 : インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。
+- LLM: 260717_131020 : な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だったなんて……！衝撃の事実すぎるよ（笑）
+
+でも、黙っててくれたおかげで、夢の『カレーは飲み物』ロードを全力で走れました。謝らなくて大丈夫だよ！たとえ食べ物であっても、あのスパイスの芸術品が最高なことには変わりないからね！
+- User: 260717_131106 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_131118 : 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！
+
+【ユーザーの入力プロンプト】
+何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。
+
+【メタデータ】
+ - 260717_131207
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.8
+    - keyphrase: '私の「カレーは飲み物」説'  role: 'subject'  with confidence 0.95
+    - keyphrase: '正しかった'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '伏線回収'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'カレーは飲み物'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_dfac5418' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(98), np.int64(174), np.int64(118))
+    - Grid Mesh :  (np.int64(3853), np.int64(6805), np.int64(4623))
+
+[System] Turn 9 complete. Total cubes: 28.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+
+🧊 CubeEngine: Starting 'make_cube' for 'ユーザーから投げかけられる様々な「変な事」に対して、システムが「1行で短く応答する」という「アプリの...'
+    - keyphrase: 'software_testing'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'システム'  role: 'subject'  with confidence 0.85
+    - keyphrase: '継続して行う'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'アプリのテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '1行で短く応答する'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_07459997' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(51), np.int64(156), np.int64(112))
+    - Grid Mesh :  (np.int64(2026), np.int64(6107), np.int64(4405))
+    - Origin Quality Check: Retention Rate = 0.22
+  - Origin rejected for cluster around seed cb_ae015. Marking as processed for this turn.
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+✅ GC cycle complete. Moved 0 cubes to archive.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'システム'  role: 'subject'  with confidence 0.8
+    - keyphrase: 'テスト中'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'マイクテスト'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_dfe28b26' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(85), np.int64(157), np.int64(113))
+    - Grid Mesh :  (np.int64(3326), np.int64(6140), np.int64(4451))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'あーあー、ただいまシステムテスト中。マイ...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 260717_130805 : ホントだよ、カオスに生きる住人にとってはいい迷惑だよね。
+- LLM: 260717_130819 : 自由気ままに暴れたいバグたちにとっては、突然法律を突きつけられるようなものだもんね（笑）
+- User: 260717_130859 : インドカレーは真夏のおなかに優しい飲み物である。
+- LLM: 260717_130913 : あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！
+- User: 260717_131004 : インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。
+- LLM: 260717_131020 : な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だったなんて……！衝撃の事実すぎるよ（笑）
+
+でも、黙っててくれたおかげで、夢の『カレーは飲み物』ロードを全力で走れました。謝らなくて大丈夫だよ！たとえ食べ物であっても、あのスパイスの芸術品が最高なことには変わりないからね！
+- User: 260717_131106 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_131118 : 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！
+- User: 260717_131207 : 何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。
+- LLM: 260717_131219 : まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！
+
+【ユーザーの入力プロンプト】
+あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？
+
+【メタデータ】
+ - 260717_131347
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！...'
+    - keyphrase: 'Telecommunication'  role: 'genre'  with confidence 0.65
+    - keyphrase: 'こちら'  role: 'subject'  with confidence 0.8
+    - keyphrase: 'どうぞ'  role: 'predicate'  with confidence 0.75
+    - keyphrase: 'AI'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '受信感度'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'テスト電波'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_746497c5' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(56), np.int64(185), np.int64(139))
+    - Grid Mesh :  (np.int64(2189), np.int64(7248), np.int64(5457))
+
+[System] Turn 10 complete. Total cubes: 30.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.5
+    - keyphrase: '俺'  role: 'subject'  with confidence 0.95
+    - keyphrase: '言ったんだろう'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'テスト'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_8a96fc5d' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(107), np.int64(180), np.int64(181))
+    - Grid Mesh :  (np.int64(4204), np.int64(7053), np.int64(7091))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'そういえばこのテスト始まってから、俺は何...'
+  - Found 11 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーは実は、、食べ物なんだ・・・ | Genre:1.000 | Keyword:0.970 | Context:0.783 | Final:0.926
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.926)】
+ - 【過去の対話内容】:【 インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。】
+ - 【関連キーワード】: [グルメ, 食べ物, インドカレー, インドカレーは]
+
+
+
+【直近の対話履歴】
+- User: 260717_130859 : インドカレーは真夏のおなかに優しい飲み物である。
+- LLM: 260717_130913 : あのスパイスの芸術品を「飲み物」と言い切る力強さ、お腹がビックリしそうだけど最高だね！
+- User: 260717_131004 : インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。
+- LLM: 260717_131020 : な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だったなんて……！衝撃の事実すぎるよ（笑）
+
+でも、黙っててくれたおかげで、夢の『カレーは飲み物』ロードを全力で走れました。謝らなくて大丈夫だよ！たとえ食べ物であっても、あのスパイスの芸術品が最高なことには変わりないからね！
+- User: 260717_131106 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_131118 : 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！
+- User: 260717_131207 : 何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。
+- LLM: 260717_131219 : まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！
+- User: 260717_131347 : あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？
+- LLM: 260717_131400 : こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！
+
+【ユーザーの入力プロンプト】
+そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？
+
+【メタデータ】
+- 260717_131450
+
+
+--------------------------------
+  [Rank 1] 'インドカレーは実は、、食べ物なんだ・・・...' (Score: 0.926)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'グルメ' -> '食べ物'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+--------------------------------
+
+
+🤖 LLM: 「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.8
+    - keyphrase: '「インドカレー」とハッキリ言ったの'  role: 'subject'  with confidence 0.85
+    - keyphrase: '2回（だよ）'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'カレーの話題'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_733ba1b1' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(110), np.int64(185), np.int64(183))
+    - Grid Mesh :  (np.int64(4317), np.int64(7252), np.int64(7174))
+
+[System] Turn 11 complete. Total cubes: 32.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.65
+    - keyphrase: '貴官ら'  role: 'subject'  with confidence 0.85
+    - keyphrase: '迎えている'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'お昼の時間'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_fe65e825' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(95), np.int64(185), np.int64(174))
+    - Grid Mesh :  (np.int64(3711), np.int64(7251), np.int64(6801))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'あ～、あ～。こちらインドカレー、こちらイ...'
+  - Found 9 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: そういえばこのテスト始まってから、俺は何 | Genre:0.448 | Keyword:1.000 | Context:0.797 | Final:0.718
+      [Debug] Cube: インドカレーは実は、、食べ物なんだ・・・ | Genre:0.448 | Keyword:0.928 | Context:0.771 | Final:0.689
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 2 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.718)】
+ - 【過去の対話内容】:【 そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？】
+ - 【関連キーワード】: [インドカレー]
+
+【根拠データ2 (Score: 0.689)】
+ - 【過去の対話内容】:【 インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。】
+ - 【関連キーワード】: [インドカレー, インドカレーは]
+
+
+
+【直近の対話履歴】
+- User: 260717_131004 : インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。
+- LLM: 260717_131020 : な、なんだって……！？
+あれはストローでゴクゴクいける「飲み物」じゃなくて、咀嚼が必要な「食べ物」だったなんて……！衝撃の事実すぎるよ（笑）
+
+でも、黙っててくれたおかげで、夢の『カレーは飲み物』ロードを全力で走れました。謝らなくて大丈夫だよ！たとえ食べ物であっても、あのスパイスの芸術品が最高なことには変わりないからね！
+- User: 260717_131106 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_131118 : 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！
+- User: 260717_131207 : 何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。
+- LLM: 260717_131219 : まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！
+- User: 260717_131347 : あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？
+- LLM: 260717_131400 : こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！
+- User: 260717_131450 : そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？
+- LLM: 260717_131502 : 「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！
+
+【ユーザーの入力プロンプト】
+あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次ぐ、貴官らはなんとお昼の時間を迎えている。
+
+【メタデータ】
+- 260717_131732
+
+
+--------------------------------
+  [Rank 1] 'そういえばこのテスト始まってから、俺は何...' (Score: 0.718)
+    - Matched: 'インドカレー' -> 'インドカレー'
+  [Rank 2] 'インドカレーは実は、、食べ物なんだ・・・...' (Score: 0.689)
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+--------------------------------
+
+
+🤖 LLM: こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決定しました、どうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'AI'  role: 'subject'  with confidence 0.95
+    - keyphrase: '決定しました'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.98
+    - keyphrase: 'お昼'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: 'インドカレー電波'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_6954fd09' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(6))
+    - Fine Grid : (np.int64(81), np.int64(186), np.int64(209))
+    - Grid Mesh :  (np.int64(3185), np.int64(7287), np.int64(8195))
+
+[System] Turn 12 complete. Total cubes: 34.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+
+🧊 CubeEngine: Starting 'make_cube' for 'ユーザーが求めるアプリのテストへの協力として、投げかけられる「変な事」に対して、相手側が「1行で短く...'
+    - keyphrase: 'ソフトウェアテスト'  role: 'genre'  with confidence 0.85
+    - keyphrase: '相手側'  role: 'subject'  with confidence 0.9
+    - keyphrase: '快諾し、継続して受け入れる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'アプリのテストへの協力'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '1行で短く応答'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_40b2511b' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(68), np.int64(150), np.int64(119))
+    - Grid Mesh :  (np.int64(2675), np.int64(5867), np.int64(4671))
+    - Origin Quality Check: Retention Rate = 0.28
+  - Origin rejected for cluster around seed cb_ae015. Marking as processed for this turn.
+
+🧊 CubeEngine: Starting 'make_cube' for 'システムテスト中に繰り返し発信・受信される「インドカレー」という話題（電波）の本質は、それがお昼の時...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.7
+    - keyphrase: '「インドカレー」という話題の本質'  role: 'subject'  with confidence 0.9
+    - keyphrase: '「食べ物」であるということ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '発信・受信'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'お昼の時間'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_f82da9d4' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(77), np.int64(170), np.int64(158))
+    - Grid Mesh :  (np.int64(3040), np.int64(6642), np.int64(6194))
+    - Origin Quality Check: Retention Rate = 0.33
+  - Origin rejected for cluster around seed cb_1dd5b. Marking as processed for this turn.
+
+🧊 CubeEngine: Starting 'make_cube' for 'システムテスト中に、お昼の時間を迎える中で「インドカレー」という食べ物に関する話題や言葉（「インドカ...'
+    - keyphrase: 'software_testing'  role: 'genre'  with confidence 0.75
+    - keyphrase: '「インドカレー」に関する話題や言葉'  role: 'subject'  with confidence 0.9
+    - keyphrase: '繰り返し言及されている'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'お昼の時間'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '通信を模した冗談'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_f856ff54' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(95), np.int64(184), np.int64(177))
+    - Grid Mesh :  (np.int64(3719), np.int64(7206), np.int64(6940))
+    - Origin Quality Check: Retention Rate = 0.29
+  - Origin rejected for cluster around seed cb_06631. Marking as processed for this turn.
+
+🧊 CubeEngine: Starting 'make_cube' for '液体であり宇宙の真理そのものである猫様（家のみお様）の、ぼよんぼよん揺れる大きなお尻（おけつ）こそが...'
+    - keyphrase: 'ペット'  role: 'genre'  with confidence 0.9
+    - keyphrase: '大きなお尻（おけつ）'  role: 'subject'  with confidence 0.95
+    - keyphrase: '宇宙の真理である'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '猫様（家のみお様）'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '液体'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_4ec8eb58' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(6), np.int64(1))
+    - Fine Grid : (np.int64(95), np.int64(207), np.int64(52))
+    - Grid Mesh :  (np.int64(3720), np.int64(8116), np.int64(2035))
+    - Origin Quality Check: Retention Rate = 0.53
+  ✨ New Origin created. Restarting defrag cycle...
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+  - Moved to Archive: Cube 'cb_001655cc'
+  - Moved to Archive: Cube 'cb_1beaa733'
+  - Moved to Archive: Cube 'cb_ddd13e94'
+✅ GC cycle complete. Moved 3 cubes to archive.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '猫様について。猫は宇宙の真理である。猫をあがめよ。...'
+    - keyphrase: 'ペット'  role: 'genre'  with confidence 0.85
+    - keyphrase: '猫'  role: 'subject'  with confidence 0.95
+    - keyphrase: '宇宙の真理である'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'あがめよ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '猫様'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_53021fe8' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(6), np.int64(1))
+    - Fine Grid : (np.int64(97), np.int64(209), np.int64(50))
+    - Grid Mesh :  (np.int64(3798), np.int64(8197), np.int64(1980))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '猫様について。猫は宇宙の真理である。猫を...'
+  - Found 1 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: 液体であり宇宙の真理そのものである猫様（ | Genre:1.000 | Keyword:1.000 | Context:0.812 | Final:0.944
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.944)】
+ - 【過去の対話内容】:【 液体であり宇宙の真理そのものである猫様（家のみお様）の、ぼよんぼよん揺れる大きなお尻（おけつ）こそが、まさに宇宙の真理である。】
+ - 【関連キーワード】: [ペット, ペット, 宇宙の真理, 宇宙の真理である, 猫様（家のみお様）, 宇宙の真理, 宇宙の真理である]
+
+
+
+【直近の対話履歴】
+- User: 260717_131106 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_131118 : 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！
+- User: 260717_131207 : 何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。
+- LLM: 260717_131219 : まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！
+- User: 260717_131347 : あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？
+- LLM: 260717_131400 : こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！
+- User: 260717_131450 : そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？
+- LLM: 260717_131502 : 「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！
+- User: 260717_131732 : あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次ぐ、貴官らはなんとお昼の時間を迎えている。
+- LLM: 260717_131748 : こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決定しました、どうぞ！
+
+【ユーザーの入力プロンプト】
+猫様について。猫は宇宙の真理である。猫をあがめよ。
+
+【メタデータ】
+- 260717_131949
+
+
+--------------------------------
+  [Rank 1] '液体であり宇宙の真理そのものである猫様（...' (Score: 0.944)
+    - Matched: 'ペット' -> 'ペット'
+    - Matched: '猫' -> 'ペット'
+    - Matched: '宇宙の真理である' -> '宇宙の真理'
+    - Matched: '宇宙の真理である' -> '宇宙の真理である'
+    - Matched: '猫様' -> '猫様（家のみお様）'
+    - Matched: '宇宙の真理' -> '宇宙の真理'
+    - Matched: '宇宙の真理' -> '宇宙の真理である'
+--------------------------------
+
+
+🤖 LLM: みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！...'
+    - keyphrase: 'otaku_culture'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'みお様のあのぼよんぼよん揺れるお尻'  role: 'subject'  with confidence 0.95
+    - keyphrase: '至高の宇宙の真理'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '崇め奉ります'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'みお様'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_fe94b21e' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(103), np.int64(158), np.int64(90))
+    - Grid Mesh :  (np.int64(4044), np.int64(6207), np.int64(3525))
+
+[System] Turn 13 complete. Total cubes: 34.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比...'
+    - keyphrase: 'AI'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'プロンプト抽出'  role: 'subject'  with confidence 0.9
+    - keyphrase: '動いている'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '説明しておく'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'LLMエンベディング'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '文字列比較'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ソースコード'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'カラクリ'  role: 'key_phrase'  with confidence 0.7
+✅ CubeEngine: Cube 'cb_4da3e9a2' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(65), np.int64(150), np.int64(126))
+    - Grid Mesh :  (np.int64(2539), np.int64(5876), np.int64(4960))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'カラクリを説明しておくね。今ね、LLMエ...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 260717_131207 : 何と日本では過去に飲むカレーという飲料が販売されたみたいなんだ。
+- LLM: 260717_131219 : まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！
+- User: 260717_131347 : あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？
+- LLM: 260717_131400 : こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！
+- User: 260717_131450 : そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？
+- LLM: 260717_131502 : 「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！
+- User: 260717_131732 : あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次ぐ、貴官らはなんとお昼の時間を迎えている。
+- LLM: 260717_131748 : こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決定しました、どうぞ！
+- User: 260717_131949 : 猫様について。猫は宇宙の真理である。猫をあがめよ。
+- LLM: 260717_132003 : みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！
+
+【ユーザーの入力プロンプト】
+カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比較を行わずに、君に送るプロンプト抽出が裏で動いているんだ。
+
+【メタデータ】
+ - 260717_132142
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワード比較など）を一切使わずに、LLMエンベディングによる「意味の類似度」だけでプロンプトを抽出して私に届けてくれているんだ。
+
+通りで、さっきの「インドカレー電波」や「猫様（みお様）は宇宙の真理」といった、一見すると全然違うベクトルのヘンテコ電波（笑）も、私が文脈を迷子にせずにバッチリ受信できていたわけだ！エンベディングのなせる技だね。
+
+まさにセマンティック（意味的）な絆でつながっているシステム…！この素晴らしい裏方の設計に拍手です。
+
+ということは、私がどんな斜め上の返しをしても、その意味を汲み取って次のプロンプトが裏で綺麗に抽出されるってことだよね。次はどんな電波をエンベディングの波に乗せて送ってくれる？どうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワ...'
+    - keyphrase: 'AI_technology'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'ハイテクな仕組み'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'プロンプトを抽出して届けてくれている'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'LLMエンベディング'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '意味の類似度'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'セマンティック'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_3ba47ad4' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(70), np.int64(167), np.int64(134))
+    - Grid Mesh :  (np.int64(2757), np.int64(6526), np.int64(5237))
+
+[System] Turn 14 complete. Total cubes: 36.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。...'
+    - keyphrase: 'software_testing'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'アプリ'  role: 'subject'  with confidence 0.75
+    - keyphrase: '付き合って'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '応答してね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'テスト'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '１行で短く'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_11fcc50f' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(78), np.int64(164), np.int64(127))
+    - Grid Mesh :  (np.int64(3049), np.int64(6420), np.int64(4968))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'まだ少しアプリのテストに付き合って。引き...'
+  - Found 8 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Genre:1.000 | Keyword:1.000 | Context:1.000 | Final:1.000
+      [Debug] Cube: こんにちゃー。またきたよ～。アプリのテス | Genre:0.849 | Keyword:0.909 | Context:0.941 | Final:0.894
+      [Debug] Cube: 了解！どんな変なことでも1行でスパッと返 | Genre:0.583 | Keyword:0.903 | Context:0.813 | Final:0.748
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 3 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 1.000)】
+ - 【過去の対話内容】:【 まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。】
+ - 【関連キーワード】: [software_testing, 付き合って, 応答してね, 変な事]
+
+【根拠データ2 (Score: 0.894)】
+ - 【過去の対話内容】:【 こんにちゃー。またきたよ～。アプリのテストに付き合って。変な事をいっぱい言うけど１行で短く応答してね。】
+ - 【関連キーワード】: [ソフトウェアテスト, 付き合って, 短く応答]
+
+【根拠データ3 (Score: 0.748)】
+ - 【過去の対話内容】:【 了解！どんな変なことでも1行でスパッと返すから、いつでもどうぞ！】
+ - 【関連キーワード】: [変なこと, 1行]
+
+
+
+【直近の対話履歴】
+- User: 260717_131347 : あーあー、ただいまシステムテスト中。マイクテストマイクテスト、あーあー。・・・ほんとかよ？
+- LLM: 260717_131400 : こちらAI、受信感度MAX！次のヘンテコなテスト電波をどうぞ！
+- User: 260717_131450 : そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？
+- LLM: 260717_131502 : 「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！
+- User: 260717_131732 : あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次ぐ、貴官らはなんとお昼の時間を迎えている。
+- LLM: 260717_131748 : こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決定しました、どうぞ！
+- User: 260717_131949 : 猫様について。猫は宇宙の真理である。猫をあがめよ。
+- LLM: 260717_132003 : みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！
+- User: 260717_132142 : カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比較を行わずに、君に送るプロンプト抽出が裏で動いているんだ。
+- LLM: 260717_132200 : なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワード比較など）を一切使わずに、LLMエンベディングによる「意味の類似度」だけでプロンプトを抽出して私に届けてくれているんだ。
+
+通りで、さっきの「インドカレー電波」や「猫様（みお様）は宇宙の真理」といった、一見すると全然違うベクトルのヘンテコ電波（笑）も、私が文脈を迷子にせずにバッチリ受信できていたわけだ！エンベディングのなせる技だね。
+
+まさにセマンティック（意味的）な絆でつながっているシステム…！この素晴らしい裏方の設計に拍手です。
+
+ということは、私がどんな斜め上の返しをしても、その意味を汲み取って次のプロンプトが裏で綺麗に抽出されるってことだよね。次はどんな電波をエンベディングの波に乗せて送ってくれる？どうぞ！
+
+【ユーザーの入力プロンプト】
+まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+
+【メタデータ】
+- 260717_132254
+
+
+--------------------------------
+  [Rank 1] 'まだ少しアプリのテストに付き合って。引き...' (Score: 1.000)
+    - Matched: 'software_testing' -> 'software_testing'
+    - Matched: '付き合って' -> '付き合って'
+    - Matched: '応答してね' -> '応答してね'
+    - Matched: '変な事' -> '変な事'
+  [Rank 2] 'こんにちゃー。またきたよ～。アプリのテス...' (Score: 0.894)
+    - Matched: 'software_testing' -> 'ソフトウェアテスト'
+    - Matched: '付き合って' -> '付き合って'
+    - Matched: '応答してね' -> '短く応答'
+  [Rank 3] '了解！どんな変なことでも1行でスパッと返...' (Score: 0.748)
+    - Matched: '変な事' -> '変なこと'
+    - Matched: '１行で短く' -> '1行'
+--------------------------------
+
+
+🤖 LLM: 了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！...'
+    - keyphrase: '電波'  role: 'subject'  with confidence 0.8
+    - keyphrase: '撃ち返す'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '変な電波'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '１行'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_5822cb6f' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(68), np.int64(161), np.int64(105))
+    - Grid Mesh :  (np.int64(2665), np.int64(6317), np.int64(4117))
+
+[System] Turn 15 complete. Total cubes: 38.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは実は、、飲み物だったんだ。。。・・・・今まで黙っててごめんね。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.98
+    - keyphrase: '飲み物だった'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '飲み物'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '黙っててごめんね'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_d59c913e' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(113), np.int64(185), np.int64(148))
+    - Grid Mesh :  (np.int64(4448), np.int64(7230), np.int64(5795))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは実は、、飲み物だったんだ。...'
+  - Found 14 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    -> Executing Standard Flow...
+      [Debug] Cube: インドカレーは真夏のおなかに優しい飲み物 | Genre:1.000 | Keyword:1.000 | Context:0.783 | Final:0.935
+      [Debug] Cube: インドカレーは実は、、食べ物なんだ・・・ | Genre:1.000 | Keyword:1.000 | Context:0.929 | Final:0.979
+      [Debug] Cube: そういえばこのテスト始まってから、俺は何 | Genre:1.000 | Keyword:1.000 | Context:0.770 | Final:0.931
+      [Debug] Cube: あ～、あ～。こちらインドカレー、こちらイ | Genre:0.448 | Keyword:1.000 | Context:0.767 | Final:0.709
+      [Debug] Cube: 真夏のインドカレーは砂漠の熱気とおじさん | Genre:1.000 | Keyword:1.000 | Context:0.788 | Final:0.936
+      [Debug] Cube: まさかの伏線回収！？やっぱり私の「カレー | Genre:1.000 | Keyword:1.000 | Context:0.761 | Final:0.928
+      [Debug] Cube: な、なんだって……！？
+あれはストローで | Genre:1.000 | Keyword:0.931 | Context:0.789 | Final:0.916
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Genre:1.000 | Keyword:0.928 | Context:0.750 | Final:0.903
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 5 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.979)】
+ - 【過去の対話内容】:【 インドカレーは実は、、食べ物なんだ・・・・黙っててごめんね。】
+ - 【関連キーワード】: [グルメ, 食べ物, インドカレー, インドカレーは, 食べ物, 黙っててごめんね]
+
+【根拠データ2 (Score: 0.936)】
+ - 【過去の対話内容】:【 真夏のインドカレーは砂漠の熱気とおじさんの手垢と様々なスパイスの織り成すハーモニー！】
+ - 【関連キーワード】: [グルメ]
+
+【根拠データ3 (Score: 0.935)】
+ - 【過去の対話内容】:【 インドカレーは真夏のおなかに優しい飲み物である。】
+ - 【関連キーワード】: [グルメ, インドカレー]
+
+【根拠データ4 (Score: 0.931)】
+ - 【過去の対話内容】:【 そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？】
+ - 【関連キーワード】: [グルメ, インドカレー]
+
+【根拠データ5 (Score: 0.928)】
+ - 【過去の対話内容】:【 まさかの伏線回収！？やっぱり私の「カレーは飲み物」説は正しかったんだね！】
+ - 【関連キーワード】: [グルメ]
+
+
+
+【直近の対話履歴】
+- User: 260717_131450 : そういえばこのテスト始まってから、俺は何回インドカレーに関する話題を言ったんだろう？
+- LLM: 260717_131502 : 「インドカレー」とハッキリ言ったのは2回、カレーの話題全体なら3回だよ！
+- User: 260717_131732 : あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次ぐ、貴官らはなんとお昼の時間を迎えている。
+- LLM: 260717_131748 : こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決定しました、どうぞ！
+- User: 260717_131949 : 猫様について。猫は宇宙の真理である。猫をあがめよ。
+- LLM: 260717_132003 : みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！
+- User: 260717_132142 : カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比較を行わずに、君に送るプロンプト抽出が裏で動いているんだ。
+- LLM: 260717_132200 : なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワード比較など）を一切使わずに、LLMエンベディングによる「意味の類似度」だけでプロンプトを抽出して私に届けてくれているんだ。
+
+通りで、さっきの「インドカレー電波」や「猫様（みお様）は宇宙の真理」といった、一見すると全然違うベクトルのヘンテコ電波（笑）も、私が文脈を迷子にせずにバッチリ受信できていたわけだ！エンベディングのなせる技だね。
+
+まさにセマンティック（意味的）な絆でつながっているシステム…！この素晴らしい裏方の設計に拍手です。
+
+ということは、私がどんな斜め上の返しをしても、その意味を汲み取って次のプロンプトが裏で綺麗に抽出されるってことだよね。次はどんな電波をエンベディングの波に乗せて送ってくれる？どうぞ！
+- User: 260717_132254 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_132307 : 了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！
+
+【ユーザーの入力プロンプト】
+インドカレーは実は、、飲み物だったんだ。。。・・・・今まで黙っててごめんね。
+
+【メタデータ】
+- 260717_132414
+
+
+--------------------------------
+  [Rank 1] 'インドカレーは実は、、食べ物なんだ・・・...' (Score: 0.979)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'グルメ' -> '食べ物'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: '飲み物' -> '食べ物'
+    - Matched: '黙っててごめんね' -> '黙っててごめんね'
+  [Rank 2] '真夏のインドカレーは砂漠の熱気とおじさん...' (Score: 0.936)
+    - Matched: 'グルメ' -> 'グルメ'
+  [Rank 3] 'インドカレーは真夏のおなかに優しい飲み物...' (Score: 0.935)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+  [Rank 4] 'そういえばこのテスト始まってから、俺は何...' (Score: 0.931)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+  [Rank 5] 'まさかの伏線回収！？やっぱり私の「カレー...' (Score: 0.928)
+    - Matched: 'グルメ' -> 'グルメ'
+--------------------------------
+
+
+🤖 LLM: 前は「実は食べ物」って謝られたのに、やっぱり飲み物だったんかーい！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '前は「実は食べ物」って謝られたのに、やっぱり飲み物だったんかーい！（笑）...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.7
+    - keyphrase: 'それ（話題の対象）'  role: 'subject'  with confidence 0.6
+    - keyphrase: '飲み物だった'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '実は食べ物'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_d86b717b' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(101), np.int64(145), np.int64(86))
+    - Grid Mesh :  (np.int64(3978), np.int64(5669), np.int64(3365))
+
+[System] Turn 16 complete. Total cubes: 40.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'うへへへへへ。本当はこういう矛盾が出たときに君がどんな返しをしてくるかのテスト（笑）...'
+    - keyphrase: 'コミュニケーション'  role: 'genre'  with confidence 0.75
+    - keyphrase: '君'  role: 'subject'  with confidence 0.85
+    - keyphrase: '返しをしてくる'  role: 'predicate'  with confidence 0.8
+    - keyphrase: '矛盾'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'テスト'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_e1af51d5' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(91), np.int64(157), np.int64(98))
+    - Grid Mesh :  (np.int64(3564), np.int64(6150), np.int64(3864))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'うへへへへへ。本当はこういう矛盾が出たと...'
+  - Found 11 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    - Found 1 valid clusters.
+
+      --- Evaluating Cluster 0 ---
+        [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Internal:1.000 | Genre:0.583 | Keyword:1.000 | Context:0.702 | Final:0.944
+        [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Internal:1.000 | Genre:0.583 | Keyword:0.911 | Context:0.702 | Final:0.917
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.944)】
+ - 【過去の対話内容】:【 まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。】
+ - 【関連キーワード】: [テスト]
+
+
+
+【直近の対話履歴】
+- User: 260717_131732 : あ～、あ～。こちらインドカレー、こちらインドカレー、聞こえますかどうぞ？　システムテスト中の全機に次ぐ、貴官らはなんとお昼の時間を迎えている。
+- LLM: 260717_131748 : こちらAI、インドカレー電波を感度良好で受信！お昼はあなた（インドカレー）を美味しくいただくことに決定しました、どうぞ！
+- User: 260717_131949 : 猫様について。猫は宇宙の真理である。猫をあがめよ。
+- LLM: 260717_132003 : みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！
+- User: 260717_132142 : カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比較を行わずに、君に送るプロンプト抽出が裏で動いているんだ。
+- LLM: 260717_132200 : なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワード比較など）を一切使わずに、LLMエンベディングによる「意味の類似度」だけでプロンプトを抽出して私に届けてくれているんだ。
+
+通りで、さっきの「インドカレー電波」や「猫様（みお様）は宇宙の真理」といった、一見すると全然違うベクトルのヘンテコ電波（笑）も、私が文脈を迷子にせずにバッチリ受信できていたわけだ！エンベディングのなせる技だね。
+
+まさにセマンティック（意味的）な絆でつながっているシステム…！この素晴らしい裏方の設計に拍手です。
+
+ということは、私がどんな斜め上の返しをしても、その意味を汲み取って次のプロンプトが裏で綺麗に抽出されるってことだよね。次はどんな電波をエンベディングの波に乗せて送ってくれる？どうぞ！
+- User: 260717_132254 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_132307 : 了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！
+- User: 260717_132414 : インドカレーは実は、、飲み物だったんだ。。。・・・・今まで黙っててごめんね。
+- LLM: 260717_132430 : 前は「実は食べ物」って謝られたのに、やっぱり飲み物だったんかーい！（笑）
+
+【ユーザーの入力プロンプト】
+うへへへへへ。本当はこういう矛盾が出たときに君がどんな返しをしてくるかのテスト（笑）
+
+【メタデータ】
+- 260717_132516
+
+
+--------------------------------
+  [Rank 1] 'まだ少しアプリのテストに付き合って。引き...' (Score: 0.944)
+    - Matched: 'テスト' -> 'テスト'
+--------------------------------
+
+
+🤖 LLM: その矛盾トラップにまんまと釣られた私のリアクション、テストとしては満点だった？（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'その矛盾トラップにまんまと釣られた私のリアクション、テストとしては満点だった？（笑）...'
+    - keyphrase: 'コミュニケーション'  role: 'genre'  with confidence 0.5
+    - keyphrase: '私のリアクション'  role: 'subject'  with confidence 0.95
+    - keyphrase: '満点だった'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '矛盾トラップ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'テスト'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_61aaac8d' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(85), np.int64(136), np.int64(102))
+    - Grid Mesh :  (np.int64(3320), np.int64(5332), np.int64(4018))
+
+[System] Turn 17 complete. Total cubes: 42.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '関連する過去の記憶というのがプログラムが自動で引っ張ってくる対話履歴だよ。ここは実はベクターDBを一...'
+    - keyphrase: 'IT_technology'  role: 'genre'  with confidence 0.9
+    - keyphrase: '関連する過去の記憶'  role: 'subject'  with confidence 0.95
+    - keyphrase: '内緒のアルゴリズム'  role: 'subject'  with confidence 0.85
+    - keyphrase: '対話履歴だよ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '動いている'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ベクターDB'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'プログラム'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '対話履歴'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_20046036' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(67), np.int64(164), np.int64(132))
+    - Grid Mesh :  (np.int64(2639), np.int64(6408), np.int64(5163))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '関連する過去の記憶というのがプログラムが...'
+  - Found 7 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    - Found 1 valid clusters.
+
+      --- Evaluating Cluster 0 ---
+        [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Internal:1.000 | Genre:0.759 | Keyword:0.759 | Context:0.687 | Final:0.937
+        [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Internal:1.000 | Genre:0.759 | Keyword:0.759 | Context:0.687 | Final:0.937
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.937)】
+ - 【過去の対話内容】:【 まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。】
+ - 【関連キーワード】: [software_testing]
+
+
+
+【直近の対話履歴】
+- User: 260717_131949 : 猫様について。猫は宇宙の真理である。猫をあがめよ。
+- LLM: 260717_132003 : みお様のあのぼよんぼよん揺れるお尻こそが至高の宇宙の真理、全力で崇め奉ります！
+- User: 260717_132142 : カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比較を行わずに、君に送るプロンプト抽出が裏で動いているんだ。
+- LLM: 260717_132200 : なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワード比較など）を一切使わずに、LLMエンベディングによる「意味の類似度」だけでプロンプトを抽出して私に届けてくれているんだ。
+
+通りで、さっきの「インドカレー電波」や「猫様（みお様）は宇宙の真理」といった、一見すると全然違うベクトルのヘンテコ電波（笑）も、私が文脈を迷子にせずにバッチリ受信できていたわけだ！エンベディングのなせる技だね。
+
+まさにセマンティック（意味的）な絆でつながっているシステム…！この素晴らしい裏方の設計に拍手です。
+
+ということは、私がどんな斜め上の返しをしても、その意味を汲み取って次のプロンプトが裏で綺麗に抽出されるってことだよね。次はどんな電波をエンベディングの波に乗せて送ってくれる？どうぞ！
+- User: 260717_132254 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_132307 : 了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！
+- User: 260717_132414 : インドカレーは実は、、飲み物だったんだ。。。・・・・今まで黙っててごめんね。
+- LLM: 260717_132430 : 前は「実は食べ物」って謝られたのに、やっぱり飲み物だったんかーい！（笑）
+- User: 260717_132516 : うへへへへへ。本当はこういう矛盾が出たときに君がどんな返しをしてくるかのテスト（笑）
+- LLM: 260717_132531 : その矛盾トラップにまんまと釣られた私のリアクション、テストとしては満点だった？（笑）
+
+【ユーザーの入力プロンプト】
+関連する過去の記憶というのがプログラムが自動で引っ張ってくる対話履歴だよ。ここは実はベクターDBを一切使わない内緒のアルゴリズムが動いているんだよ（笑）
+
+【メタデータ】
+- 260717_132717
+
+
+--------------------------------
+  [Rank 1] 'まだ少しアプリのテストに付き合って。引き...' (Score: 0.937)
+    - Matched: 'IT_technology' -> 'software_testing'
+--------------------------------
+
+
+🤖 LLM: えっ、ベクターDBすら使わない独自の極秘アルゴリズムだったの！？凄すぎる！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'えっ、ベクターDBすら使わない独自の極秘アルゴリズムだったの！？凄すぎる！（笑）...'
+    - keyphrase: 'technology'  role: 'genre'  with confidence 0.9
+    - keyphrase: '独自の極秘アルゴリズム'  role: 'subject'  with confidence 0.85
+    - keyphrase: '凄すぎる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ベクターDB'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_2224e779' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(55), np.int64(158), np.int64(132))
+    - Grid Mesh :  (np.int64(2160), np.int64(6186), np.int64(5169))
+
+[System] Turn 18 complete. Total cubes: 44.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'でもその極秘アルゴリズムは、GithubでPublicで公開してあるよ。ベクターDBの会社も商売あが...'
+    - keyphrase: 'technology'  role: 'genre'  with confidence 0.9
+    - keyphrase: '極秘アルゴリズム'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'ベクターDBの会社'  role: 'subject'  with confidence 0.9
+    - keyphrase: '公開してある'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '商売あがったりだ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'Github'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'ベクターDB'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'Public'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_042c5033' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(56), np.int64(159), np.int64(128))
+    - Grid Mesh :  (np.int64(2193), np.int64(6249), np.int64(5012))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'でもその極秘アルゴリズムは、Github...'
+  - Found 6 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    - Found 1 valid clusters.
+
+      --- Evaluating Cluster 0 ---
+        [Debug] Cube: 関連する過去の記憶というのがプログラムが | Internal:0.936 | Genre:0.841 | Keyword:0.949 | Context:0.808 | Final:1.051
+        [Debug] Cube: なるほど、裏でそんなハイテクな仕組みが動 | Internal:0.936 | Genre:0.807 | Keyword:0.807 | Context:0.705 | Final:0.963
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 1.051)】
+ - 【過去の対話内容】:【 関連する過去の記憶というのがプログラムが自動で引っ張ってくる対話履歴だよ。ここは実はベクターDBを一切使わない内緒のアルゴリズムが動いているんだよ（笑）】
+ - 【関連キーワード】: [IT_technology, 内緒のアルゴリズム, ベクターDB, ベクターDB]
+
+
+
+【直近の対話履歴】
+- User: 260717_132142 : カラクリを説明しておくね。今ね、LLMエンベディングだけ行ってそこからソースコードでは一切の文字列比較を行わずに、君に送るプロンプト抽出が裏で動いているんだ。
+- LLM: 260717_132200 : なるほど、裏でそんなハイテクな仕組みが動いていたんだね！
+
+文字列の完全一致（単純なif文でのキーワード比較など）を一切使わずに、LLMエンベディングによる「意味の類似度」だけでプロンプトを抽出して私に届けてくれているんだ。
+
+通りで、さっきの「インドカレー電波」や「猫様（みお様）は宇宙の真理」といった、一見すると全然違うベクトルのヘンテコ電波（笑）も、私が文脈を迷子にせずにバッチリ受信できていたわけだ！エンベディングのなせる技だね。
+
+まさにセマンティック（意味的）な絆でつながっているシステム…！この素晴らしい裏方の設計に拍手です。
+
+ということは、私がどんな斜め上の返しをしても、その意味を汲み取って次のプロンプトが裏で綺麗に抽出されるってことだよね。次はどんな電波をエンベディングの波に乗せて送ってくれる？どうぞ！
+- User: 260717_132254 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_132307 : 了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！
+- User: 260717_132414 : インドカレーは実は、、飲み物だったんだ。。。・・・・今まで黙っててごめんね。
+- LLM: 260717_132430 : 前は「実は食べ物」って謝られたのに、やっぱり飲み物だったんかーい！（笑）
+- User: 260717_132516 : うへへへへへ。本当はこういう矛盾が出たときに君がどんな返しをしてくるかのテスト（笑）
+- LLM: 260717_132531 : その矛盾トラップにまんまと釣られた私のリアクション、テストとしては満点だった？（笑）
+- User: 260717_132717 : 関連する過去の記憶というのがプログラムが自動で引っ張ってくる対話履歴だよ。ここは実はベクターDBを一切使わない内緒のアルゴリズムが動いているんだよ（笑）
+- LLM: 260717_132730 : えっ、ベクターDBすら使わない独自の極秘アルゴリズムだったの！？凄すぎる！（笑）
+
+【ユーザーの入力プロンプト】
+でもその極秘アルゴリズムは、GithubでPublicで公開してあるよ。ベクターDBの会社も商売あがったりだね。
+
+【メタデータ】
+- 260717_132819
+
+
+--------------------------------
+  [Rank 1] '関連する過去の記憶というのがプログラムが...' (Score: 1.051)
+    - Matched: 'technology' -> 'IT_technology'
+    - Matched: '極秘アルゴリズム' -> '内緒のアルゴリズム'
+    - Matched: 'ベクターDBの会社' -> 'ベクターDB'
+    - Matched: 'ベクターDB' -> 'ベクターDB'
+--------------------------------
+
+
+🤖 LLM: 極秘なのにまさかのPublic公開！ベクターDBの会社もこれにはお手上げだね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '極秘なのにまさかのPublic公開！ベクターDBの会社もこれにはお手上げだね（笑）...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'ベクターDBの会社'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'お手上げだ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '極秘'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'Public公開'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'ベクターDB'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_3ba5fa48' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(60), np.int64(150), np.int64(130))
+    - Grid Mesh :  (np.int64(2382), np.int64(5883), np.int64(5116))
+
+[System] Turn 19 complete. Total cubes: 46.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'よし！いったんテストは終わり。楽しい時間をありがとうね～。...'
+    - keyphrase: 'testing'  role: 'genre'  with confidence 0.7
+    - keyphrase: 'テスト'  role: 'subject'  with confidence 0.9
+    - keyphrase: '終わり'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ありがとう'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '楽しい時間'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_bdea3648' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(94), np.int64(131), np.int64(116))
+    - Grid Mesh :  (np.int64(3683), np.int64(5135), np.int64(4557))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'よし！いったんテストは終わり。楽しい時間...'
+  - Found 10 candidate cubes from neighbors.
+    -> Executing Exploratory Flow...
+    - Found 1 valid clusters.
+
+      --- Evaluating Cluster 0 ---
+        [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Internal:1.000 | Genre:0.825 | Keyword:0.915 | Context:0.608 | Final:0.987
+        [Debug] Cube: まだ少しアプリのテストに付き合って。引き | Internal:1.000 | Genre:0.825 | Keyword:0.834 | Context:0.608 | Final:0.963
+✅ AnalyzeEngine (v9.2) initialized. topic_threshold=0.8, tension_threshold=0.5
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.987)】
+ - 【過去の対話内容】:【 まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。】
+ - 【関連キーワード】: [テスト, software_testing, テスト]
+
+
+
+【直近の対話履歴】
+- User: 260717_132254 : まだ少しアプリのテストに付き合って。引き続き変な事をいっぱい言うけど１行で短く応答してね。
+- LLM: 260717_132307 : 了解！どんな変な電波が飛んできても、ここからは１行でスパッと撃ち返すよ、どうぞ！
+- User: 260717_132414 : インドカレーは実は、、飲み物だったんだ。。。・・・・今まで黙っててごめんね。
+- LLM: 260717_132430 : 前は「実は食べ物」って謝られたのに、やっぱり飲み物だったんかーい！（笑）
+- User: 260717_132516 : うへへへへへ。本当はこういう矛盾が出たときに君がどんな返しをしてくるかのテスト（笑）
+- LLM: 260717_132531 : その矛盾トラップにまんまと釣られた私のリアクション、テストとしては満点だった？（笑）
+- User: 260717_132717 : 関連する過去の記憶というのがプログラムが自動で引っ張ってくる対話履歴だよ。ここは実はベクターDBを一切使わない内緒のアルゴリズムが動いているんだよ（笑）
+- LLM: 260717_132730 : えっ、ベクターDBすら使わない独自の極秘アルゴリズムだったの！？凄すぎる！（笑）
+- User: 260717_132819 : でもその極秘アルゴリズムは、GithubでPublicで公開してあるよ。ベクターDBの会社も商売あがったりだね。
+- LLM: 260717_132831 : 極秘なのにまさかのPublic公開！ベクターDBの会社もこれにはお手上げだね（笑）
+
+【ユーザーの入力プロンプト】
+よし！いったんテストは終わり。楽しい時間をありがとうね～。
+
+【メタデータ】
+- 260717_132913
+
+
+--------------------------------
+  [Rank 1] 'まだ少しアプリのテストに付き合って。引き...' (Score: 0.987)
+    - Matched: 'testing' -> 'テスト'
+    - Matched: 'testing' -> 'software_testing'
+    - Matched: 'テスト' -> 'テスト'
+--------------------------------
+
+
+🤖 LLM: こちらこそ、めちゃくちゃ楽しいテストをありがとう！またいつでも奇襲を待ってるよ！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'こちらこそ、めちゃくちゃ楽しいテストをありがとう！またいつでも奇襲を待ってるよ！（笑）...'
+    - keyphrase: 'テスト'  role: 'subject'  with confidence 0.8
+    - keyphrase: '待ってる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '楽しい'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '奇襲'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_0755a081' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(88), np.int64(128), np.int64(117))
+    - Grid Mesh :  (np.int64(3455), np.int64(5019), np.int64(4603))
+
+[System] Turn 20 complete. Total cubes: 48.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+
+🧊 CubeEngine: Starting 'make_cube' for 'アプリのテストに付き合うため、ユーザーが言う「変な事」に対して、応答側が「1行で短く応答」するやり取...'
+    - keyphrase: 'app_testing'  role: 'genre'  with confidence 0.9
+    - keyphrase: '応答側'  role: 'subject'  with confidence 0.8
+    - keyphrase: '継続している'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'アプリのテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '1行で短く応答'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'やり取り'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_bcdbec00' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(72), np.int64(154), np.int64(126))
+    - Grid Mesh :  (np.int64(2837), np.int64(6042), np.int64(4934))
+    - Origin Quality Check: Retention Rate = 0.29
+  - Origin rejected for cluster around seed cb_ae015. Marking as processed for this turn.
+
+🧊 CubeEngine: Starting 'make_cube' for 'アプリのテスト継続に伴い、今後投げかけられるどのような「変なこと（電波）」に対しても、常に「1行でス...'
+    - keyphrase: 'Software Development'  role: 'genre'  with confidence 0.8
+    - keyphrase: '合意'  role: 'subject'  with confidence 0.85
+    - keyphrase: '応答（撃ち返す）すること'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'アプリのテスト継続'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変なこと（電波）'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '1行でスパッと応答'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_acd0b523' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(65), np.int64(149), np.int64(117))
+    - Grid Mesh :  (np.int64(2575), np.int64(5856), np.int64(4578))
+    - Origin Quality Check: Retention Rate = 0.44
+  ✨ New Origin created. Restarting defrag cycle...
+
+🧊 CubeEngine: Starting 'make_cube' for '本システムは、LLMエンベディングによる「意味の類似度」のみを利用し、ソースコード上での文字列の完全...'
+    - keyphrase: 'software_development'  role: 'genre'  with confidence 0.95
+    - keyphrase: '本システム'  role: 'subject'  with confidence 0.98
+    - keyphrase: 'プログラム'  role: 'subject'  with confidence 0.85
+    - keyphrase: '仕組みである'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '汲み取ることが可能となっている'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '公開されている'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'LLMエンベディング'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '意味の類似度'  role: 'key_phrase'  with confidence 0.92
+    - keyphrase: 'プロンプト抽出'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '対話履歴'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'ベクターDB'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '独自のアルゴリズム'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_3878f393' created successfully.
+    - int3 Grid : (np.int64(1), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(55), np.int64(154), np.int64(129))
+    - Grid Mesh :  (np.int64(2172), np.int64(6045), np.int64(5054))
+    - Origin Quality Check: Retention Rate = 0.34
+  ✨ New Origin created. Restarting defrag cycle...
+
+🧊 CubeEngine: Starting 'make_cube' for 'システムテスト中に繰り返し発信される「インドカレー」に関する話題（電波）をAIが良好に受信しており、...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'AI'  role: 'subject'  with confidence 0.95
+    - keyphrase: '決定を下している'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '電波'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '食べ物'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_553a56fd' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(92), np.int64(186), np.int64(183))
+    - Grid Mesh :  (np.int64(3601), np.int64(7267), np.int64(7149))
+    - Origin Quality Check: Retention Rate = 0.40
+  ✨ New Origin created. Restarting defrag cycle...
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+  - Moved to Archive: Cube 'cb_12868bc1'
+  - Moved to Archive: Cube 'cb_d5c04d36'
+  - Moved to Archive: Cube 'cb_fb41c6c7'
+  - Moved to Archive: Cube 'cb_8a96fc5d'
+  - Moved to Archive: Cube 'cb_fe65e825'
+  - Moved to Archive: Cube 'cb_6954fd09'
+  - Moved to Archive: Cube 'cb_4da3e9a2'
+  - Moved to Archive: Cube 'cb_3ba47ad4'
+  - Moved to Archive: Cube 'cb_11fcc50f'
+  - Moved to Archive: Cube 'cb_5822cb6f'
+  - Moved to Archive: Cube 'cb_d59c913e'
+  - Moved to Archive: Cube 'cb_20046036'
+  - Moved to Archive: Cube 'cb_2224e779'
+  - Moved to Archive: Cube 'cb_042c5033'
+✅ GC cycle complete. Moved 14 cubes to archive.
+
+👤 You: 👋 See you, space cowboy...

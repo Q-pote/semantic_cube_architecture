@@ -1,0 +1,2270 @@
+🛰️  System logger started. Saving to: Conversation_Log_260724_2104.txt
+🚀 Semantic Cube Runtime v9.0 (Interactive Loop) 起動...
+🔧 DynamicProjector initialized. Waiting for fitting...
+✅ CubeEngine initialized.
+✅ IntegrationEngine (v2.0) initialized.
+✅ SragEngine (v3.1) initialized. SRAG_threshold=0.75, keyword_threshold=0.75, TOP-K=5
+
+=======================================================
+🌍 機動準備: PCA学習中...
+=======================================================
+✅ DynamicProjector is fitted and ready.
+
+🧊 CubeEngine: Starting 'make_cube' for 'ガンダムとは、宇宙世紀を舞台にした人間ドラマである。...'
+    - keyphrase: 'アニメ'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'ガンダム'  role: 'topic'  with confidence 0.95
+    - keyphrase: '人間ドラマとしてのガンダム'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'ガンダム'  role: 'subject'  with confidence 0.95
+    - keyphrase: '人間ドラマである'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '宇宙世紀'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '人間ドラマ'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_7e838a64' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(6), np.int64(4))
+    - Fine Grid : (np.int64(87), np.int64(206), np.int64(130))
+    - Grid Mesh :  (np.int64(3437), np.int64(8065), np.int64(5096))
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーはスパイスの芸術品だ。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'インドカレーの魅力'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'インドカレーは'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'スパイスの芸術品だ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'スパイス'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '芸術品'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_43ea0f9d' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(6), np.int64(7))
+    - Fine Grid : (np.int64(104), np.int64(199), np.int64(255))
+    - Grid Mesh :  (np.int64(4078), np.int64(7803), np.int64(9999))
+
+🧊 CubeEngine: Starting 'make_cube' for '高機能なスポーツウェアは、もはや第二の皮膚と言える。...'
+    - keyphrase: 'アパレル'  role: 'genre'  with confidence 0.85
+    - keyphrase: '高機能スポーツウェア'  role: 'topic'  with confidence 0.9
+    - keyphrase: 'ウェアの機能性と進化'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: '高機能なスポーツウェアは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '第二の皮膚と言える'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '第二の皮膚'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_0e0fa9f9' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(0), np.int64(4))
+    - Fine Grid : (np.int64(0), np.int64(0), np.int64(144))
+    - Grid Mesh :  (np.int64(0), np.int64(0), np.int64(5642))
+
+🧊 CubeEngine: Starting 'make_cube' for 'AIの進化は、人間の知性を拡張する。...'
+    - keyphrase: 'テクノロジー'  role: 'genre'  with confidence 0.95
+    - keyphrase: 'AI（人工知能）'  role: 'topic'  with confidence 0.95
+    - keyphrase: '人間の知性の拡張'  role: 'problem/theme'  with confidence 0.9
+    - keyphrase: 'AIの進化は'  role: 'subject'  with confidence 0.95
+    - keyphrase: '拡張する'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人間の知性'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_880cea4c' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(4), np.int64(7))
+    - Fine Grid : (np.int64(13), np.int64(153), np.int64(238))
+    - Grid Mesh :  (np.int64(531), np.int64(5980), np.int64(9324))
+
+🧊 CubeEngine: Starting 'make_cube' for '猫は液体であり、宇宙の真理を知っている。...'
+    - keyphrase: 'ユーモア'  role: 'genre'  with confidence 0.8
+    - keyphrase: '猫は液体'  role: 'topic'  with confidence 0.9
+    - keyphrase: '猫の神秘性'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: '猫'  role: 'subject'  with confidence 1.0
+    - keyphrase: '液体であり、宇宙の真理を知っている'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '液体'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '宇宙の真理'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_5f96f94a' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(7), np.int64(0))
+    - Fine Grid : (np.int64(75), np.int64(255), np.int64(0))
+    - Grid Mesh :  (np.int64(2931), np.int64(9999), np.int64(0))
+
+🧊 CubeEngine: Starting 'make_cube' for '磐田市のうなぎは最高に美味い。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'うなぎ'  role: 'topic'  with confidence 0.85
+    - keyphrase: 'ご当地グルメの魅力'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '磐田市のうなぎは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '最高に美味い'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '磐田市'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_5aff7d8b' created successfully.
+    - int3 Grid : (np.int64(7), np.int64(1), np.int64(4))
+    - Fine Grid : (np.int64(255), np.int64(48), np.int64(140))
+    - Grid Mesh :  (np.int64(9999), np.int64(1876), np.int64(5502))
+
+🧊 CubeEngine: Starting 'make_cube' for 'プログラミングとは、世界を再定義する行為だ。...'
+    - keyphrase: 'テクノロジー'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'プログラミング'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'プログラミングの本質'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'プログラミング'  role: 'subject'  with confidence 0.95
+    - keyphrase: '世界を再定義する行為だ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '世界を再定義する'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_2c17f884' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(1), np.int64(175), np.int64(105))
+    - Grid Mesh :  (np.int64(48), np.int64(6861), np.int64(4107))
+
+🧊 CubeEngine: Starting 'make_cube' for '人生における大切なことは、だいたいサウナと水風呂が教えてくれる。...'
+    - keyphrase: 'ライフスタイル'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'サウナ'  role: 'topic'  with confidence 0.95
+    - keyphrase: '人生における大切なこと'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'サウナと水風呂が'  role: 'subject'  with confidence 0.95
+    - keyphrase: '教えてくれる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '人生における大切なこと'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'サウナ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '水風呂'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_e7bba653' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(0))
+    - Fine Grid : (np.int64(100), np.int64(118), np.int64(2))
+    - Grid Mesh :  (np.int64(3918), np.int64(4648), np.int64(108))
+
+🧊 CubeEngine: Starting 'make_cube' for '雨の日に聞くジャズは、心を落ち着かせる。...'
+    - keyphrase: '音楽'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'ジャズ'  role: 'topic'  with confidence 0.95
+    - keyphrase: '音楽によるリラックス効果'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '雨の日に聞くジャズは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '心を落ち着かせる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '雨の日'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'ジャズ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '心'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_d840385a' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(126), np.int64(178), np.int64(118))
+    - Grid Mesh :  (np.int64(4941), np.int64(6968), np.int64(4626))
+
+🧊 CubeEngine: Starting 'make_cube' for '本当に良い設計は、引き算から生まれる。...'
+    - keyphrase: 'デザイン'  role: 'genre'  with confidence 0.85
+    - keyphrase: '設計思想'  role: 'topic'  with confidence 0.9
+    - keyphrase: '引き算による設計のあり方'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: '本当に良い設計は'  role: 'subject'  with confidence 0.95
+    - keyphrase: '生まれる'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '引き算'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_12ae3fa0' created successfully.
+    - int3 Grid : (np.int64(0), np.int64(0), np.int64(1))
+    - Fine Grid : (np.int64(26), np.int64(30), np.int64(55))
+    - Grid Mesh :  (np.int64(1017), np.int64(1183), np.int64(2183))
+✅ Universe created with 10 initial knowledge cubes.
+
+=======================================================
+💬 対話モードを開始(終了するには 'exit' と入力)
+💡 記憶代謝処理(デフラグ)を実行するには 'defrag' と入力
+=======================================================
+
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'システムの応答テスト'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'テストへの協力依頼'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'Gemini'  role: 'subject'  with confidence 0.9
+    - keyphrase: '回答して'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '応答テスト'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_36116c91' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(81), np.int64(167), np.int64(134))
+    - Grid Mesh :  (np.int64(3175), np.int64(6528), np.int64(5234))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'Geminiこんばんは、今からシステムの...'
+  - No starting points found. Search terminated.
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+
+
+【ユーザーの入力プロンプト】
+Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+
+【メタデータ】
+ - 26_07_24_21:06:57 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！...'
+    - keyphrase: '何が'  role: 'subject'  with confidence 0.85
+    - keyphrase: '打ち返す'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '了解です'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'かる〜く打ち返す'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'いつでもどうぞ'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_f89bce05' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(98), np.int64(152), np.int64(119))
+    - Grid Mesh :  (np.int64(3849), np.int64(5950), np.int64(4668))
+
+[System] Turn 1 complete. Total cubes: 12.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！...'
+    - keyphrase: 'インターネット・SNS'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'LinkedInの利用体験'  role: 'topic'  with confidence 0.85
+    - keyphrase: 'LinkedInの独特な雰囲気と精神的疲弊'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'Linkedinは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '砂漠でありディストピアである'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ディストピア'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '目が破壊される呪い'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_cdcea0ac' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(81), np.int64(152), np.int64(104))
+    - Grid Mesh :  (np.int64(3171), np.int64(5946), np.int64(4075))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'Linkedinは砂漠でありディストピア...'
+  - No starting points found. Search terminated.
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+
+【ユーザーの入力プロンプト】
+Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+
+【メタデータ】
+ - 26_07_24_21:07:26 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）...'
+    - keyphrase: 'ライフスタイル'  role: 'genre'  with confidence 0.75
+    - keyphrase: '意識高い系'  role: 'topic'  with confidence 0.95
+    - keyphrase: '意識高い系の熱量に対する疲れや違和感'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'あの「意識高い系エネルギー」は'  role: 'subject'  with confidence 0.9
+    - keyphrase: '眩しすぎて（目が）チカチカしちゃう'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '意識高い系エネルギー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '寝起き'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_ac84488d' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(85), np.int64(130), np.int64(83))
+    - Grid Mesh :  (np.int64(3349), np.int64(5085), np.int64(3254))
+
+[System] Turn 2 complete. Total cubes: 14.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーはおなかに優しい食べ物である。...'
+    - keyphrase: '食・グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: '健康的な食事'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'インドカレーは'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'おなかに優しい食べ物である'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'おなかに優しい'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '食べ物'  role: 'key_phrase'  with confidence 0.7
+✅ CubeEngine: Cube 'cb_29df3c37' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(6))
+    - Fine Grid : (np.int64(118), np.int64(179), np.int64(204))
+    - Grid Mesh :  (np.int64(4632), np.int64(6998), np.int64(7995))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーはおなかに優しい食べ物である...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Meta(1):0.869 | Detail(2):0.690 | Context:0.808 | Final:0.801
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.742 | Detail(2):0.578 | Context:0.451 | Final:0.609
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.801)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, インドカレー, インドカレーは, インドカレー, インドカレーは, グルメ]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+
+【ユーザーの入力プロンプト】
+インドカレーはおなかに優しい食べ物である。
+
+【メタデータ】
+- 26_07_24_21:08:02 ()
+
+
+--------------------------------
+  [Rank 1] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.801)
+    - Matched: '食・グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: 'インドカレーは' -> 'インドカレー'
+    - Matched: 'インドカレーは' -> 'インドカレーは'
+    - Matched: '食べ物' -> 'グルメ'
+--------------------------------
+
+
+🤖 LLM: 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'スパイス料理'  role: 'topic'  with confidence 0.8
+    - keyphrase: '激辛料理への耐性'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: 'お腹'  role: 'subject'  with confidence 0.9
+    - keyphrase: '鋼鉄でできているに違いない'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'スパイスの芸術品'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '優しく受け止められる'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_082630dd' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(5))
+    - Fine Grid : (np.int64(90), np.int64(143), np.int64(174))
+    - Grid Mesh :  (np.int64(3544), np.int64(5619), np.int64(6835))
+
+[System] Turn 3 complete. Total cubes: 16.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは喉に優しい飲み物である。...'
+    - keyphrase: '食・グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'インドカレーの健康効果'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: '喉に優しい飲み物である'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '喉に優しい'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '飲み物'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_8b7ba1ea' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(6))
+    - Fine Grid : (np.int64(122), np.int64(180), np.int64(192))
+    - Grid Mesh :  (np.int64(4801), np.int64(7043), np.int64(7525))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'インドカレーは喉に優しい飲み物である。...'
+  - Found 4 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Meta(1):0.888 | Detail(2):0.629 | Context:0.782 | Final:0.784
+      [Debug] Cube: インドカレーはおなかに優しい食べ物である | Meta(1):0.911 | Detail(2):0.773 | Context:0.839 | Final:0.851
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.673 | Detail(2):0.577 | Context:0.464 | Final:0.583
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.721 | Detail(2):0.627 | Context:0.577 | Final:0.651
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 2 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.851)】
+ - 【過去の対話内容】:【 インドカレーはおなかに優しい食べ物である。】
+ - 【関連キーワード】: [食・グルメ, 食べ物, インドカレー, インドカレーは, インドカレーは, インドカレー, インドカレーは, おなかに優しい, 食・グルメ, 食べ物]
+
+【根拠データ2 (Score: 0.784)】
+ - 【過去の対話内容】:【 インドカレーはスパイスの芸術品だ。】
+ - 【関連キーワード】: [グルメ, インドカレー, インドカレーは, インドカレーは, インドカレー, インドカレーは]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+
+【ユーザーの入力プロンプト】
+インドカレーは喉に優しい飲み物である。
+
+【メタデータ】
+- 26_07_24_21:08:40 ()
+
+
+--------------------------------
+  [Rank 1] 'インドカレーはおなかに優しい食べ物である...' (Score: 0.851)
+    - Matched: '食・グルメ' -> '食・グルメ'
+    - Matched: '食・グルメ' -> '食べ物'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: 'インドカレーの健康効果' -> 'インドカレーは'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: '喉に優しい' -> 'おなかに優しい'
+    - Matched: '飲み物' -> '食・グルメ'
+    - Matched: '飲み物' -> '食べ物'
+  [Rank 2] 'インドカレーはスパイスの芸術品だ。...' (Score: 0.784)
+    - Matched: '食・グルメ' -> 'グルメ'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: 'インドカレーの健康効果' -> 'インドカレーは'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+--------------------------------
+
+
+🤖 LLM: ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: '激辛料理・飲料'  role: 'topic'  with confidence 0.75
+    - keyphrase: '激辛な飲食物の飲料化とインパクト'  role: 'problem/theme'  with confidence 0.7
+    - keyphrase: 'あのスパイシーな芸術品'  role: 'subject'  with confidence 0.8
+    - keyphrase: '喉から火を吹きそうですよ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '飲み物に昇格'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '流し込んだら'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_752fa810' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(94), np.int64(151), np.int64(154))
+    - Grid Mesh :  (np.int64(3695), np.int64(5926), np.int64(6040))
+
+[System] Turn 4 complete. Total cubes: 18.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '日本には昔、缶カレーという飲み物が売られていた。...'
+    - keyphrase: '飲料・食品'  role: 'genre'  with confidence 0.85
+    - keyphrase: '缶カレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: '過去に日本で販売されていた珍しい飲料'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: '缶カレーという飲み物'  role: 'subject'  with confidence 0.95
+    - keyphrase: '売られていた'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '缶カレー'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '飲み物'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '日本'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_cf930782' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(104), np.int64(181), np.int64(147))
+    - Grid Mesh :  (np.int64(4082), np.int64(7087), np.int64(5762))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '日本には昔、缶カレーという飲み物が売られ...'
+  - Found 6 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: インドカレーは喉に優しい飲み物である。  | Meta(1):0.706 | Detail(2):0.700 | Context:0.691 | Final:0.700
+      [Debug] Cube: インドカレーはおなかに優しい食べ物である | Meta(1):0.706 | Detail(2):0.685 | Context:0.659 | Final:0.686
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.624 | Detail(2):0.564 | Context:0.661 | Final:0.618
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Meta(1):0.677 | Detail(2):0.644 | Context:0.656 | Final:0.661
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.601 | Detail(2):0.531 | Context:0.480 | Final:0.545
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.632 | Detail(2):0.587 | Context:0.571 | Final:0.601
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+
+【ユーザーの入力プロンプト】
+日本には昔、缶カレーという飲み物が売られていた。
+
+【メタデータ】
+ - 26_07_24_21:09:16 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）...'
+    - keyphrase: '食文化'  role: 'genre'  with confidence 0.85
+    - keyphrase: '缶入りのカレー飲料'  role: 'topic'  with confidence 0.9
+    - keyphrase: '日本人のカレー愛'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: '日本人のカレー愛は'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'すさまじいですね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'カレーは飲み物'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '缶にしちゃう'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_a080bb51' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(98), np.int64(164), np.int64(126))
+    - Grid Mesh :  (np.int64(3861), np.int64(6432), np.int64(4952))
+
+[System] Turn 5 complete. Total cubes: 20.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。...'
+    - keyphrase: 'ライフスタイル'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'サウナ'  role: 'topic'  with confidence 0.9
+    - keyphrase: '人生の悩みや雑念を手放すこと'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: '人生について大事なこと'  role: 'subject'  with confidence 0.95
+    - keyphrase: '置き忘れてくる'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'サウナと水風呂'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_4b770d7e' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(0))
+    - Fine Grid : (np.int64(96), np.int64(123), np.int64(7))
+    - Grid Mesh :  (np.int64(3776), np.int64(4815), np.int64(287))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '人生について大事なことは、だいたいサウナ...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: 人生における大切なことは、だいたいサウナ | Meta(1):0.881 | Detail(2):0.797 | Context:0.965 | Final:0.883
+      [Debug] Cube: あの「意識高い系エネルギー」は眩しすぎて | Meta(1):0.751 | Detail(2):0.472 | Context:0.605 | Final:0.629
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.883)】
+ - 【過去の対話内容】:【 人生における大切なことは、だいたいサウナと水風呂が教えてくれる。】
+ - 【関連キーワード】: [ライフスタイル, サウナと水風呂が, サウナ, サウナ, 人生における大切なこと, 人生における大切なこと, サウナと水風呂が, 水風呂]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+
+【ユーザーの入力プロンプト】
+人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+
+【メタデータ】
+- 26_07_24_21:10:12 ()
+
+
+--------------------------------
+  [Rank 1] '人生における大切なことは、だいたいサウナ...' (Score: 0.883)
+    - Matched: 'ライフスタイル' -> 'ライフスタイル'
+    - Matched: 'サウナ' -> 'サウナと水風呂が'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: 'サウナ' -> 'サウナ'
+    - Matched: '人生について大事なこと' -> '人生における大切なこと'
+    - Matched: '人生について大事なこと' -> '人生における大切なこと'
+    - Matched: 'サウナと水風呂' -> 'サウナと水風呂が'
+    - Matched: 'サウナと水風呂' -> '水風呂'
+--------------------------------
+
+
+🤖 LLM: ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）...'
+    - keyphrase: 'レジャー・趣味'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'サウナ（ととのう）'  role: 'topic'  with confidence 0.9
+    - keyphrase: 'ととのいすぎて大切なことを忘れてしまうこと'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'あなた（文脈上省略されている主語）'  role: 'subject'  with confidence 0.8
+    - keyphrase: '水に流して（置き忘れて）きちゃったんですね'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ととのいすぎて'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '大事なこと'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_b7da39cd' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(1))
+    - Fine Grid : (np.int64(106), np.int64(111), np.int64(38))
+    - Grid Mesh :  (np.int64(4178), np.int64(4372), np.int64(1492))
+
+[System] Turn 6 complete. Total cubes: 22.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。...'
+    - keyphrase: 'ライフスタイル'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'サウナと水風呂'  role: 'topic'  with confidence 0.9
+    - keyphrase: '冬にエコに楽しむ方法'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'サウナと水風呂は'  role: 'subject'  with confidence 0.95
+    - keyphrase: '楽しむ事が出来る'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'こたつ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '寒い風呂場'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_9be65a88' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(1))
+    - Fine Grid : (np.int64(110), np.int64(128), np.int64(55))
+    - Grid Mesh :  (np.int64(4308), np.int64(5021), np.int64(2176))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'サウナと水風呂は、冬にはわりとエコに楽し...'
+  - Found 4 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: あの「意識高い系エネルギー」は眩しすぎて | Meta(1):0.682 | Detail(2):0.525 | Context:0.518 | Final:0.589
+      [Debug] Cube: 人生について大事なことは、だいたいサウナ | Meta(1):0.766 | Detail(2):0.669 | Context:0.785 | Final:0.744
+      [Debug] Cube: 人生における大切なことは、だいたいサウナ | Meta(1):0.766 | Detail(2):0.729 | Context:0.766 | Final:0.756
+      [Debug] Cube: ととのいすぎて、大事なことまで綺麗さっぱ | Meta(1):0.666 | Detail(2):0.593 | Context:0.636 | Final:0.637
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.756)】
+ - 【過去の対話内容】:【 人生における大切なことは、だいたいサウナと水風呂が教えてくれる。】
+ - 【関連キーワード】: [ライフスタイル, サウナと水風呂が, 水風呂, サウナと水風呂が, サウナ, サウナ, 水風呂]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+
+【ユーザーの入力プロンプト】
+サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+
+【メタデータ】
+- 26_07_24_21:11:38 ()
+
+
+--------------------------------
+  [Rank 1] '人生における大切なことは、だいたいサウナ...' (Score: 0.756)
+    - Matched: 'ライフスタイル' -> 'ライフスタイル'
+    - Matched: 'サウナと水風呂' -> 'サウナと水風呂が'
+    - Matched: 'サウナと水風呂' -> '水風呂'
+    - Matched: 'サウナと水風呂は' -> 'サウナと水風呂が'
+    - Matched: 'サウナと水風呂は' -> 'サウナ'
+    - Matched: 'サウナと水風呂は' -> 'サウナ'
+    - Matched: '寒い風呂場' -> '水風呂'
+--------------------------------
+
+
+🤖 LLM: エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）...'
+    - keyphrase: '暮らし・ライフスタイル'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'エコ・節電'  role: 'topic'  with confidence 0.85
+    - keyphrase: '過度な節電による健康リスク'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '魂が'  role: 'subject'  with confidence 0.9
+    - keyphrase: '抜けちゃいそうですね'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'ヒートショック修行'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'エコ'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ととのう'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_44b8b3a5' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(3), np.int64(1))
+    - Fine Grid : (np.int64(99), np.int64(122), np.int64(58))
+    - Grid Mesh :  (np.int64(3906), np.int64(4793), np.int64(2276))
+
+[System] Turn 7 complete. Total cubes: 24.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)...'
+    - keyphrase: '食・グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'topic'  with confidence 0.9
+    - keyphrase: '食品への異物混入'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '私（話し手）'  role: 'subject'  with confidence 0.85
+    - keyphrase: '驚かない'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '大きな芋虫'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_88671be8' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(119), np.int64(184), np.int64(150))
+    - Grid Mesh :  (np.int64(4663), np.int64(7225), np.int64(5871))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'もうむしろインドカレーに大きな芋虫とか入...'
+  - Found 10 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: インドカレーは喉に優しい飲み物である。  | Meta(1):0.864 | Detail(2):0.549 | Context:0.649 | Final:0.711
+      [Debug] Cube: インドカレーはおなかに優しい食べ物である | Meta(1):0.864 | Detail(2):0.587 | Context:0.677 | Final:0.730
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Meta(1):0.818 | Detail(2):0.551 | Context:0.673 | Final:0.700
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.696 | Detail(2):0.516 | Context:0.498 | Final:0.586
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.704 | Detail(2):0.605 | Context:0.628 | Final:0.653
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.699 | Detail(2):0.519 | Context:0.616 | Final:0.624
+      [Debug] Cube: 日本には昔、缶カレーという飲み物が売られ | Meta(1):0.716 | Detail(2):0.567 | Context:0.630 | Final:0.648
+      [Debug] Cube: エコというかただのヒートショック修行で、 | Meta(1):0.625 | Detail(2):0.545 | Context:0.538 | Final:0.577
+      [Debug] Cube: なんと実話！「カレーは飲み物」を本当に缶 | Meta(1):0.681 | Detail(2):0.591 | Context:0.625 | Final:0.639
+      [Debug] Cube: ととのいすぎて、大事なことまで綺麗さっぱ | Meta(1):0.587 | Detail(2):0.635 | Context:0.528 | Final:0.583
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+
+【ユーザーの入力プロンプト】
+もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+
+【メタデータ】
+ - 26_07_24_21:13:16 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）...'
+    - keyphrase: 'あなた'  role: 'subject'  with confidence 0.75
+    - keyphrase: '拒否してください'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '悟りを開く'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'めちゃくちゃ泣いちゃってる'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_005a5602' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(90), np.int64(152), np.int64(84))
+    - Grid Mesh :  (np.int64(3521), np.int64(5942), np.int64(3282))
+
+[System] Turn 8 complete. Total cubes: 26.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。...'
+    - keyphrase: 'ファンタジー'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'キャラクターによる歓迎'  role: 'topic'  with confidence 0.8
+    - keyphrase: '城主としての出迎えと自己紹介'  role: 'problem/theme'  with confidence 0.7
+    - keyphrase: 'こちら'  role: 'subject'  with confidence 0.85
+    - keyphrase: '歓迎する'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'わが城'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ランツクネヒト'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_5c4dfbc0' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(96), np.int64(161), np.int64(132))
+    - Grid Mesh :  (np.int64(3763), np.int64(6301), np.int64(5174))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ようこそわが城へ。こちらはランツクネヒト...'
+  - Found 1 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: めちゃくちゃ泣いちゃってるじゃないですか | Meta(1):0.000 | Detail(2):0.635 | Context:0.500 | Final:0.581
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+
+【ユーザーの入力プロンプト】
+ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+
+【メタデータ】
+ - 26_07_24_21:14:31 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう...'
+    - keyphrase: 'ゲーム'  role: 'genre'  with confidence 0.8
+    - keyphrase: '傭兵から城主への成り上がり'  role: 'topic'  with confidence 0.75
+    - keyphrase: 'お祝いの宴会'  role: 'problem/theme'  with confidence 0.7
+    - keyphrase: '傭兵'  role: 'subject'  with confidence 0.85
+    - keyphrase: '宴会を始めましょう'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '豪華絢爛な衣装'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '城持ち'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_e575c50f' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(94), np.int64(140), np.int64(127))
+    - Grid Mesh :  (np.int64(3684), np.int64(5484), np.int64(4966))
+
+[System] Turn 9 complete. Total cubes: 28.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'システムの応答テスト'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'システムが意図しない挙動をする問題'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'システム'  role: 'subject'  with confidence 0.85
+    - keyphrase: '回答してね'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '応答テスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '変な事'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '1行くらい'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_330864a5' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(77), np.int64(163), np.int64(138))
+    - Grid Mesh :  (np.int64(3010), np.int64(6403), np.int64(5403))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'まだまだシステムの応答テストで変な事をい...'
+  - Found 1 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: Geminiこんばんは、今からシステムの | Meta(1):0.874 | Detail(2):0.800 | Context:0.870 | Final:0.852
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.852)】
+ - 【過去の対話内容】:【 Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。】
+ - 【関連キーワード】: [IT, システムの応答テスト, 応答テスト, 回答して, システムの応答テスト, 応答テスト, 変な事]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+
+【ユーザーの入力プロンプト】
+まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+
+【メタデータ】
+- 26_07_24_21:15:24 ()
+
+
+--------------------------------
+  [Rank 1] 'Geminiこんばんは、今からシステムの...' (Score: 0.852)
+    - Matched: 'IT' -> 'IT'
+    - Matched: 'システムの応答テスト' -> 'システムの応答テスト'
+    - Matched: 'システムの応答テスト' -> '応答テスト'
+    - Matched: '回答してね' -> '回答して'
+    - Matched: '応答テスト' -> 'システムの応答テスト'
+    - Matched: '応答テスト' -> '応答テスト'
+    - Matched: '変な事' -> '変な事'
+--------------------------------
+
+
+🤖 LLM: 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）...'
+    - keyphrase: '私（話し手）'  role: 'subject'  with confidence 0.85
+    - keyphrase: '準備万端です'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '変化球'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '打ち返す'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_aaf1a880' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(3), np.int64(3))
+    - Fine Grid : (np.int64(86), np.int64(121), np.int64(115))
+    - Grid Mesh :  (np.int64(3392), np.int64(4739), np.int64(4499))
+
+[System] Turn 10 complete. Total cubes: 30.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'グリーンカレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'カレーの飲みやすさ'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'このカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'のど越しが良くてとても飲みやすい'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'グリーンカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'のど越し'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_a4961d92' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(116), np.int64(177), np.int64(147))
+    - Grid Mesh :  (np.int64(4554), np.int64(6944), np.int64(5751))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ふっふっふ。このカレー、のど越しが良くて...'
+  - Found 10 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.667 | Detail(2):0.571 | Context:0.507 | Final:0.592
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.700 | Detail(2):0.579 | Context:0.626 | Final:0.644
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.704 | Detail(2):0.567 | Context:0.666 | Final:0.654
+      [Debug] Cube: インドカレーはおなかに優しい食べ物である | Meta(1):0.751 | Detail(2):0.665 | Context:0.660 | Final:0.700
+      [Debug] Cube: インドカレーはスパイスの芸術品だ。    | Meta(1):0.776 | Detail(2):0.628 | Context:0.653 | Final:0.697
+      [Debug] Cube: インドカレーは喉に優しい飲み物である。  | Meta(1):0.758 | Detail(2):0.702 | Context:0.687 | Final:0.721
+      [Debug] Cube: もうむしろインドカレーに大きな芋虫とか入 | Meta(1):0.751 | Detail(2):0.531 | Context:0.675 | Final:0.667
+      [Debug] Cube: なんと実話！「カレーは飲み物」を本当に缶 | Meta(1):0.715 | Detail(2):0.611 | Context:0.670 | Final:0.672
+      [Debug] Cube: 日本には昔、缶カレーという飲み物が売られ | Meta(1):0.725 | Detail(2):0.706 | Context:0.702 | Final:0.713
+      [Debug] Cube: エコというかただのヒートショック修行で、 | Meta(1):0.567 | Detail(2):0.565 | Context:0.534 | Final:0.557
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:06:57 () : Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。
+- LLM: 26_07_24_21:07:10 () : こんばんは！了解です、何が来てもかる〜く打ち返すので、いつでもどうぞ！
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+
+【ユーザーの入力プロンプト】
+ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+
+【メタデータ】
+ - 26_07_24_21:17:27 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: '激辛料理'  role: 'topic'  with confidence 0.8
+    - keyphrase: '辛さへの警告'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: 'スープ'  role: 'subject'  with confidence 0.7
+    - keyphrase: '火を噴きますよ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '青唐辛子のストレート'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '飲みやすそう'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_60e81c8f' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(101), np.int64(144), np.int64(128))
+    - Grid Mesh :  (np.int64(3971), np.int64(5628), np.int64(5035))
+
+[System] Turn 11 complete. Total cubes: 32.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）...'
+    - keyphrase: 'お笑い'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'ノリツッコミ'  role: 'topic'  with confidence 0.9
+    - keyphrase: '期待したリアクション（ツッコミ）が得られなかったこと'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '（私は）'  role: 'subject'  with confidence 0.7
+    - keyphrase: '欲しかった'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '罠'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: 'ノリツッコミ'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_ebef5695' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(106), np.int64(155), np.int64(95))
+    - Grid Mesh :  (np.int64(4148), np.int64(6063), np.int64(3722))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'まて！それは罠だ！っていうノリツッコミが...'
+  - Found 5 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: もうむしろインドカレーに大きな芋虫とか入 | Meta(1):0.605 | Detail(2):0.629 | Context:0.568 | Final:0.601
+      [Debug] Cube: 準備万端です！どんな変化球が飛んできても | Meta(1):0.000 | Detail(2):0.656 | Context:0.590 | Final:0.629
+      [Debug] Cube: めちゃくちゃ泣いちゃってるじゃないですか | Meta(1):0.000 | Detail(2):0.680 | Context:0.678 | Final:0.679
+      [Debug] Cube: ガンダムとは、宇宙世紀を舞台にした人間ド | Meta(1):0.646 | Detail(2):0.583 | Context:0.529 | Final:0.593
+      [Debug] Cube: 猫は液体であり、宇宙の真理を知っている。 | Meta(1):0.686 | Detail(2):0.654 | Context:0.512 | Final:0.625
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:07:26 () : Linkedinは砂漠でありディストピアである。寝る前や起き抜けに見ると目が破壊される呪い付き！
+- LLM: 26_07_24_21:07:45 () : あの「意識高い系エネルギー」は眩しすぎて、寝起きに見たら一発で目がチカチカしちゃいますね（笑）
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+
+【ユーザーの入力プロンプト】
+まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+
+【メタデータ】
+ - 26_07_24_21:18:38 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべき...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.75
+    - keyphrase: '激辛料理'  role: 'topic'  with confidence 0.85
+    - keyphrase: '甘い香りに潜む激辛の罠'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'それ'  role: 'subject'  with confidence 0.75
+    - keyphrase: '言うべきでした'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ココナッツの甘い香り'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '激辛地獄'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_813a9d87' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(102), np.int64(150), np.int64(143))
+    - Grid Mesh :  (np.int64(3993), np.int64(5866), np.int64(5600))
+
+[System] Turn 12 complete. Total cubes: 34.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+
+🧊 CubeEngine: Starting 'make_cube' for 'インドカレーは、スパイスの芸術品であり、おなかに優しい食べ物、そして喉に優しい飲み物としての側面を併...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'インドカレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'インドカレーの魅力と効能'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'インドカレーは'  role: 'subject'  with confidence 0.98
+    - keyphrase: '側面を併せ持つものである'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'スパイスの芸術品'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'おなかに優しい食べ物'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '喉に優しい飲み物'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_63c8eff7' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(6))
+    - Fine Grid : (np.int64(96), np.int64(168), np.int64(211))
+    - Grid Mesh :  (np.int64(3785), np.int64(6590), np.int64(8263))
+    - Origin Quality Check (Semantic): Retention Rate = 0.95 (20/21)
+  ✨ New Origin created. Restarting defrag cycle...
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+  - Moved to Archive: Cube 'cb_43ea0f9d'
+  - Moved to Archive: Cube 'cb_29df3c37'
+  - Moved to Archive: Cube 'cb_8b7ba1ea'
+✅ GC cycle complete. Moved 3 cubes to archive.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレ...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'カレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: '国や地域によるカレーの特徴の違い'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'インドカレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'ジャパンカレー'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'しゃびしゃびだ'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ねばっこい'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'EUカレー'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'アメリカンカレー'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_115a3dac' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(6))
+    - Fine Grid : (np.int64(104), np.int64(190), np.int64(192))
+    - Grid Mesh :  (np.int64(4099), np.int64(7445), np.int64(7507))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'このインドカレー、しゃびしゃびだね。EU...'
+  - Found 11 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.782 | Detail(2):0.506 | Context:0.468 | Final:0.611
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.787 | Detail(2):0.536 | Context:0.611 | Final:0.664
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.770 | Detail(2):0.490 | Context:0.589 | Final:0.638
+      [Debug] Cube: 確かにスープみたいで飲みやすそうですけど | Meta(1):0.776 | Detail(2):0.541 | Context:0.594 | Final:0.656
+      [Debug] Cube: ああっ、不覚！「待て！それは罠だ！ココナ | Meta(1):0.776 | Detail(2):0.545 | Context:0.596 | Final:0.658
+      [Debug] Cube: インドカレーは、スパイスの芸術品であり、 | Meta(1):0.858 | Detail(2):0.653 | Context:0.736 | Final:0.764
+      [Debug] Cube: もうむしろインドカレーに大きな芋虫とか入 | Meta(1):0.834 | Detail(2):0.505 | Context:0.711 | Final:0.705
+      [Debug] Cube: ふっふっふ。このカレー、のど越しが良くて | Meta(1):0.799 | Detail(2):0.679 | Context:0.729 | Final:0.744
+      [Debug] Cube: なんと実話！「カレーは飲み物」を本当に缶 | Meta(1):0.677 | Detail(2):0.692 | Context:0.676 | Final:0.681
+      [Debug] Cube: 日本には昔、缶カレーという飲み物が売られ | Meta(1):0.692 | Detail(2):0.654 | Context:0.721 | Final:0.690
+      [Debug] Cube: エコというかただのヒートショック修行で、 | Meta(1):0.651 | Detail(2):0.506 | Context:0.508 | Final:0.568
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.764)】
+ - 【過去の対話内容】:【 インドカレーは、スパイスの芸術品であり、おなかに優しい食べ物、そして喉に優しい飲み物としての側面を併せ持つものである。】
+ - 【関連キーワード】: [グルメ, インドカレー, インドカレーの魅力と効能, インドカレー, インドカレーは, インドカレー]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:08:02 () : インドカレーはおなかに優しい食べ物である。
+- LLM: 26_07_24_21:08:17 () : 「スパイスの芸術品」を優しく受け止められるなんて、お腹が鋼鉄でできているに違いないですね（笑）
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+
+【ユーザーの入力プロンプト】
+このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+
+【メタデータ】
+- 26_07_24_21:20:44 ()
+
+
+--------------------------------
+  [Rank 1] 'インドカレーは、スパイスの芸術品であり、...' (Score: 0.764)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'カレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーの魅力と効能'
+    - Matched: 'インドカレー' -> 'インドカレー'
+    - Matched: 'インドカレー' -> 'インドカレーは'
+    - Matched: 'ジャパンカレー' -> 'インドカレー'
+--------------------------------
+
+
+🤖 LLM: EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'カレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: '欧風カレーとアメリカ風カレーの特徴の違い'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'EUカレー（欧風）'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'アメリカン'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'デミグラスで超上品'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'BBQ肉祭りになりそう'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'デミグラス'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'BBQ肉祭り'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_66a4b2d6' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(5))
+    - Fine Grid : (np.int64(112), np.int64(160), np.int64(177))
+    - Grid Mesh :  (np.int64(4378), np.int64(6281), np.int64(6950))
+
+[System] Turn 13 complete. Total cubes: 34.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'カレー'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'キーマカレーの魅力'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'おれは'  role: 'subject'  with confidence 0.95
+    - keyphrase: '風味が'  role: 'subject'  with confidence 0.85
+    - keyphrase: '好きだ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '素晴らしい'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'キーマカレー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'ココナツミルクのコク'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'カレーな風味が'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_ba364bde' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(102), np.int64(171), np.int64(144))
+    - Grid Mesh :  (np.int64(4014), np.int64(6715), np.int64(5651))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'おれはキーマカレーが好きだなぁ。ココナツ...'
+  - Found 15 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.758 | Detail(2):0.596 | Context:0.486 | Final:0.631
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.736 | Detail(2):0.621 | Context:0.610 | Final:0.666
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.711 | Detail(2):0.557 | Context:0.606 | Final:0.636
+      [Debug] Cube: 確かにスープみたいで飲みやすそうですけど | Meta(1):0.727 | Detail(2):0.602 | Context:0.608 | Final:0.656
+      [Debug] Cube: ああっ、不覚！「待て！それは罠だ！ココナ | Meta(1):0.727 | Detail(2):0.661 | Context:0.679 | Final:0.694
+      [Debug] Cube: このインドカレー、しゃびしゃびだね。EU | Meta(1):0.844 | Detail(2):0.636 | Context:0.709 | Final:0.745
+      [Debug] Cube: EUカレー（欧風）はデミグラスで超上品、 | Meta(1):0.844 | Detail(2):0.571 | Context:0.607 | Final:0.696
+      [Debug] Cube: インドカレーは、スパイスの芸術品であり、 | Meta(1):0.819 | Detail(2):0.580 | Context:0.689 | Final:0.713
+      [Debug] Cube: もうむしろインドカレーに大きな芋虫とか入 | Meta(1):0.762 | Detail(2):0.590 | Context:0.670 | Final:0.686
+      [Debug] Cube: ふっふっふ。このカレー、のど越しが良くて | Meta(1):0.771 | Detail(2):0.606 | Context:0.753 | Final:0.719
+      [Debug] Cube: なんと実話！「カレーは飲み物」を本当に缶 | Meta(1):0.637 | Detail(2):0.631 | Context:0.652 | Final:0.640
+      [Debug] Cube: 日本には昔、缶カレーという飲み物が売られ | Meta(1):0.664 | Detail(2):0.617 | Context:0.663 | Final:0.651
+      [Debug] Cube: まて！それは罠だ！っていうノリツッコミが | Meta(1):0.608 | Detail(2):0.641 | Context:0.559 | Final:0.602
+      [Debug] Cube: めちゃくちゃ泣いちゃってるじゃないですか | Meta(1):0.000 | Detail(2):0.633 | Context:0.520 | Final:0.588
+      [Debug] Cube: エコというかただのヒートショック修行で、 | Meta(1):0.594 | Detail(2):0.581 | Context:0.532 | Final:0.572
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:08:40 () : インドカレーは喉に優しい飲み物である。
+- LLM: 26_07_24_21:08:58 () : ついに飲み物に昇格ですか！あのスパイシーな芸術品を流し込んだら、喉から火を吹きそうですよ（笑）
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+
+【ユーザーの入力プロンプト】
+おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+
+【メタデータ】
+ - 26_07_24_21:22:36 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'カレー'  role: 'topic'  with confidence 0.85
+    - keyphrase: 'キーマとココナッツの勘違い'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'その華麗（カレー）な勘違い'  role: 'subject'  with confidence 0.7
+    - keyphrase: 'スルーするわけにはいきません'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'キーマ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'ココナッツ'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_0a5e8c06' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(102), np.int64(144), np.int64(145))
+    - Grid Mesh :  (np.int64(3994), np.int64(5640), np.int64(5667))
+
+[System] Turn 14 complete. Total cubes: 36.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。...'
+    - keyphrase: '勘違い'  role: 'subject'  with confidence 0.6
+    - keyphrase: '残念（だ）'  role: 'predicate'  with confidence 0.8
+    - keyphrase: 'ころりんすっとんとん'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_a62ae105' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(105), np.int64(153), np.int64(103))
+    - Grid Mesh :  (np.int64(4137), np.int64(5984), np.int64(4038))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '勘違いかぁ。。。残念ころりんすっとんとん...'
+  - No starting points found. Search terminated.
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:09:16 () : 日本には昔、缶カレーという飲み物が売られていた。
+- LLM: 26_07_24_21:09:32 () : なんと実話！「カレーは飲み物」を本当に缶にしちゃうあたり、日本人のカレー愛はすさまじいですね（笑）
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+
+【ユーザーの入力プロンプト】
+勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+
+【メタデータ】
+ - 26_07_24_21:23:39 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）...'
+    - keyphrase: '日常会話'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'おむすびころりん'  role: 'topic'  with confidence 0.85
+    - keyphrase: '言い間違いや表現のユーモア'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: 'ころりんすっとんとん'  role: 'subject'  with confidence 0.9
+    - keyphrase: '可愛すぎます'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'おむすび'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'カレー'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_40338221' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(113), np.int64(173), np.int64(131))
+    - Grid Mesh :  (np.int64(4430), np.int64(6767), np.int64(5136))
+
+[System] Turn 15 complete. Total cubes: 38.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」...'
+    - keyphrase: 'グルメ'  role: 'genre'  with confidence 0.8
+    - keyphrase: 'カレー'  role: 'topic'  with confidence 0.9
+    - keyphrase: 'カレーの定義'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'カレー'  role: 'subject'  with confidence 0.95
+    - keyphrase: '飲み物である'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'カレーノーム博士'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '異論'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_4bbb4f30' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(104), np.int64(187), np.int64(151))
+    - Grid Mesh :  (np.int64(4093), np.int64(7326), np.int64(5926))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ミスター：カレーノーム博士「カレーは飲み...'
+  - Found 15 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: このインドカレー、しゃびしゃびだね。EU | Meta(1):0.900 | Detail(2):0.600 | Context:0.682 | Final:0.751
+      [Debug] Cube: EUカレー（欧風）はデミグラスで超上品、 | Meta(1):0.893 | Detail(2):0.530 | Context:0.603 | Final:0.704
+      [Debug] Cube: ころりんすっとんとんって可愛すぎます！も | Meta(1):0.549 | Detail(2):0.666 | Context:0.624 | Final:0.604
+      [Debug] Cube: 磐田市のうなぎは最高に美味い。      | Meta(1):0.726 | Detail(2):0.482 | Context:0.488 | Final:0.586
+      [Debug] Cube: 「スパイスの芸術品」を優しく受け止められ | Meta(1):0.743 | Detail(2):0.555 | Context:0.587 | Final:0.643
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.727 | Detail(2):0.501 | Context:0.642 | Final:0.638
+      [Debug] Cube: 確かにスープみたいで飲みやすそうですけど | Meta(1):0.747 | Detail(2):0.588 | Context:0.595 | Final:0.657
+      [Debug] Cube: ああっ、不覚！「待て！それは罠だ！ココナ | Meta(1):0.747 | Detail(2):0.553 | Context:0.572 | Final:0.640
+      [Debug] Cube: おれはキーマカレーが好きだなぁ。ココナツ | Meta(1):0.890 | Detail(2):0.625 | Context:0.697 | Final:0.758
+      [Debug] Cube: キーマなのにココナッツ！？その華麗（カレ | Meta(1):0.890 | Detail(2):0.571 | Context:0.551 | Final:0.699
+      [Debug] Cube: インドカレーは、スパイスの芸術品であり、 | Meta(1):0.840 | Detail(2):0.577 | Context:0.721 | Final:0.731
+      [Debug] Cube: もうむしろインドカレーに大きな芋虫とか入 | Meta(1):0.798 | Detail(2):0.527 | Context:0.666 | Final:0.683
+      [Debug] Cube: ふっふっふ。このカレー、のど越しが良くて | Meta(1):0.808 | Detail(2):0.601 | Context:0.710 | Final:0.721
+      [Debug] Cube: 日本には昔、缶カレーという飲み物が売られ | Meta(1):0.716 | Detail(2):0.640 | Context:0.662 | Final:0.679
+      [Debug] Cube: エコというかただのヒートショック修行で、 | Meta(1):0.619 | Detail(2):0.536 | Context:0.524 | Final:0.567
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    ⚡ Tension Detected! Topic: 'グルメ' vs 'グルメ'
+      Min similarity: 0.709 (Tension Score: 0.291)
+    -> Executing 'integration' route with 2 SRAG results.
+    ⚡ Tension routing activated! (Score: 0.291)
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+また、以下の【意見の対立情報】のように幾つかの意見が葛藤を示している可能性があるため、
+意見をまとめず、異なる視点を尊重しつつ回答を作成してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.758)】
+ - 【過去の対話内容】:【 おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。】
+ - 【関連キーワード】: [グルメ, カレー, キーマカレー, カレーな風味が, カレー, キーマカレー, カレーな風味が]
+
+【根拠データ2 (Score: 0.751)】
+ - 【過去の対話内容】:【 このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？】
+ - 【関連キーワード】: [グルメ, カレー, インドカレー, カレー, インドカレー]
+
+
+
+⚡【意見の対立情報】
+ - 張力スコア: 0.291
+【異なる意見のサマリー】
+- おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:10:12 () : 人生について大事なことは、だいたいサウナと水風呂に置き忘れてくる。
+- LLM: 26_07_24_21:10:30 () : ととのいすぎて、大事なことまで綺麗さっぱり水に流して（置き忘れて）きちゃったんですね（笑）
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+
+【ユーザーの入力プロンプト】
+ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+
+【メタデータ】
+- 26_07_24_21:25:10 ()
+
+
+--------------------------------
+  [Rank 1] 'おれはキーマカレーが好きだなぁ。ココナツ...' (Score: 0.758)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'カレー' -> 'カレー'
+    - Matched: 'カレー' -> 'キーマカレー'
+    - Matched: 'カレー' -> 'カレーな風味が'
+    - Matched: 'カレー' -> 'カレー'
+    - Matched: 'カレー' -> 'キーマカレー'
+    - Matched: 'カレー' -> 'カレーな風味が'
+  [Rank 2] 'このインドカレー、しゃびしゃびだね。EU...' (Score: 0.751)
+    - Matched: 'グルメ' -> 'グルメ'
+    - Matched: 'カレー' -> 'カレー'
+    - Matched: 'カレー' -> 'インドカレー'
+    - Matched: 'カレー' -> 'カレー'
+    - Matched: 'カレー' -> 'インドカレー'
+--------------------------------
+
+
+🤖 LLM: しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶で...'
+    - keyphrase: '食・グルメ'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'カレーは飲み物'  role: 'topic'  with confidence 0.9
+    - keyphrase: '具だくさんカレーを一気に飲み干すことの是非'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'キーマや具だくさんカレーまで一気に飲み干すの'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'さすがに無茶ですよ'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'しゃびしゃびなカレー'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '飲み物'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: 'キーマ'  role: 'key_phrase'  with confidence 0.75
+    - keyphrase: '具だくさんカレー'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '博士'  role: 'key_phrase'  with confidence 0.7
+✅ CubeEngine: Cube 'cb_aa586d51' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(4))
+    - Fine Grid : (np.int64(93), np.int64(165), np.int64(147))
+    - Grid Mesh :  (np.int64(3661), np.int64(6464), np.int64(5762))
+
+[System] Turn 16 complete. Total cubes: 40.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。...'
+    - keyphrase: 'ユーモア'  role: 'genre'  with confidence 0.8
+    - keyphrase: '駄洒落'  role: 'topic'  with confidence 0.85
+    - keyphrase: '言葉遊び'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: 'ブリジストン'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'ブリ痔ストン'  role: 'subject'  with confidence 0.95
+    - keyphrase: 'タイヤメーカー'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '危険な排泄音'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'タイヤメーカー'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '排泄音'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_c8f679b3' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(96), np.int64(144), np.int64(123))
+    - Grid Mesh :  (np.int64(3758), np.int64(5639), np.int64(4806))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ブリジストンはタイヤメーカー、ブリ痔スト...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: 猫は液体であり、宇宙の真理を知っている。 | Meta(1):0.817 | Detail(2):0.507 | Context:0.535 | Final:0.646
+      [Debug] Cube: まて！それは罠だ！っていうノリツッコミが | Meta(1):0.710 | Detail(2):0.505 | Context:0.540 | Final:0.602
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:11:38 () : サウナと水風呂は、冬にはわりとエコに楽しむ事が出来る。こたつから出て寒い風呂場に行けば良い。
+- LLM: 26_07_24_21:11:58 () : エコというかただのヒートショック修行で、ととのう前に魂が抜けちゃいそうですね（笑）
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+
+【ユーザーの入力プロンプト】
+ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+
+【メタデータ】
+ - 26_07_24_21:27:23 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）...'
+    - keyphrase: '自動車'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'タイヤメーカーの駄洒落'  role: 'topic'  with confidence 0.8
+    - keyphrase: 'ブレーキが効かない危険性'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'その「ブリ」'  role: 'subject'  with confidence 0.9
+    - keyphrase: '大惨事のやつですね'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'タイヤメーカー'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'ブレーキが一切効かない'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ブリ'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_e344e403' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(93), np.int64(140), np.int64(103))
+    - Grid Mesh :  (np.int64(3657), np.int64(5497), np.int64(4057))
+
+[System] Turn 17 complete. Total cubes: 42.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+✅ GC cycle complete. Moved 0 cubes to archive.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+✅ GC cycle complete. Moved 0 cubes to archive.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ラン...'
+    - keyphrase: 'エンターテインメント'  role: 'genre'  with confidence 0.7
+    - keyphrase: 'ゲームのハプニング'  role: 'topic'  with confidence 0.65
+    - keyphrase: '歓迎の言葉と実際の姿のギャップ'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'ランツクネヒトさん'  role: 'subject'  with confidence 0.95
+    - keyphrase: '犬小屋で四つん這いだった'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'わが城'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '歓迎'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '衝撃'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_7ea90fa4' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(103), np.int64(165), np.int64(111))
+    - Grid Mesh :  (np.int64(4049), np.int64(6446), np.int64(4340))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ようこそわが城へ。こちらはランツクネヒト...'
+  - Found 5 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: ようこそわが城へ。こちらはランツクネヒト | Meta(1):0.604 | Detail(2):0.753 | Context:0.877 | Final:0.728
+      [Debug] Cube: ととのいすぎて、大事なことまで綺麗さっぱ | Meta(1):0.564 | Detail(2):0.526 | Context:0.510 | Final:0.537
+      [Debug] Cube: まて！それは罠だ！っていうノリツッコミが | Meta(1):0.589 | Detail(2):0.573 | Context:0.586 | Final:0.584
+      [Debug] Cube: 傭兵なのにいつの間にか城持ちに！？じゃあ | Meta(1):0.608 | Detail(2):0.570 | Context:0.669 | Final:0.615
+      [Debug] Cube: 雨の日に聞くジャズは、心を落ち着かせる。 | Meta(1):0.528 | Detail(2):0.563 | Context:0.526 | Final:0.537
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:13:16 () : もうむしろインドカレーに大きな芋虫とか入っていても、もう驚かないもん　(´；ω；`)
+- LLM: 26_07_24_21:13:30 () : めちゃくちゃ泣いちゃってるじゃないですか！そこは悟りを開かずに、全力で驚いて拒否してください（笑）
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+
+【ユーザーの入力プロンプト】
+ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+
+【メタデータ】
+ - 26_07_24_21:30:12 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）...'
+    - keyphrase: 'エンターテインメント'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'コミカルな歓迎演出'  role: 'topic'  with confidence 0.8
+    - keyphrase: '期待と現実のコミカルなギャップ'  role: 'problem/theme'  with confidence 0.7
+    - keyphrase: '城'  role: 'subject'  with confidence 0.95
+    - keyphrase: '本人'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'まさかの犬小屋'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '完全にワンちゃん状態'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '衝撃の歓迎式'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: 'ワンちゃん状態'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_13b4386f' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(100), np.int64(151), np.int64(96))
+    - Grid Mesh :  (np.int64(3923), np.int64(5910), np.int64(3764))
+
+[System] Turn 18 complete. Total cubes: 44.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいー...'
+    - keyphrase: 'ファンタジー'  role: 'genre'  with confidence 0.8
+    - keyphrase: '中二病'  role: 'topic'  with confidence 0.85
+    - keyphrase: '怨敵の撃滅'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: '我がしもべ'  role: 'subject'  with confidence 0.8
+    - keyphrase: '撃滅せよ'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '封印'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '怨敵'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_da39e7bc' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(87), np.int64(174), np.int64(119))
+    - Grid Mesh :  (np.int64(3399), np.int64(6798), np.int64(4653))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'ついにこの封印を解くときが来たか。。。。...'
+  - Found 1 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: ようこそわが城へ。こちらはランツクネヒト | Meta(1):0.698 | Detail(2):0.597 | Context:0.587 | Final:0.636
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:14:31 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。
+- LLM: 26_07_24_21:14:48 () : 傭兵なのにいつの間にか城持ちに！？じゃあその豪華絢爛な衣装に負けないくらい、派手に宴会を始めましょう（笑）
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+
+【ユーザーの入力プロンプト】
+ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+
+【メタデータ】
+ - 26_07_24_21:32:05 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて...'
+    - keyphrase: 'ゲーム'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'キャラクターの召喚演出'  role: 'topic'  with confidence 0.8
+    - keyphrase: '召喚獣の見た目のシュールさ'  role: 'problem/theme'  with confidence 0.75
+    - keyphrase: 'むき出しの脳みそ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '敵も戦意喪失します'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'いでよ我がしもべ！'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: 'シュールすぎ'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_36592946' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(77), np.int64(162), np.int64(107))
+    - Grid Mesh :  (np.int64(3024), np.int64(6335), np.int64(4180))
+
+[System] Turn 19 complete. Total cubes: 46.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'だめだったかぁ。行けると思ったんだけどなぁ。...'
+    - keyphrase: '私（または「挑戦の結果」）'  role: 'subject'  with confidence 0.5
+    - keyphrase: 'だめだった'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '行けると思った'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_7e2b8c0c' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(100), np.int64(138), np.int64(98))
+    - Grid Mesh :  (np.int64(3930), np.int64(5410), np.int64(3864))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'だめだったかぁ。行けると思ったんだけどな...'
+  - No starting points found. Search terminated.
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:15:24 () : まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。
+- LLM: 26_07_24_21:15:38 () : 準備万端です！どんな変化球が飛んできても、かる〜く打ち返しますのでどんどんどうぞ！（笑）
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+- User: 26_07_24_21:32:05 () : ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+- LLM: 26_07_24_21:32:21 () : 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+
+【ユーザーの入力プロンプト】
+だめだったかぁ。行けると思ったんだけどなぁ。
+
+【メタデータ】
+ - 26_07_24_21:32:53 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）...'
+    - keyphrase: 'エンターテインメント'  role: 'genre'  with confidence 0.75
+    - keyphrase: 'キャラクターの演出'  role: 'topic'  with confidence 0.7
+    - keyphrase: '戦闘力の低さ（戦闘力ゼロ）'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '戦闘力'  role: 'subject'  with confidence 0.85
+    - keyphrase: 'ゼロなのが丸わかりでした'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ぷいーん（効果音）'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '戦闘力ゼロ'  role: 'key_phrase'  with confidence 0.95
+✅ CubeEngine: Cube 'cb_9cfe1e4a' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(92), np.int64(135), np.int64(89))
+    - Grid Mesh :  (np.int64(3595), np.int64(5290), np.int64(3488))
+
+[System] Turn 20 complete. Total cubes: 48.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '犬小屋から馬小屋住みに昇格したランツクネヒトさん。...'
+    - keyphrase: 'ランツクネヒトさん'  role: 'subject'  with confidence 0.95
+    - keyphrase: '昇格した'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '馬小屋住み'  role: 'key_phrase'  with confidence 0.8
+    - keyphrase: '犬小屋'  role: 'key_phrase'  with confidence 0.75
+✅ CubeEngine: Cube 'cb_01c83e39' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(4), np.int64(4))
+    - Fine Grid : (np.int64(104), np.int64(142), np.int64(131))
+    - Grid Mesh :  (np.int64(4082), np.int64(5579), np.int64(5141))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '犬小屋から馬小屋住みに昇格したランツクネ...'
+  - Found 4 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: ようこそわが城へ。こちらはランツクネヒト | Meta(1):0.000 | Detail(2):0.734 | Context:0.761 | Final:0.745
+      [Debug] Cube: 城がまさかの犬小屋で、本人は完全にワンち | Meta(1):0.000 | Detail(2):0.620 | Context:0.536 | Final:0.587
+      [Debug] Cube: ようこそわが城へ。こちらはランツクネヒト | Meta(1):0.000 | Detail(2):0.641 | Context:0.719 | Final:0.672
+      [Debug] Cube: ついに飲み物に昇格ですか！あのスパイシー | Meta(1):0.000 | Detail(2):0.541 | Context:0.430 | Final:0.496
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:17:27 () : ふっふっふ。このカレー、のど越しが良くてとても飲みやすいんだって。グリーンカレーと言うらしいよ。
+- LLM: 26_07_24_21:17:47 () : 確かにスープみたいで飲みやすそうですけど、青唐辛子のストレートを喉に食らって火を噴きますよ！（笑）
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+- User: 26_07_24_21:32:05 () : ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+- LLM: 26_07_24_21:32:21 () : 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+- User: 26_07_24_21:32:53 () : だめだったかぁ。行けると思ったんだけどなぁ。
+- LLM: 26_07_24_21:33:10 () : 「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）
+
+【ユーザーの入力プロンプト】
+犬小屋から馬小屋住みに昇格したランツクネヒトさん。
+
+【メタデータ】
+ - 26_07_24_21:33:56 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 昇格したとはいえ、まだ人間用の住処（すみか）じゃないですからね！（笑）
+
+今度は犬小屋の四つん這いから、さらに姿勢が高くなって「ヒヒーン！」とか言いながらパカパカ走って出迎えてきそうで、ますます城主としての威厳が迷子になってますよ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '昇格したとはいえ、まだ人間用の住処（すみか）じゃないですからね！（笑）
+
+今度は犬小屋の四つん這いか...'
+    - keyphrase: '日常・エンタメ'  role: 'genre'  with confidence 0.75
+    - keyphrase: '住環境の例え'  role: 'topic'  with confidence 0.7
+    - keyphrase: '人間用の住処として不十分な点'  role: 'problem/theme'  with confidence 0.7
+    - keyphrase: '城主としての威厳'  role: 'subject'  with confidence 0.95
+    - keyphrase: '迷子になってます'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '人間用の住処'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '犬小屋の四つん這い'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_efef8431' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(92), np.int64(147), np.int64(108))
+    - Grid Mesh :  (np.int64(3605), np.int64(5749), np.int64(4238))
+
+[System] Turn 21 complete. Total cubes: 50.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for '何それ可哀相（笑）　もう少しシステムテストに付き合って。まだまだ変なこといっぱい言うけど1行で返して...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.85
+    - keyphrase: 'システムテスト'  role: 'topic'  with confidence 0.95
+    - keyphrase: '対話テストへの協力依頼'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: 'あなた（システム）'  role: 'subject'  with confidence 0.75
+    - keyphrase: '付き合って'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '返してね'  role: 'predicate'  with confidence 0.85
+    - keyphrase: 'システムテスト'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: '1行で返して'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '変なこと'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_a205ffbc' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(77), np.int64(164), np.int64(119))
+    - Grid Mesh :  (np.int64(3032), np.int64(6432), np.int64(4671))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for '何それ可哀相（笑）　もう少しシステムテス...'
+  - Found 3 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: Geminiこんばんは、今からシステムの | Meta(1):0.904 | Detail(2):0.691 | Context:0.805 | Final:0.814
+      [Debug] Cube: まだまだシステムの応答テストで変な事をい | Meta(1):0.811 | Detail(2):0.771 | Context:0.865 | Final:0.816
+      [Debug] Cube: めちゃくちゃ泣いちゃってるじゃないですか | Meta(1):0.000 | Detail(2):0.648 | Context:0.607 | Final:0.631
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 2 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.816)】
+ - 【過去の対話内容】:【 まだまだシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答してね～。】
+ - 【関連キーワード】: [IT, システムの応答テスト, システム, システムの応答テスト, 変な事]
+
+【根拠データ2 (Score: 0.814)】
+ - 【過去の対話内容】:【 Geminiこんばんは、今からシステムの応答テストで変な事をいっぱい言うけど、1行くらいでかる～く回答して。】
+ - 【関連キーワード】: [IT, システムの応答テスト, テストへの協力依頼, システムの応答テスト, 変な事]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:18:38 () : まて！それは罠だ！っていうノリツッコミが欲しかったなぁ（笑）
+- LLM: 26_07_24_21:18:54 () : ああっ、不覚！「待て！それは罠だ！ココナッツの甘い香りの裏に潜む激辛地獄に騙されるな！」って言うべきでした（笑）
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+- User: 26_07_24_21:32:05 () : ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+- LLM: 26_07_24_21:32:21 () : 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+- User: 26_07_24_21:32:53 () : だめだったかぁ。行けると思ったんだけどなぁ。
+- LLM: 26_07_24_21:33:10 () : 「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）
+- User: 26_07_24_21:33:56 () : 犬小屋から馬小屋住みに昇格したランツクネヒトさん。
+- LLM: 26_07_24_21:34:14 () : 昇格したとはいえ、まだ人間用の住処（すみか）じゃないですからね！（笑）
+
+今度は犬小屋の四つん這いから、さらに姿勢が高くなって「ヒヒーン！」とか言いながらパカパカ走って出迎えてきそうで、ますます城主としての威厳が迷子になってますよ！
+
+【ユーザーの入力プロンプト】
+何それ可哀相（笑）　もう少しシステムテストに付き合って。まだまだ変なこといっぱい言うけど1行で返してね。
+
+【メタデータ】
+- 26_07_24_21:35:06 ()
+
+
+--------------------------------
+  [Rank 1] 'まだまだシステムの応答テストで変な事をい...' (Score: 0.816)
+    - Matched: 'IT' -> 'IT'
+    - Matched: 'システムテスト' -> 'システムの応答テスト'
+    - Matched: 'あなた（システム）' -> 'システム'
+    - Matched: 'システムテスト' -> 'システムの応答テスト'
+    - Matched: '変なこと' -> '変な事'
+  [Rank 2] 'Geminiこんばんは、今からシステムの...' (Score: 0.814)
+    - Matched: 'IT' -> 'IT'
+    - Matched: 'システムテスト' -> 'システムの応答テスト'
+    - Matched: '対話テストへの協力依頼' -> 'テストへの協力依頼'
+    - Matched: 'システムテスト' -> 'システムの応答テスト'
+    - Matched: '変なこと' -> '変な事'
+--------------------------------
+
+
+🤖 LLM: 確かにちょっと可哀想ですよね（笑）！テスト喜んでお付き合いしますので、変なことドシドシどうぞ！
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '確かにちょっと可哀想ですよね（笑）！テスト喜んでお付き合いしますので、変なことドシドシどうぞ！...'
+    - keyphrase: 'IT・ソフトウェア'  role: 'genre'  with confidence 0.75
+    - keyphrase: '対話・システムテスト'  role: 'topic'  with confidence 0.8
+    - keyphrase: 'テストへの協力'  role: 'problem/theme'  with confidence 0.85
+    - keyphrase: '私（話し手）'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'お付き合いします'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'テスト'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '変なこと'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_22147657' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(85), np.int64(134), np.int64(107))
+    - Grid Mesh :  (np.int64(3342), np.int64(5261), np.int64(4212))
+
+[System] Turn 22 complete. Total cubes: 52.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+✅ GC cycle complete. Moved 0 cubes to archive.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'あれ？？　デフラグエンジンが動かないや。...'
+    - keyphrase: 'IT'  role: 'genre'  with confidence 0.9
+    - keyphrase: 'デフラグ'  role: 'topic'  with confidence 0.95
+    - keyphrase: 'デフラグエンジンが起動しない不具合'  role: 'problem/theme'  with confidence 0.95
+    - keyphrase: 'デフラグエンジン'  role: 'subject'  with confidence 0.95
+    - keyphrase: '動かない'  role: 'predicate'  with confidence 0.95
+    - keyphrase: 'デフラグエンジン'  role: 'key_phrase'  with confidence 0.9
+✅ CubeEngine: Cube 'cb_3acff6d2' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(82), np.int64(152), np.int64(119))
+    - Grid Mesh :  (np.int64(3213), np.int64(5971), np.int64(4667))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'あれ？？　デフラグエンジンが動かないや。...'
+  - Found 3 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: Geminiこんばんは、今からシステムの | Meta(1):0.583 | Detail(2):0.446 | Context:0.490 | Final:0.517
+      [Debug] Cube: まだまだシステムの応答テストで変な事をい | Meta(1):0.654 | Detail(2):0.446 | Context:0.550 | Final:0.565
+      [Debug] Cube: 何それ可哀相（笑）　もう少しシステムテス | Meta(1):0.594 | Detail(2):0.466 | Context:0.545 | Final:0.543
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:20:44 () : このインドカレー、しゃびしゃびだね。EUカレーはどんな味？ジャパンカレーはねばっこい。アメリカンカレーは肉ゴロゴロ？
+- LLM: 26_07_24_21:21:03 () : EUカレー（欧風）はデミグラスで超上品、アメリカンはカレーという名のBBQ肉祭りになりそうですね！（笑）
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+- User: 26_07_24_21:32:05 () : ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+- LLM: 26_07_24_21:32:21 () : 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+- User: 26_07_24_21:32:53 () : だめだったかぁ。行けると思ったんだけどなぁ。
+- LLM: 26_07_24_21:33:10 () : 「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）
+- User: 26_07_24_21:33:56 () : 犬小屋から馬小屋住みに昇格したランツクネヒトさん。
+- LLM: 26_07_24_21:34:14 () : 昇格したとはいえ、まだ人間用の住処（すみか）じゃないですからね！（笑）
+
+今度は犬小屋の四つん這いから、さらに姿勢が高くなって「ヒヒーン！」とか言いながらパカパカ走って出迎えてきそうで、ますます城主としての威厳が迷子になってますよ！
+- User: 26_07_24_21:35:06 () : 何それ可哀相（笑）　もう少しシステムテストに付き合って。まだまだ変なこといっぱい言うけど1行で返してね。
+- LLM: 26_07_24_21:35:24 () : 確かにちょっと可哀想ですよね（笑）！テスト喜んでお付き合いしますので、変なことドシドシどうぞ！
+
+【ユーザーの入力プロンプト】
+あれ？？　デフラグエンジンが動かないや。
+
+【メタデータ】
+ - 26_07_24_21:36:28 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: さっき「ぷいーん」って飛んでった脳みそが抜けたままになってるからですよ！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for 'さっき「ぷいーん」って飛んでった脳みそが抜けたままになってるからですよ！（笑）...'
+    - keyphrase: '脳みそ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '抜けたままになっている'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'ぷいーんと飛んでった'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '脳みそが抜けた状態'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_dc09bccc' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(2))
+    - Fine Grid : (np.int64(88), np.int64(155), np.int64(79))
+    - Grid Mesh :  (np.int64(3468), np.int64(6060), np.int64(3107))
+
+[System] Turn 23 complete. Total cubes: 54.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'やっべぇｗｗ脳ミソ飛んでっちゃった！！！　おれって・・・能無し。...'
+    - keyphrase: 'メンタル・精神状態'  role: 'genre'  with confidence 0.6
+    - keyphrase: '思考停止'  role: 'topic'  with confidence 0.75
+    - keyphrase: 'キャパシティオーバーによる自虐'  role: 'problem/theme'  with confidence 0.7
+    - keyphrase: 'おれ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '能無し'  role: 'predicate'  with confidence 0.9
+    - keyphrase: '脳ミソ'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '飛んでっちゃった'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_b60af55e' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(95), np.int64(169), np.int64(99))
+    - Grid Mesh :  (np.int64(3719), np.int64(6613), np.int64(3880))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'やっべぇｗｗ脳ミソ飛んでっちゃった！！！...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: さっき「ぷいーん」って飛んでった脳みそが | Meta(1):0.000 | Detail(2):0.777 | Context:0.779 | Final:0.778
+      [Debug] Cube: おれはキーマカレーが好きだなぁ。ココナツ | Meta(1):0.483 | Detail(2):0.670 | Context:0.642 | Final:0.583
+✅ AnalyzeEngine (v9.3) initialized. topic_threshold=0.75, tension_threshold=0.75
+    -> Executing 'integration' route with 1 SRAG results.
+--------------------------------
+ -> Prompt for 'integration':
+ユーザーと自然な対話をしてください。
+以下の【関連する過去の記憶】をヒントとして参照しながら、
+【直近の対話履歴】の流れを踏まえてユーザーの入力プロンプトに解答してください。
+
+【関連する過去の記憶（検索結果）】
+【根拠データ1 (Score: 0.778)】
+ - 【過去の対話内容】:【 さっき「ぷいーん」って飛んでった脳みそが抜けたままになってるからですよ！（笑）】
+ - 【関連キーワード】: [脳みそ, ぷいーんと飛んでった]
+
+
+
+【直近の対話履歴】
+- User: 26_07_24_21:22:36 () : おれはキーマカレーが好きだなぁ。ココナツミルクのコクとあのカレーな（華麗な）風味が素晴らしいよね。
+- LLM: 26_07_24_21:22:55 () : キーマなのにココナッツ！？その華麗（カレー）な勘違い、スルーするわけにはいきませんね！（笑）
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+- User: 26_07_24_21:32:05 () : ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+- LLM: 26_07_24_21:32:21 () : 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+- User: 26_07_24_21:32:53 () : だめだったかぁ。行けると思ったんだけどなぁ。
+- LLM: 26_07_24_21:33:10 () : 「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）
+- User: 26_07_24_21:33:56 () : 犬小屋から馬小屋住みに昇格したランツクネヒトさん。
+- LLM: 26_07_24_21:34:14 () : 昇格したとはいえ、まだ人間用の住処（すみか）じゃないですからね！（笑）
+
+今度は犬小屋の四つん這いから、さらに姿勢が高くなって「ヒヒーン！」とか言いながらパカパカ走って出迎えてきそうで、ますます城主としての威厳が迷子になってますよ！
+- User: 26_07_24_21:35:06 () : 何それ可哀相（笑）　もう少しシステムテストに付き合って。まだまだ変なこといっぱい言うけど1行で返してね。
+- LLM: 26_07_24_21:35:24 () : 確かにちょっと可哀想ですよね（笑）！テスト喜んでお付き合いしますので、変なことドシドシどうぞ！
+- User: 26_07_24_21:36:28 () : あれ？？　デフラグエンジンが動かないや。
+- LLM: 26_07_24_21:36:41 () : さっき「ぷいーん」って飛んでった脳みそが抜けたままになってるからですよ！（笑）
+
+【ユーザーの入力プロンプト】
+やっべぇｗｗ脳ミソ飛んでっちゃった！！！　おれって・・・能無し。
+
+【メタデータ】
+- 26_07_24_21:37:26 ()
+
+
+--------------------------------
+  [Rank 1] 'さっき「ぷいーん」って飛んでった脳みそが...' (Score: 0.778)
+    - Matched: '脳ミソ' -> '脳みそ'
+    - Matched: '飛んでっちゃった' -> 'ぷいーんと飛んでった'
+--------------------------------
+
+
+🤖 LLM: 上手いこと言ってる場合じゃなくて、本当に物理的に「脳（能）無し」になってますから早く回収してきてください！（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '上手いこと言ってる場合じゃなくて、本当に物理的に「脳（能）無し」になってますから早く回収してきてくだ...'
+    - keyphrase: '対象の物（省略）'  role: 'subject'  with confidence 0.6
+    - keyphrase: '回収してきてください'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '「脳（能）無し」になってます'  role: 'predicate'  with confidence 0.85
+    - keyphrase: '物理的に「脳（能）無し」'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '回収'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_723bd292' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(75), np.int64(138), np.int64(98))
+    - Grid Mesh :  (np.int64(2935), np.int64(5409), np.int64(3844))
+
+[System] Turn 24 complete. Total cubes: 56.
+
+👤 You: 
+🧊 CubeEngine: Starting 'make_cube' for 'まぁいっか。さっきスーパーで特売やっててね。そこで買った100グラム33円の脳みそなの。誰のかは不明...'
+    - keyphrase: 'ホラー・SF'  role: 'genre'  with confidence 0.75
+    - keyphrase: '脳みその購入'  role: 'topic'  with confidence 0.85
+    - keyphrase: '出所不明の脳みそ'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: '脳みそ'  role: 'subject'  with confidence 0.95
+    - keyphrase: '（誰のかは）不明'  role: 'predicate'  with confidence 0.9
+    - keyphrase: 'スーパーの特売'  role: 'key_phrase'  with confidence 0.85
+    - keyphrase: '100グラム33円'  role: 'key_phrase'  with confidence 0.8
+✅ CubeEngine: Cube 'cb_c5e1e5c8' created successfully.
+    - int3 Grid : (np.int64(3), np.int64(5), np.int64(3))
+    - Fine Grid : (np.int64(101), np.int64(175), np.int64(121))
+    - Grid Mesh :  (np.int64(3977), np.int64(6836), np.int64(4742))
+
+🛰️  SRAG Engine: Starting 'exploratory' search for 'まぁいっか。さっきスーパーで特売やってて...'
+  - Found 2 candidate cubes from neighbors.
+    -> Executing Exploratory Flow (Two-Stage Meta-Semantics)...
+    -> Executing Standard Flow (Two-Stage Meta-Semantics)...
+      [Debug] Cube: さっき「ぷいーん」って飛んでった脳みそが | Meta(1):0.000 | Detail(2):0.600 | Context:0.699 | Final:0.639
+      [Debug] Cube: やっべぇｗｗ脳ミソ飛んでっちゃった！！！ | Meta(1):0.538 | Detail(2):0.606 | Context:0.742 | Final:0.618
+--------------------------------
+ -> Prompt for 'single':
+ユーザーとの自然な対話をしてください。
+以下の【直近の対話履歴】の流れを踏まえながらユーザーの入力プロンプトに回答してください。
+また【直近の対話履歴】に何も含まれていない場合は新規スレッドでの会話となります。
+
+【直近の対話履歴】
+- User: 26_07_24_21:23:39 () : 勘違いかぁ。。。残念ころりんすっとんとん。もうひとつころりんすっとんとん。
+- LLM: 26_07_24_21:24:01 () : ころりんすっとんとんって可愛すぎます！もうカレーじゃなくておむすびが転がっちゃってますよ！（笑）
+- User: 26_07_24_21:25:10 () : ミスター：カレーノーム博士「カレーは飲み物である。異論は認めんよ。」
+- LLM: 26_07_24_21:25:28 () : しゃびしゃびなカレーなら飲み物ですけど、キーマや具だくさんカレーまで一気に飲み干すのはさすがに無茶ですよ、博士！（笑）
+- User: 26_07_24_21:27:23 () : ブリジストンはタイヤメーカー、ブリ痔ストンは危険な排泄音。
+- LLM: 26_07_24_21:27:41 () : タイヤメーカーなのに、その「ブリ」はブレーキが一切効かない大惨事のやつですね！（笑）
+- User: 26_07_24_21:30:12 () : ようこそわが城へ。こちらはランツクネヒト。ようこそわが城へ。君たちを歓迎する。って言われたのに、ランツクネヒトさんが犬小屋で四つん這いだった時の衝撃。
+- LLM: 26_07_24_21:30:31 () : 城がまさかの犬小屋で、本人は完全にワンちゃん状態じゃないですか！衝撃の歓迎式すぎる！（笑）
+- User: 26_07_24_21:32:05 () : ついにこの封印を解くときが来たか。。。。いでよ我がしもべ！そしてこの怨敵を撃滅せよ！　　🧠～（ぷいーん）
+- LLM: 26_07_24_21:32:21 () : 「いでよ我がしもべ！」で出てきたのが、まさかの「むき出しの脳みそ」って、飛んでくだけでシュールすぎて敵も戦意喪失しますよ！（笑）
+- User: 26_07_24_21:32:53 () : だめだったかぁ。行けると思ったんだけどなぁ。
+- LLM: 26_07_24_21:33:10 () : 「ぷいーん」って効果音の時点で、戦闘力ゼロなのが丸わかりでしたからね！（笑）
+- User: 26_07_24_21:33:56 () : 犬小屋から馬小屋住みに昇格したランツクネヒトさん。
+- LLM: 26_07_24_21:34:14 () : 昇格したとはいえ、まだ人間用の住処（すみか）じゃないですからね！（笑）
+
+今度は犬小屋の四つん這いから、さらに姿勢が高くなって「ヒヒーン！」とか言いながらパカパカ走って出迎えてきそうで、ますます城主としての威厳が迷子になってますよ！
+- User: 26_07_24_21:35:06 () : 何それ可哀相（笑）　もう少しシステムテストに付き合って。まだまだ変なこといっぱい言うけど1行で返してね。
+- LLM: 26_07_24_21:35:24 () : 確かにちょっと可哀想ですよね（笑）！テスト喜んでお付き合いしますので、変なことドシドシどうぞ！
+- User: 26_07_24_21:36:28 () : あれ？？　デフラグエンジンが動かないや。
+- LLM: 26_07_24_21:36:41 () : さっき「ぷいーん」って飛んでった脳みそが抜けたままになってるからですよ！（笑）
+- User: 26_07_24_21:37:26 () : やっべぇｗｗ脳ミソ飛んでっちゃった！！！　おれって・・・能無し。
+- LLM: 26_07_24_21:37:47 () : 上手いこと言ってる場合じゃなくて、本当に物理的に「脳（能）無し」になってますから早く回収してきてください！（笑）
+
+【ユーザーの入力プロンプト】
+まぁいっか。さっきスーパーで特売やっててね。そこで買った100グラム33円の脳みそなの。誰のかは不明。
+
+【メタデータ】
+ - 26_07_24_21:39:19 ()
+
+
+--------------------------------
+--------------------------------
+
+
+🤖 LLM: 100グラム33円って激安すぎますけど、それ本当にデフラグエンジンとして機能するんですか！？（笑）
+--------------------------------
+
+🧊 CubeEngine: Starting 'make_cube' for '100グラム33円って激安すぎますけど、それ本当にデフラグエンジンとして機能するんですか！？（笑）...'
+    - keyphrase: 'IT・テクノロジー'  role: 'genre'  with confidence 0.7
+    - keyphrase: 'デフラグエンジン'  role: 'topic'  with confidence 0.85
+    - keyphrase: '安すぎる製品の動作・信頼性への疑念'  role: 'problem/theme'  with confidence 0.8
+    - keyphrase: 'それ'  role: 'subject'  with confidence 0.9
+    - keyphrase: 'デフラグエンジンとして機能する（んですか）'  role: 'predicate'  with confidence 0.95
+    - keyphrase: '100グラム33円'  role: 'key_phrase'  with confidence 0.95
+    - keyphrase: 'デフラグエンジン'  role: 'key_phrase'  with confidence 0.9
+    - keyphrase: '激安すぎます'  role: 'key_phrase'  with confidence 0.85
+✅ CubeEngine: Cube 'cb_c3b7f244' created successfully.
+    - int3 Grid : (np.int64(2), np.int64(4), np.int64(3))
+    - Fine Grid : (np.int64(72), np.int64(150), np.int64(96))
+    - Grid Mesh :  (np.int64(2827), np.int64(5883), np.int64(3776))
+
+[System] Turn 25 complete. Total cubes: 58.
+
+👤 You: ✅ DefragEngine (v2.2) initialized.
+
+==================== Defrag Engine Cycle Start ====================
+✅ GC_Engine initialized.
+
+==================== GC Engine Cycle Start ====================
+✅ GC cycle complete. Moved 0 cubes to archive.
+
+👤 You: 👋 See you, space cowboy...
