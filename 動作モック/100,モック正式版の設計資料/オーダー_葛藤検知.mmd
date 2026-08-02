@@ -1,0 +1,29 @@
+flowchart TD
+    %% ノード定義
+    Start(["START\n葛藤検知プロセス開始"])
+    Input["検索結果のキューブ群\n(Context Cubes)"]
+    LoopStart{"キューブのペア\n(Cube A, Cube B)\nを取り出す"}
+    
+    CheckTopic{"トピックロック判定\nMiniCube(単語)の類似度は\n閾値より高いか？"}
+    CalcTension["張力(Tension)計算\nSemanticCube(文脈)の\nコサイン類似度を算出"]
+    CheckConflict{"葛藤判定\n文脈の類似度が\n閾値より低い(逆を向いている)か？"}
+    
+    RecordConflict["葛藤(Conflict)を記録\n最大Tensionスコアを更新"]
+    End(["END\n最終的なTensionスコアを\nIntegrationへ渡す"])
+
+    %% 処理フロー
+    Start --> Input
+    Input --> LoopStart
+    
+    LoopStart -->|ペアあり| CheckTopic
+    LoopStart -->|全ペア検証完了| End
+    
+    CheckTopic -->|No - 別の話題| LoopStart
+    CheckTopic -->|Yes - 同じ話題について話している| CalcTension
+    
+    CalcTension --> CheckConflict
+    
+    CheckConflict -->|No - 意見が一致している| LoopStart
+    CheckConflict -->|Yes - 真っ向から意見が対立| RecordConflict
+    
+    RecordConflict --> LoopStart

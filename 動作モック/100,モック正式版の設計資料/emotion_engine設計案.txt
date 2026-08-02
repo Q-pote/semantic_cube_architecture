@@ -1,0 +1,467 @@
+おお、これはもう設計書にしておいた方がいいやつだ。😼
+
+今の構想は「EmotionEngineを作る」じゃなくて、
+
+> **ERAG vNext : Cognitive State Architecture**
+
+の導入計画になってる。
+
+わしならこんな感じで残す。
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ERAG vNext
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## Cognitive State Architecture 導入計画
+
+### 目的
+
+現行のERAGは、
+
+```text
+Memory
+↓
+Search
+↓
+Response
+```
+
+の流れで動作する。
+
+しかし実際の人間は、
+
+```text
+Memory
+↓
+State
+↓
+Search
+↓
+Memory
+↓
+State
+```
+
+という循環構造を持つ。
+
+そのため、
+
+* 同じ質問でも機嫌で反応が変わる
+* 思い出すだけで感情が揺れる
+* 感情によって反芻の深さが変化する
+* 時間経過で感情が代謝される
+
+という挙動が発生する。
+
+本設計では、
+
+検索システム(SRAG)の外側に
+
+```text
+Cognitive State Layer
+```
+
+を導入し、
+
+認知状態による検索方針制御を実現する。
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Phase1
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## 型定義の拡張
+
+目的
+
+```text
+将来的な状態変数を格納可能にする
+```
+
+***
+
+### EmotionVector
+
+```python
+@dataclass
+class EmotionVector:
+
+    joy: float = 0.0
+    anger: float = 0.0
+    sorrow: float = 0.0
+    pleasure: float = 0.0
+```
+
+感情の基礎ベクトル。
+
+***
+
+### CognitiveState
+
+```python
+@dataclass
+class CognitiveState:
+
+    emotion: EmotionVector
+
+    curiosity: float
+    confidence: float
+
+    stress: float
+    fatigue: float
+```
+
+***
+
+分類
+
+```text
+Emotion Layer
+  喜怒哀楽
+
+Motivation Layer
+  好奇心
+  自信
+
+Load Layer
+  ストレス
+  疲労
+```
+
+***
+
+### SemanticCube追加項目
+
+```python
+memory_importance
+
+origin_emotion
+
+recall_emotion
+```
+
+***
+
+役割
+
+```text
+memory_importance
+
+  人生における重要度
+
+origin_emotion
+
+  当時感じた感情
+
+recall_emotion
+
+  現在想起時に発生する感情
+```
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Phase2
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## DataHubへの状態追加
+
+目的
+
+```text
+記憶とは別に現在状態を持つ
+```
+
+***
+
+追加項目
+
+```python
+self.current_state
+```
+
+***
+
+概念
+
+```text
+Memory
+≠
+Current State
+```
+
+を分離する。
+
+***
+
+例
+
+```text
+ミイダス不採用
+
+Memory :
+  残っている
+
+Current Emotion :
+  既に回復済み
+```
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Phase3
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## EmotionEngine導入
+
+目的
+
+State制御機構の実装
+
+***
+
+初期機能
+
+```python
+update_state()
+
+apply_memory_impact()
+
+decay()
+```
+
+のみ。
+
+***
+
+処理
+
+```text
+RecallEmotion
+×
+alpha
+×
+memory_importance
+↓
+Current Stateへ加算
+```
+
+***
+
+ここでは
+
+```text
+SRAG
+RSRAG
+```
+
+には影響を与えない。
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Phase4
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## State可視化
+
+目的
+
+デバッグ可能にする
+
+***
+
+例
+
+```text
+Current State
+
+Joy       0.25
+Anger     0.41
+Sorrow    0.12
+Pleasure  0.63
+
+Curiosity 0.82
+Confidence 0.31
+
+Stress    0.44
+Fatigue   0.67
+```
+
+***
+
+理由
+
+状態が見えないと
+
+```text
+EmotionEngineが悪い
+
+SRAGが悪い
+```
+
+の切り分けができなくなる。
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Phase5
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## RSRAGとの連携
+
+目的
+
+状態による反芻深度制御
+
+***
+
+例
+
+```python
+if sorrow > 0.6:
+    rumination_count += 2
+
+if stress > 0.7:
+    exploratory_mode = False
+
+if curiosity > 0.8:
+    exploratory_mode = True
+```
+
+***
+
+状態によって
+
+```text
+検索内容
+```
+
+ではなく
+
+```text
+検索方針
+```
+
+を変更する。
+
+***
+
+重要
+
+ここではまだ
+
+```text
+検索スコア
+```
+
+は変更しない。
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Phase6
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+## SRAGバイアス導入
+
+目的
+
+認知状態による検索結果偏向
+
+***
+
+例
+
+```python
+final_score
+
+=
+semantic_score
++
+emotion_bias
++
+importance_bias
+```
+
+***
+
+ここで初めて
+
+```text
+怒っている
+↓
+怒り記憶を引きやすい
+
+悲しい
+↓
+内省記憶を引きやすい
+```
+
+が発生する。
+
+***
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 最終構造
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+```text
+DataHub
+
+├─ Memory Layer
+│
+│   SemanticCube
+│   MiniCube
+│
+├─ Cognitive State Layer
+│
+│   Emotion
+│   Motivation
+│   Load
+│
+├─ EmotionEngine
+│
+│   State Update
+│   Decay
+│
+├─ SRAG
+│
+│   Semantic Search
+│
+├─ RSRAG
+│
+│   Rumination Search
+│
+└─ Defrag
+    Memory Metabolism
+```
+
+***
+
+# 最終目標
+
+現行ERAG
+
+```text
+Memory
+↓
+Search
+↓
+Response
+```
+
+次世代ERAG
+
+```text
+Memory
+↓
+State
+↓
+Search
+↓
+Memory
+↓
+State
+↓
+Response
+```
+
+つまり、
+
+> **「覚えているAI」ではなく、「経験によって現在状態が変化するAI」**
+
+を目指す。
+
+***
+
+これ、かなり良いロードマップだと思う。
+
+特に Phase5 まで検索ロジックを汚さず、最後の Phase6 で初めてバイアスを入れる構成は、君の好きな「壊れない増築」ができる。😼🔧🧠🌌

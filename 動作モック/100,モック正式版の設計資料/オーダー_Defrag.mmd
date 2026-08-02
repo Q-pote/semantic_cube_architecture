@@ -1,0 +1,42 @@
+flowchart TD
+    %% ノード定義
+    Start(["START\nデフラグ・プロセス開始\nターンエンド時等に非同期実行"])
+    GetTargets(["代謝候補の抽出\nAlpha値(生命力)が閾値以下の\nキューブを取得"])
+    
+    Cluster(["周辺記憶の収集\n空間グリッド(27近傍)や類似度で\n関連キューブのクラスタを形成"])
+    CalcCentroid(["クラスタの重心計算\n集めたベクトル群から\n平均値(Centroid)を算出"])
+    
+    FindPseudo(["疑似クエリの選定\n重心に最も近い既存のキューブを\n「クラスタの代表」として抽出"])
+    
+    LLMAbstract(["LLMによる抽象化\n代表キューブを中心に\n新しいOriginキューブを生成"])
+    
+    QualityCheck{"Origin品質チェック\n元のキューブ群が持っていた\nMiniCube(意味)が\n引き継がれているか？"}
+    
+    SaveOrigin(["新規Originの保存\nDataHubへ新しい記憶として登録"])
+    MarkGC(["旧キューブの処理\n元のキューブ群を透過(Alpha=0)し\nGcEngine(忘却)へ委譲"])
+    
+    Reject(["生成の破棄(Reject)\nハルシネーションとみなし\n今回の代謝を見送る"])
+    
+    If(["代謝候補が存在するか？\nクラスター生成が可能な\nキューブが存在する"])
+
+    End(["END\nデフラグ完了"])
+
+    
+
+    %% 処理フロー
+    Start --> GetTargets
+    GetTargets --> Cluster
+    Cluster --> CalcCentroid
+    CalcCentroid --> FindPseudo
+    FindPseudo --> LLMAbstract
+    LLMAbstract --> QualityCheck
+    
+    QualityCheck -->|Yes - 品質クリア・意味の継承確認| SaveOrigin
+    SaveOrigin --> MarkGC
+    MarkGC --> If
+    
+    QualityCheck -->|No - 意味の欠落・捏造あり| Reject
+    Reject --> If
+
+    If -->|Yes - 代謝候補あり| Start
+    If -->|No - 代謝候補なし| End

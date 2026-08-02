@@ -1,0 +1,77 @@
+flowchart TD
+
+    %% インターフェース
+    User("ユーザー\n対話")
+
+    %% 外部依存関係
+    subgraph external["外部依存関係"]
+        LLM_API["外部APIサービス\nGemini / Claude 等"]
+    end
+
+    %% ゲートウェイ
+    subgraph gateway["LLMサービス"]
+        LLMService["LLM Service\nProvider"]
+    end
+    
+    %% 内部データベース
+    subgraph Datamodel["Data hub / Memory"]
+        DataHub{"キューブプール\n直近対話\n(意識領域)"}
+        Archive{"Archived\n(無意識領域)"}
+    end
+
+    %% キューブ操作エンジン
+    subgraph Cube["キューブ操作エンジン"]
+        CubeEngine["Cube Engine\nキューブ生成・保存・検索"]
+    end
+
+    %% 記憶エンジン
+    subgraph search["記憶エンジン"]
+        SragE["SRAG Engine\n探索的検索"]
+    end
+    
+    %% 代謝エンジン
+    subgraph Metabolism["代謝エンジン"]
+        DefragE["Defrag Engine\n抽象化・Origin生成"]
+        GcE["GC Engine\nAlpha減衰・忘却"]
+    end
+
+    %% 対話制御エンジン
+    subgraph Dialogue["対話制御エンジン"]
+        AnalyzeE["Analyze Engine\n葛藤・トピック検知"]
+        EmotionE["Emotion Engine\n機嫌・感情フラッシュバック"]
+        IntegrationE["Integration Engine\nハイブリッド回答生成"]
+    end
+
+    
+    %% ユーザー入力
+    User -->|"１，プロンプト入力"| Cube
+    Cube <-->|"２，意味キューブ化"| gateway
+    Cube -->|"３，意味キューブ保存"| Datamodel
+    
+    %% 記憶検索
+    search -->|"４，記憶検索"| Datamodel
+    Datamodel -->|"５，検索結果\n(TOP-K)"| search
+
+    %% 記憶制御
+    Datamodel -->|"６A，直近対話履歴"| Dialogue
+    search -->|"６B，関連記憶"| Dialogue
+
+    %% 対話制御
+    AnalyzeE -->|"７，葛藤分析"| EmotionE
+    EmotionE -->|"８，気分・情動"| IntegrationE
+    AnalyzeE -->|"９，解析済みコンテキスト"| IntegrationE
+    Dialogue <-->|"１０，LLM回答生成"| gateway
+    IntegrationE -->|"１１，回答出力"| User
+
+    %% 記憶代謝
+    Datamodel -->|"１２，代謝対象の全キューブ"| Metabolism
+    Metabolism <-->|"１３，新規で意味キューブ化"| gateway
+    Metabolism -->|"１４，代謝後の新規キューブ"| Datamodel
+    Metabolism -->|"１５，ガベージコレクト操作"| Datamodel
+    
+    %% 外部API
+    LLM_API <-->|"LLMサービスへ"| LLMService
+
+
+    %% ユーザー（start）を目立つ色に
+    style User fill:#AA0000,stroke:#FFF,stroke-width:4px

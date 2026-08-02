@@ -1,0 +1,38 @@
+flowchart TD
+    %% ノード定義
+    Start(["START\nMakeCube プロセス開始\nテキストデータの入力"])
+    
+    %% Semantic Cube (全体文脈) の生成
+    EmbedText["全体文脈のベクトル化\nLLMServiceへテキストを渡し\nembedding_vectorを取得"]
+    CalcGrid["全体グリッド座標の計算\nベクトルを3次元空間等へ射影\n(int3_gridを算出)"]
+    
+    %% Mini Cube (語義・キーワード) の生成
+    ExtractKeywords["語義(キーワード)の抽出\nテキストから重要概念・名詞を\nリストとして抽出"]
+    
+    LoopStart{"抽出されたキーワードの\nループ処理"}
+    
+    EmbedKeyword["キーワードのベクトル化\n各キーワード単体をLLMServiceへ渡し\n専用のベクトルを取得"]
+    CalcMiniGrid["語義グリッド座標の計算\nキーワードのベクトルから\n(vec_int3を算出)"]
+    CalcTrust["信頼度(Trust Score)の算出\nキーワードの重要度や\n抽出確度を計算"]
+    CreateMiniCube["MiniCubeのインスタンス化\n(ID, vector, vec_int3, trust_score)"]
+    
+    %% アセンブルと完了
+    AssembleCube["SemanticCubeのアセンブル\n全体ベクトル、グリッド、Alpha値、\nそして生成したMiniCube群を1つに統合"]
+    
+    End(["END\nキューブ生成完了\nDataHub(記憶の海)へ保存"])
+
+    %% 処理フロー
+    Start --> EmbedText
+    EmbedText --> CalcGrid
+    CalcGrid --> ExtractKeywords
+    
+    ExtractKeywords --> LoopStart
+    
+    LoopStart -->|"キーワードが存在"| EmbedKeyword
+    EmbedKeyword --> CalcMiniGrid
+    CalcMiniGrid --> CalcTrust
+    CalcTrust --> CreateMiniCube
+    CreateMiniCube --> LoopStart
+    
+    LoopStart -->|"全キーワード処理完了"| AssembleCube
+    AssembleCube --> End

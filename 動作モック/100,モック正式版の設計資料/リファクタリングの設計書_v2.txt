@@ -1,0 +1,167 @@
+
+# 🌌 Semantic Cube Architecture 設計仕様
+
+---
+
+## 1. システム全体概要・データフロー
+
+本システムは、従来のベクターDBや単純な文字列完全一致に頼らず、高次元Embeddingの3次元空間プロジェクション（PCA + MinMaxScaler）による **3段階空間グリッド（8 / 256 / 10,000 階調）** を用いて、記憶の構造化・多層検索（SRAG）・葛藤検知（Tension）・代謝・忘却（Defrag/GC）を自律的に実行するアーキテクチャである。
+
+### 🔄 1ターン（対話〜代謝）の全シーケンスフロー
+1. **[入力＆キューブ化]**: ユーザー入力を `CubeEngine` で `SemanticCube`（Q-Cube）へ変換（6種類の `PhraseRole` 抽出・ベクトル化・3階調座標マッピング）。
+2. **[記憶検索 (SRAG v3.1)]**: 27近傍グリッドフィルタリング ➔ メタ（60%）＆詳細（40%）の **「二段階メタ・セマンティクス探査」** ➔ DBSCANクラスタリング（探索モード時）。
+3. **[葛藤検知 (Tension v9.3)]**: 共通トピックロック（類似度 `≥ 0.75`） ➔ 主主張ベクトル比較（`threshold = 0.70`）。対立時は視点両論併記ルートへ分岐。
+4. **[応答統合]**: `IntegrationEngine` が過去記憶・対話履歴・Tensionサマリーを編み込んでLLM応答（A-Cube）を生成し、因果関係（`reactionLink_ID`）で相互リンク。
+5. **[記憶代謝 (Defrag v2.2 & GC)]**: 生命力（$\alpha$値）が `0.75` 未満に減衰した記憶をシードとし、DBSCAN前処理 ➔ 幾何学的重心 ➔ 疑似クエリ精製 ➔ **意味的保持率（Semantic Retention `≥ 30%`）** で品質チェックを行い、新しい概念（Origin）を昇華生成。不要な旧記憶をアーカイブ隔離。
+
+---
+
+## 2. コア・データ構造 (Data Specifications)
+
+### 🧊 1. `SemanticCube` (思考の原子)
+| プロパティ名 | 型 | 説明 |
+|:---|:---|:---|
+| `cube_id` | `str` | `"cb_"` + UUID8桁 |
+| `role` | `CubeRole` | `"history"`, `"origin"`, `"knowledge"`, `"ethics"`, `"identity"` |
+| `source` | `CubeSource` | `"USER"`, `"LLM"`, `"DEFRAG"` |
+| `summary` | `str` | 発話原文またはOrigin要約テキスト |
+| `embedding_vector` | `np.ndarray` | LLM生成の高次元埋め込みベクトル (3072次元等) |
+| `vec_int3` | `np.ndarray` | 量子化済みN次元配列 |
+| `int3_grid` | `Tuple[int, int, int]` | 8階調 [0-7] インデックス・ルーティング用座標 |
+| `int8_grid` | `Tuple[int, int, int]` | 256階調 [0-255] 分布観測・描画用座標 |
+| `grid_mesh` | `Tuple[int, int, int]` | 10,000階調 [0-9999] クラスタ・葛藤演算用精密座標 |
+| `trust` | `TrustStruct` | 信頼度・代謝構造体 (`alpha`, `ref_count`) |
+| `mini_cubes` | `List[MiniCube]` | 抽出されたキーワード小キューブ群 |
+| `reactionLink_ID` | `str` | Q-CubeとA-Cubeを結ぶ相互因果リンクID |
+| `defrag_target` | `bool` | デフラグ対象フラグ (`history`, `origin` が `True`) |
+| `is_archived` | `bool` | 論理削除・アーカイブフラグ |
+| `create_turn` / `defrag_turn` | `int` | 生成ターンおよび最終デフラグ処理ターン |
+
+#### 🌿 生命力（衰退）計算ロジック (`get_alpha`)
+$$ \text{decay} = 0.1 \times \max(0, \text{global\_turn} - \text{last\_used\_turn} - 5) $$
+$$ \alpha = \max(0.0, 1.0 - \text{decay}) $$
+* `knowledge`, `ethics`, `identity` ロールは $\alpha = 1.0$ 固定。
+* 5ターンの猶予期間（`grace_period`）経過後、1ターンにつき `0.1` ずつ自動減衰。
+
+---
+
+### 📦 2. `MiniCube` (意味キーワード単位)
+| プロパティ名 | 型 | 説明 |
+|:---|:---|:---|
+| `minicube_id` | `str` | `"mc_"` + UUID8桁 |
+| `phrase` | `str` | 抽出フレーズ |
+| `role` | `PhraseRole` | 全6種類: `"genre"`, `"topic"`, `"problem/theme"`, `"subject"`, `"predicate"`, `"key_phrase"` |
+| `confidence` | `float` | LLM抽出時の信頼度 (0.0〜1.0) |
+| `embedding` | `np.ndarray` | フレーズ単体のEmbeddingベクトル |
+| `int3_grid` / `grid_mesh` | `Tuple[int, int, int]` | 単体キーワードの空間座標 |
+| `parent_cube_id` | `str` | 親 `SemanticCube` のID |
+
+---
+
+### 🛡️ 3. `TrustStruct` & 検索関連構造体
+```python
+@dataclass
+class TrustStruct:
+    score: float = 1.0
+    alpha: float = 1.0
+    ref_count: int = 0
+
+@dataclass
+class MatchInfo:
+    query_phrase: str = ""
+    target_phrase: str = ""
+    score: float = 0.0
+    parent_cube_id: str = ""
+
+@dataclass
+class TensionResult:
+    has_tension: bool = False
+    tension_score: float = 0.0
+    divergent_summaries: List[str] = field(default_factory=list)
+
+@dataclass
+class SearchResult:
+    cube: SemanticCube
+    final_score: float
+    reason: str
+    matched_minicubes: List[MatchInfo] = field(default_factory=list)
+```
+
+---
+
+## 3. 中央データハブ (`DataHub`) 仕様
+
+すべての長期記憶・短期記憶・作業領域を一元管理する状態マネージャー。
+
+```python
+class DataHub:
+    def __init__(self):
+        self.cube_pool: Dict[str, SemanticCube] = {}       # 1. アクティブな全長期記憶
+        self.active_history: List[SemanticCube] = []       # 2. 直近対話ログ (最大10件)
+        self.srag_results: List[SearchResult] = []          # 3. SRAG検索ワークエリア
+        self.archived_cube_pool: Dict[str, SemanticCube] = {} # 4. GC隔離プール
+        self.global_turn: int = 0                          # グローバルターン数
+        self.defrag_turn: int = 0                          # 最終デフラグ実行ターン
+
+    def tick(self): self.global_turn += 1
+    def cube_add(self, cube: SemanticCube): self.cube_pool[cube.cube_id] = cube
+    def cube_get_all(self) -> List[SemanticCube]: return [c for c in self.cube_pool.values() if not c.is_archived]
+    def history_push(self, cube: SemanticCube):
+        self.active_history.append(cube)
+        if len(self.active_history) > 10: self.active_history.pop(0)
+    def history_get_all(self) -> List[SemanticCube]: return self.active_history
+```
+
+---
+
+## 4. 各処理エンジン設計 (Engine Implementations)
+
+### ⚙️ 1. `CubeEngine` (ベクトル・多解像度座標生成)
+* **プロジェクター (`DynamicProjector`)**: 3072次元Embeddingを全記憶分布に基づきPCA (3成分) ＋ MinMaxScaler (0.0〜1.0) に通し、3階調座標を一括算出。
+  * `int3_grid`: `norm_coords * 8`
+  * `int8_grid`: `norm_coords * 256`
+  * `grid_mesh`: `norm_coords * 10000`
+* **6分類キーワード抽出**: LLMプロンプトにより、発話文から `genre`, `topic`, `problem/theme`, `subject`, `predicate`, `key_phrase` の全6ロールを抽出。
+
+---
+
+### 🛰️ 2. `SragEngine` (二段階メタ・セマンティクス探査)
+* **高速起点フィルタリング (`_select_starting_points`)**: クエリの `MiniCube` の `int3_grid` 近傍27マスから、キーワードコサイン類似度 `≥ 0.75` の記憶候補を高速抽出。
+* **二段階メタ・スコアリング**:
+  $$\text{mini\_score} = (\text{half\_score\_1} \times 0.6) + (\text{half\_score\_2} \times 0.4)$$
+  * **前段階 (`half_score_1`)**: `genre`, `topic`, `problem/theme`（大文脈・テーマ適合度）
+  * **後段階 (`half_score_2`)**: `subject`, `predicate`, `key_phrase`（具体文脈適合度）
+  * メタ情報不在（雑談等）時は、`half_score_2` と全体コンテキスト（`context_sim`）へ動的に重みを再分配。
+* **標準フロー (`_run_standard_flow`)**:
+  $$\text{Final Score} = (\text{mini\_score} \times 0.7) + (\text{context\_sim} \times 0.3)$$
+* **探索型フロー (`_run_exploratory_flow`)**:
+  10,000階調 `grid_mesh` 空間で DBSCAN (`eps=200`, `min_samples=2`) クラスタリングを実行し、クラスタ内軸類似度（15%）＋ ミニキューブ適合度（55%）＋ 全体コンテキスト（30%）で代表記憶を選出。
+
+---
+
+### ⚡ 3. `AnalyzeEngine` (葛藤・張力検知)
+1. **トピックロック**: 全ペアの `MiniCube` ベクトル類似度 `≥ 0.75` を探索し、「共通の話題について語っているか」を判定。
+2. **張力測定**: 同一トピックを持つペアの本体 `embedding_vector` コサイン類似度を比較。
+3. **葛藤判定**: 最小類似度が **`tension_threshold = 0.70`** 未満の場合、主主張が対立（そっぽを向いている）とみなし `TensionResult(has_tension=True)` を生成。
+
+---
+
+### 🤝 4. `IntegrationEngine` (応答生成)
+* **`single` ルート**: SRAGヒットが0件の場合、直近対話履歴のみからLLM応答を生成。
+* **`integration` ルート**:
+  * **通常時**: SRAG検索結果（根拠データ）と対話履歴から自然な統合回答を作成。
+  * **Tension発動時**: 「意見の対立情報（異なるサマリー）」をプロンプトに注入し、**「安易にまとめず、異なる視点を尊重して両論併記で回答を作成する」** 特別指示を適用。
+
+---
+
+### 🧬 5. `DefragEngine` & `GCEngine`
+1. **衰退シード検出**: `defrag_target == True` かつ生命力 $\alpha < \text{defrag\_threshold} (0.75)$ の記憶を選出。
+2. **DBSCAN前処理**: 8階調近傍27マス内の候補キューブに対し、10,000階調 `grid_mesh` で DBSCAN (`eps=500`, `min_samples=2`) を掛け、異物ノイズを物理的に排除した高密度クラスタを抽出。
+3. **重心算出 & 疑似クエリ選出**: クラスタの幾何学的重心（`np.mean(grid_mesh)`）に最も近いキューブを「疑似クエリ」として選定。
+4. **高次元精製**: 疑似クエリとクラスタ内記憶との高次元ベクトル類似度判定で純度を100%に向上。
+5. **Origin生成**: クラスタ内の断片的記憶をLLMで抽象化し、新たな `role="origin"` キューブを錬成。
+6. **意味的品質検証 (`_check_origin_quality`)**:
+   新Originの `MiniCube` と旧記憶群の `MiniCube` との意味的類似度（`≥ 0.75`）で保持率を算出。**保持率 `≥ newOrigin_threshold` (0.30/30%)** で合格・採用。
+7. **ガベージコレクション (`GCEngine`)**: Originに昇華された旧記憶の `is_archived` を `True` に設定し、`cube_pool` から `archived_cube_pool`（お墓）へ物理隔離。
+
+---

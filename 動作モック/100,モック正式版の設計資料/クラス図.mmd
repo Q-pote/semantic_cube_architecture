@@ -1,0 +1,148 @@
+classDiagram
+
+    %% ==========================================
+    %% Data Models (データ構造)
+    %% ==========================================
+    class SemanticCube {
+        +String cube_id
+        +String summary
+        +List~float~ embedding_vector
+        +List~int~ int3_grid
+        +float trust_score
+        +float alpha
+        +Dict recall_emotion
+        +List~MiniCube~ minicubes
+        +update_alpha(decay_rate: float) void
+        +get_centroid_vector() List~float~
+    }
+
+    class MiniCube {
+        +String minicube_id
+        +String keyword
+        +List~float~ embedding_vector
+        +List~int~ vec_int3
+        +float trust_score
+    }
+
+    %% ==========================================
+    %% Data Hub (記憶管理)
+    %% ==========================================
+    class DataHub {
+        -List~SemanticCube~ active_pool
+        -List~SemanticCube~ archived_pool
+        +add_cube(cube: SemanticCube) void
+        +get_active_cubes() List~SemanticCube~
+        +archive_cube(cube_id: String) void
+        +get_recent_context(k: int) List~SemanticCube~
+    }
+
+    %% ==========================================
+    %% Engines (機能群)
+    %% ==========================================
+    class CubeEngine {
+        -LLMService llm_service
+        +generate_cube(text: String) SemanticCube
+        -_extract_keywords(text: String) List~String~
+        -_project_to_grid(vector: List~float~) List~int~
+    }
+
+    class SragEngine {
+        -LLMService llm_service
+        -DataHub data_hub
+        +search(query_cube: SemanticCube) List~SemanticCube~
+        -_run_standard_flow() List~SemanticCube~
+        -_run_exploratory_flow() List~SemanticCube~
+        -_run_ruminate_flow() List~SemanticCube~
+    }
+
+    class AnalyzeEngine {
+        +detect_conflict(cubes: List~SemanticCube~) float
+        -_calculate_tension(cube_a: SemanticCube, cube_b: SemanticCube) float
+        -_check_topic_lock(cube_a: SemanticCube, cube_b: SemanticCube) bool
+    }
+
+    class EmotionEngine {
+        +apply_emotion(cubes: List~SemanticCube~, state: CognitiveState) CognitiveState
+        -_trigger_flashback(cube: SemanticCube) void
+    }
+
+    class IntegrationEngine {
+        -LLMService llm_service
+        +generate_response(query: String, context: List~SemanticCube~, tension: float) String
+        -_build_standard_prompt() String
+        -_build_hybrid_prompt() String
+    }
+
+    class DefragEngine {
+        -LLMService llm_service
+        -DataHub data_hub
+        +run_defrag() void
+        -_find_pseudo_query(cluster: List~SemanticCube~) SemanticCube
+        -_check_origin_quality(old_cubes, new_cube) bool
+    }
+
+    class GcEngine {
+        -DataHub data_hub
+        +run_gc() void
+        -_decay_alpha() void
+        -_move_to_archive(cube: SemanticCube) void
+    }
+
+    %% ==========================================
+    %% External Interfaces (外部接続)
+    %% ==========================================
+    class LLMService {
+        -LLMProvider provider
+        +generate_text(prompt: String) LLMResult
+        +get_embedding(text: String) LLMResult
+    }
+
+    class LLMProvider {
+        <<interface>>
+        +generate(prompt: String) LLMResult*
+        +embed(text: String) LLMResult*
+    }
+
+    class GeminiProvider {
+        +generate(prompt: String) LLMResult
+        +embed(text: String) LLMResult
+    }
+
+
+    %% ==========================================
+    %% Relationships (関係性)
+    %% ==========================================
+
+    %% コンポジット / 依存関係
+    DataHub "1" o-- "0...n" SemanticCube : 集約
+    SemanticCube "1" *-- "1...n" MiniCube : 内包
+    
+    
+    %% インターフェース実装
+    LLMProvider <|.. GeminiProvider : 実装
+    LLMService "1" *-- "1" LLMProvider : DI (依存性の注入)
+
+
+    %% エンジン間の依存
+    %% キューブ生成
+    CubeEngine --> LLMService
+    CubeEngine --> DataHub
+
+    %% 検索・探索
+    SragEngine --> LLMService
+    SragEngine <--> DataHub
+
+    %% 記憶代謝
+    DefragEngine --> LLMService
+    DefragEngine --> DataHub
+    DefragEngine --> CubeEngine
+    DefragEngine --> GcEngine
+    GcEngine --> DataHub
+
+    %% LLM応答
+    DataHub --> AnalyzeEngine
+    AnalyzeEngine --> EmotionEngine
+    EmotionEngine --> IntegrationEngine
+    IntegrationEngine --> LLMService
+    IntegrationEngine --> CubeEngine
+    

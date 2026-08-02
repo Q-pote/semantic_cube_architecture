@@ -1,0 +1,70 @@
+flowchart TD
+    %% ノード定義
+    Start(["START\nRSRAG 検索開始<br/>クエリキューブ入力"])
+    ModeSelect{"検索モードの選択<br/>(Standard / Exploratory / Ruminate)"}
+
+    %% ==============================
+    %% 1. Standard Flow (通常検索)
+    %% ==============================
+    subgraph Standard ["Standard Mode"]
+        StdCalc["コサイン類似度計算<br/>(Query vs 全Cube)"]
+        StdSort["類似度順にソートして<br/>Top-Kを抽出"]
+    end
+
+    %% ==============================
+    %% 2. Exploratory Flow (探索的検索)
+    %% ==============================
+    subgraph Exploratory ["Exploratory Mode"]
+        ExpGrid["空間グリッド(grid_mesh)による<br/>周辺候補の抽出"]
+        ExpCluster["高密度座標でクラスタリング<br/>(DBSCAN等)"]
+        ExpCentroid["各クラスタの重心から<br/>多様な代表キューブを抽出"]
+        ExpFilter["MiniCube(語義)でノイズ除去し<br/>Trust Scoreでソート"]
+    end
+
+    %% ==============================
+    %% 3. Ruminate Flow (反芻・連想ループ)
+    %% ==============================
+    subgraph Ruminate ["Ruminate Mode : 思考の深潜り"]
+        RumInit["初期化:<br/>現在の起点 = オリジナルクエリ"]
+        
+        RumLoop(["連想ループ開始"])
+        RumSearch["現在の起点で検索実行<br/>(Standard or Exploratory)\nのフローを夫々実行"]
+        
+        RumCheck{"安全ブレーキ判定<br/>見つけた記憶とオリジナルクエリの<br/>類似度は閾値以上か？"}
+        
+        RumNext["見つけた記憶を文脈に追加し、<br/>それを『次の起点』に設定<br/>(深度カウント+1)"]
+        
+        RumDepth{"深度チェック<br/>最大反芻回数(例:5回)に<br/>達したか？"}
+    end
+
+    End(["END\n最終コンテキスト群として<br/>Integration/Analyzeへ渡す"])
+
+    %% ==============================
+    %% フローの結線
+    %% ==============================
+    Start --> ModeSelect
+
+    %% Standard
+    ModeSelect -->|"直接的な回答が欲しい時\n1回のみの検索"| StdCalc
+    StdCalc --> StdSort
+    StdSort --> End
+
+    %% Exploratory
+    ModeSelect -->|"多様な視点・文脈が欲しい時\n１回のみの検索"| ExpGrid
+    ExpGrid --> ExpCluster
+    ExpCluster --> ExpCentroid
+    ExpCentroid --> ExpFilter
+    ExpFilter --> End
+
+    %% Ruminate
+    ModeSelect -->|"深く思考・連想する時\n反芻検索"| RumInit
+    RumInit --> RumLoop
+    RumLoop --> RumSearch
+    RumSearch --> RumCheck
+
+    RumCheck -->|"No (元の話題から離れた場合)"| End
+    RumCheck -->|"Yes (まだ元の話題の範囲内)"| RumNext
+    
+    RumNext --> RumDepth
+    RumDepth -->|"No (深掘りを行う)"| RumLoop
+    RumDepth -->|"Yes (閾値オーバー)"| End
