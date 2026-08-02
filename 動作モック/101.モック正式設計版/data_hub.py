@@ -40,7 +40,7 @@ class DataHub:
         return [c for c in self.cube_pool.values() if not c.is_archived]
 
     def history_push(self, cube: SemanticCube):
-        """直近対話ログにキューブを追加（10個制限）"""
+        """直近対話ログにキューブを追加（10TURN制限）"""
         self.active_history.append(cube)
         if len(self.active_history) > self.active_history_limit:
             self.active_history.pop(0)

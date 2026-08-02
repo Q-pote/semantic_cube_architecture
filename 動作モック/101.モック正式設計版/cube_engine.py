@@ -128,9 +128,9 @@ class CubeEngine:
 
 【回答フォーマット】
 [
-  {{"phrase": "推測した単語", "role": "genre", "confidence": 0.8}}
-  {{"phrase": "推測した単語", "role": "topic", "confidence": 0.65}}
-  {{"phrase": "推測した単語", "role": "problem/theme", "confidence": 0.75}}
+  {{"phrase": "推測した単語", "role": "genre", "confidence": 0.8}},
+  {{"phrase": "推測した単語", "role": "topic", "confidence": 0.65}},
+  {{"phrase": "推測した単語", "role": "problem/theme", "confidence": 0.75}},
   {{"phrase": "抽出した単語", "role": "subject", "confidence": 0.95}},
   {{"phrase": "抽出した単語", "role": "predicate", "confidence": 0.90}},
   {{"phrase": "抽出した単語", "role": "key_phrase", "confidence": 0.85}}

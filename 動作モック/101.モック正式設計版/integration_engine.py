@@ -13,7 +13,6 @@ class IntegrationEngine:
         """
         SRAGが何も見つけられなかった時に呼ばれる。
         """
-        # print("    -> Executing 'single' route (No SRAG context).")
         
         # 直近の対話履歴をプロンプト用に整形
         history_text = "\n".join([f"- {h.source}: {h.create_datetime} : {h.summary}" for h in history])
@@ -50,9 +49,9 @@ class IntegrationEngine:
         srag_context = ""
         for i, res in enumerate(search_results):
             matched_phrases = ", ".join([m.target_phrase for m in res.matched_minicubes])
-            srag_context += f"【根拠データ{i+1} (Score: {res.final_score:.3f})】\n"
+            srag_context += f"【関連する過去の対話データ{i+1} (Score: {res.final_score:.3f})】\n"
             srag_context += f" - 【過去の対話内容】:【 {res.cube.summary}】\n"
-            srag_context += f" - 【関連キーワード】: [{matched_phrases}]\n\n"
+            # srag_context += f" - 【関連キーワード】: [{matched_phrases}]\n\n"
 
         history_text = "\n".join([f"- {h.source}: {h.create_datetime} : {h.summary}" for h in history])
         

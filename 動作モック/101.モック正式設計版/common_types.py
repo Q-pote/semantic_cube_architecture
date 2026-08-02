@@ -3,19 +3,19 @@
 from __future__ import annotations
 
 import uuid
-import math
 import numpy as np
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
 from dataclasses import dataclass, field
 from typing import List, Tuple, Literal
 
 
 # --- enum設計 ---
 CubeRole = Literal["history", "origin", "knowledge", "ethics", "identity"]
-CubeSource = Literal["USER", "LLM"]
+CubeSource = Literal["USER", "LLM", "DEFRAG", "SYSTEM"]
 PhraseRole = Literal["genre", "topic", "problem/theme", "subject", "predicate", "key_phrase"]
 
-SearchMode = Literal["standard", "exploratory"]
+# 検索メソッドの定義以外に、反芻のON/OFFのフラグもあるよ～！
+SearchMethod = Literal["standard", "exploratory"]
 
 # ---------------------------------
 @dataclass
